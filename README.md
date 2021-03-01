@@ -6,9 +6,9 @@ This directory contains the supporting artifact for our paper on PLDI 2021 paper
 A copy of our PLDI submission can be found at: [URL]
 
 # Overview of Results
-As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have submitted 158 unique bug reports, of which 129 have been verified, and 115 have already been fixed by the developers. Furthermore, 21 of the Comfort generated test cases were added into Test-262, the official Javascript conformance test suite.
+As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have indentified 158 unique bugs, of which 129 have been verified, and 115 have been fixed by the developers. Furthermore, 21 of the Comfort generated test cases were added into Test-262, the official Javascript conformance test suite.
 
-A list of bugs discovered by our techniques can be found at [url]. We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. 
+A list of bugs discovered by our techniques can be found at [url]. We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. We have also identified some new bugs after our PLDI submission, which are also noted. 
 
 # Getting Start Guide
 For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted]:9996 use the password [redacted]. The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
