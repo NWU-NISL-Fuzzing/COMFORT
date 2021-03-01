@@ -1,6 +1,6 @@
 # Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing: Artifact
 
-This directory contains the supporting artifact for our paper on automated Conformance Testing for JavaScript Compilers. 
+This directory contains the supporting artifact for our paper on Automated Conformance Testing for JavaScript Compilers. 
 It contains reduced-size data sets for evaluating
 our testcase generator, testcase harness, and differential tester. The full
 dataset is quite large (>200 GB uncompressed), and we are working on finding a
