@@ -11,7 +11,7 @@ As stated in Section 5 of the PLDI submission, we have started experimenting wit
 A list of bugs discovered by our techniques can be found at [url]. We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. 
 
 # Getting Start Guide
-Our research artefact enables the reproduction of the experimental results of our work (Section 5 of the submitted version). For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted]:9996 use the password [redacted]. The notebook provides instructions on how to configured and test our techniques on a small-scale dataset. 
+For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted]:9996 use the password [redacted]. The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
 
 Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could either choose to run the Jupyter Notebook locally on your machine or using a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
 
