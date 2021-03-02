@@ -239,7 +239,7 @@ The Docker image contains the following scripts for evaluation.
 Evaluate GPT-2 program synthesizer by running the following command:
 ``` Command ```
 
-The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refined a pre-trained GPT-2 model on the JS corpus, and generates 1024 new JS test cases. 
+The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus, and generates 1024 new JS test cases. 
 
 We have reduced the size of the corpus so that it takes around 4 hours to train on a CPU. We trained our model on more data (140,000 JS programs rather tan 2,000) for longer (50 epochs rather than 10). As such, the quality of output of this model is lower, with shorter and few syntactically correct programs being generated. 
 
