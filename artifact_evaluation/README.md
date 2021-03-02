@@ -33,167 +33,167 @@ To run our Jupyter Notebook locally, please see [xx].
 
 A list of bugs exposed by COMFORT-generated test case. Note that if a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. 
 
+| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
+| --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
+| 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 2 | V8 | 0e44fef | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=8088) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 3 | V8 | e39c701 | [v8_report3](https://bugs.chromium.org/p/v8/issues/detail?id=10268) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 4 | V8 | e39c701 | [v8_report4](https://bugs.chromium.org/p/v8/issues/detail?id=10589) | [Xing Qu](https://github.com/QuXing9) | Verified | |
+| 5 | ChakraCore | v1.11.12 | [chakra_report1](https://github.com/microsoft/ChakraCore/issues/6278) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 6 | ChakraCore | 8fcb0f1 | [chakra_report2](local-bugs/ChakraCore/No.86.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | Not first discovered|
+| 7 | ChakraCore | eaaf7ac | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6351) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | | 
+| 8 | ChakraCore | eaaf7ac | [chakra_report4](https://github.com/microsoft/ChakraCore/issues/6383) |  [Yuan Wang](https://github.com/YuanWangC) | Verified | | 
+| 9 | ChakraCore | eaaf7ac | [chakra_report5](https://github.com/microsoft/ChakraCore/issues/6342) | [Yuan Wang](https://github.com/YuanWangC) | Verified | | 
+| 10 | ChakraCore | v1.11.8 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6467) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | | 
+| 11 | ChakraCore | v1.11.8 | [chakra_report7](https://github.com/microsoft/ChakraCore/issues/6477) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | | 
+| 12 | JavaScriptCore | d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=201910) | [Yang Tian](https://github.com/ty5491003) | Fixed | |
+| 13 | JavaScriptCore | d940b47 | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=200190) | [Yang Tian](https://github.com/ty5491003) | Fixed | |
+| 14 | JavaScriptCore | d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=199744) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 15 | JavaScriptCore | b96bf75 | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=204971) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 16 | JavaScriptCore | d940b47 | [JSC_report5](https://bugs.webkit.org/show_bug.cgi?id=203456) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 17 | JavaScriptCore | d940b47 | [JSC_report6](https://bugs.webkit.org/show_bug.cgi?id=199663) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 18 | JavaScriptCore | b96bf75 | [JSC_report7](https://bugs.webkit.org/show_bug.cgi?id=205498) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion	 | |
+| 19 | JavaScriptCore | d940b47 | [JSC_report8](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/javascriptCore/No.73.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered|
+| 20 | JavaScriptCore | 	b3fa4c5 | [JSC_report9](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/javascriptCore/No.74.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered|
+| 21 | JavaScriptCore | 	d940b47 | [JSC_report10](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/javascriptCore/No.125.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered|
+| 22 | JavaScriptCore | 	dbae081 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | Fixed | |
+| 23 | JavaScriptCore | d940b47 | [JSC_report12](https://bugs.webkit.org/show_bug.cgi?id=213023) | [Yuan Wang](https://github.com/YuanWangC) | Fixed	 | |
+| 24 | SpiderMonkey | v1.7.0 | [spidermonkey_report1](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.6.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |Not first discovered|
+| 25 | SpiderMonkey | mozjs-52.9.1pre | [spidermonkey_report2](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.82.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |Not first discovered|
+| 26 | SpiderMonkey | mozjs-38.3.0 | [spidermonkey_report3](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.84.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |Not first discovered|
+| 27 | Rhino | 1.7.12 | [rhino_report1](https://github.com/mozilla/rhino/issues/664) | [Yang Tian](https://github.com/ty5491003) | Fixed |  |
+| 28 | Rhino | 1.7.12 | [rhino_report2](https://github.com/mozilla/rhino/issues/665) | [Yang Tian](https://github.com/ty5491003) | Fixed |  |
+| 29 | Rhino | 1.7.12 | [rhino_report3](https://github.com/mozilla/rhino/issues/670) | [Yang Tian](https://github.com/ty5491003) | Fixed |  |
+| 30 | Rhino | 1.7.11 | [rhino_report4](https://github.com/mozilla/rhino/issues/570) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers |  |
+| 31 | Rhino | 1.7.11 | [rhino_report5](https://github.com/mozilla/rhino/issues/587) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |  |
+| 32 | Rhino | 1.7.11  | [rhino_report6](https://github.com/mozilla/rhino/issues/574) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 33 | Rhino | 1.7.11  | [rhino_report7](https://github.com/mozilla/rhino/issues/612) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+| 34 | Rhino | 1.7.11  | [rhino_report8](https://github.com/mozilla/rhino/issues/576) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers  | |
+| 35 | Rhino | 1.7.11  | [rhino_report9](https://github.com/mozilla/rhino/issues/575) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+|36 | Rhino | 1.7.11  | [rhino_report10](https://github.com/mozilla/rhino/issues/580) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+| 37 | Rhino | 1.7.11  | [rhino_report11](https://github.com/mozilla/rhino/issues/571) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+| 38 |Rhino | 1.7.12  | [rhino_report12](https://github.com/mozilla/rhino/issues/667) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+| 39 | Rhino | 1.7.11  | [rhino_report13](local-bugs/Rhino/No.68.png) | [Xing Qu](https://github.com/QuXing9) | Fixed  |Not first discovered|
+| 40 | Rhino | 1.7.11  | [rhino_report14](local-bugs/Rhino/No.69.png) | [Xing Qu](https://github.com/QuXing9) | Fixed  |Not first discovered|
+| 41 | Rhino | 1.7.12 | [rhino_report15](https://github.com/mozilla/rhino/issues/673) | [Yang Tian](https://github.com/ty5491003) | Fixed | |
+| 42 | Rhino | 1.7.12 | [rhino_report16](https://github.com/mozilla/rhino/issues/659) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 43 | Rhino | 1.7.12 | [rhino_report17](https://github.com/mozilla/rhino/issues/648) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 44 | Rhino | 1.7.12 | [rhino_report18](https://github.com/mozilla/rhino/issues/651) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 45 | Rhino | 1.7.12 | [rhino_report19](https://github.com/mozilla/rhino/issues/639) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 46 | Rhino | 1.7.12 | [rhino_report20](https://github.com/mozilla/rhino/issues/656) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 47 | Rhino | 1.7.12 | [rhino_report21](https://github.com/mozilla/rhino/issues/684) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 48 | Rhino | 1.7.12 | [rhino_report22](https://github.com/mozilla/rhino/issues/686) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 49 | Rhino | 1.7.12 | [rhino_report23](https://github.com/mozilla/rhino/issues/687) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+| 50 | Rhino | 1.7.12 | [rhino_report24](https://github.com/mozilla/rhino/issues/688) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 51 | Rhino | 1.7.12 | [rhino_report25](https://github.com/mozilla/rhino/issues/691) | [Wen Yi](https://github.com/YiWen-y) | Under discussion | |
+| 52 | Rhino | 1.7.12 | [rhino_report26](https://github.com/mozilla/rhino/issues/692) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 53 | Rhino | 1.7.12 | [rhino_report27](https://github.com/mozilla/rhino/issues/697) | [Xing Qu](https://github.com/QuXing9) & [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+| 54 | Rhino | 1.7.12 | [rhino_report28](https://github.com/mozilla/rhino/issues/699) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion | |
+| 55 | Rhino | 1.7.12 | [rhino_report29](https://github.com/mozilla/rhino/issues/698) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 56 | Rhino | 1.7.12 | [rhino_report30](https://github.com/mozilla/rhino/issues/708) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 57 | Rhino | 1.7.12 | [rhino_report31](https://github.com/mozilla/rhino/issues/719) | [Haobin Li](1355878370@qq.com) | Under discussion | |
+| 58 | Rhino | 1.7.12 | [rhino_report32](https://github.com/mozilla/rhino/issues/726) | [Wen Yi](https://github.com/YiWen-y)  |  Fixed | |
+| 59 | Rhino | 1.7.12 | [rhino_report33](https://github.com/mozilla/rhino/issues/725) | [Wen Yi](https://github.com/YiWen-y)  |  Verified | |
+| 60 | Rhino | 1.7.12 | [rhino_report34](https://github.com/mozilla/rhino/issues/746) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 61 | Rhino | 1.7.12 | [rhino_report35](https://github.com/mozilla/rhino/issues/750) | [Haobin Li](1355878370@qq.com) | Fixed | |
+| 62 | Rhino | 1.7.11 | [rhino_report36](https://github.com/mozilla/rhino/issues/582) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | Fix [String.prototype.includes](local-bugs/Rhino/No.152.png) at the same time |
+| 63 | Rhino | 1.7.11 | [rhino_report37](https://github.com/mozilla/rhino/issues/581) | [Implementist](https://github.com/Implementist) | Fixed | |
+| 64 | Rhino | 1.7.10 | [rhino_report38](https://github.com/mozilla/rhino/issues/563) | [yeguixin](https://github.com/yeguixin) | Fixed | |
+| 65 | Rhino | 1.7.10 | [rhino_report39](https://github.com/mozilla/rhino/issues/566) | [Implementist](https://github.com/Implementist) | Fixed | |
+| 66 | Rhino | 1.7.11 | [rhino_report40](https://github.com/mozilla/rhino/issues/569) | [yeguixin](https://github.com/yeguixin) | Under discussion | |
+| 67 | Rhino | 1.7.11 | [rhino_report41](https://github.com/mozilla/rhino/issues/573) | [Implementist](https://github.com/Implementist) | Verified | |
+| 68 | Rhino | 1.7.11 | [rhino_report42](https://github.com/mozilla/rhino/issues/564) | [yeguixin](https://github.com/yeguixin) | Verified | |
+| 69 | Rhino | 1.7.11 | [rhino_report43](https://github.com/mozilla/rhino/issues/577) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers | |
+| 70 | Rhino | 1.7.11 | [rhino_report44](https://github.com/mozilla/rhino/issues/568) | [yeguixin](https://github.com/yeguixin) | Under discussion | |
+| 71 | Nashorn | 12.0.1  | [nashorn_report1](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8228702) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 72 | Nashorn | 12.0.1  | [nashorn_report2](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8228703) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 73 | Nashorn | 12.0.1  | [nashorn_report3](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8227682) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 74 | Nashorn | 13.0.1  | [nashorn_report4](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8240298) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 75 | Nashorn | 13.0.1  | [nashorn_report5](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8240299) | [Wen Yi](https://github.com/YiWen-y) | Verified | |
+| 76 | Nashorn | 12.0.1 | [nashorn_report6](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8227681) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 77 | Nashorn | 12.0.1 | [nashorn_report7](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8227428) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 78 | Nashorn | 13.0.1 | [nashorn_report8](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8235328) | [Yuan Wang](https://github.com/YuanWangC) | Verified | |
+| 79 | Nashorn | 13.0.1 | [nashorn_report9](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8242340) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 80 | Nashorn | 12.0.1 | [nashorn_report10](local-bugs/nashorn/No.122.png) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |Not first discovered|
+| 81 | Nashorn | 12.0.1 | [nashorn_report11](local-bugs/nashorn/report11.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |Not first discovered|
+| 82 | Nashorn | 12.0.1 | [nashorn_report12](local-bugs/nashorn/report12.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |Not first discovered|
+| 83 | Nashorn | 12.0.1 | [nashorn_report13](local-bugs/nashorn/report13.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |Not first discovered|
+| 84 | Nashorn | 12.0.1 | [nashorn_report14](local-bugs/nashorn/report14.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |Not first discovered|
+| 85 | Nashorn | 12.0.1 | [nashorn_report15](local-bugs/nashorn/report15.png) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
+| 86 | Nashorn | 12.0.1 | [nashorn_report16](local-bugs/nashorn/report16.png) | [Wen Yi](https://github.com/YiWen-y) | Under discussion |Not first discovered|
+| 87 | Nashorn | 12.0.1 | [nashorn_report17](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8226554) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 88 | Nashorn | 12.0.1 | [nashorn_report18](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8226652) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 89 | Hermes | 3ed8340 | [hermes_report1](https://github.com/facebook/hermes/issues/188) | [Implementist](https://github.com/Implementist) |  Fixed | |
+| 90 | Hermes | 3826084 | [hermes_report2](https://github.com/facebook/hermes/issues/143) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 91 | Hermes | 3826084 | [hermes_report3](https://github.com/facebook/hermes/issues/134) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
+| 92 | Hermes | 3ed8340 | [hermes_report4](https://github.com/facebook/hermes/issues/102) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 93 | Hermes | 3ed8340 | [hermes_report5](https://github.com/facebook/hermes/issues/120) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 94 | Hermes | 3ed8340 | [hermes_report6](https://github.com/facebook/hermes/issues/107) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 95 | Hermes | 3826084 | [hermes_report7](https://github.com/facebook/hermes/issues/153) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 96 | Hermes | 3ed8340 | [hermes_report8](local-bugs/hermes/No.80.png) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |Not first discovered|
+| 97 | Hermes | 3ed8340 | [hermes_report9](local-bugs/hermes/No.81.png) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |Not first discovered|
+| 98 | Hermes | 044cf4b | [hermes_report10](https://github.com/facebook/hermes/issues/165) | [Wen Yi](https://github.com/YiWen-y) | Verified | |
+| 99 | Hermes | 3826084 | [hermes_report11](https://github.com/facebook/hermes/issues/159) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 100 | Hermes | b6530ae | [hermes_report12](https://github.com/facebook/hermes/issues/252) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 101 | Hermes | 3826084 | [hermes_report13](https://github.com/facebook/hermes/issues/154) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 102 | Hermes | 3ed8340 | [hermes_report14](local-bugs/hermes/No.114.png) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |Not first discovered|
+| 103 | Hermes | 3826084 | [hermes_report15](local-bugs/hermes/No.127.png) | [Yang Tian](https://github.com/ty5491003) | Fixed |Not first discovered|
+| 104 | Hermes | b6530ae | [hermes_report16](https://github.com/facebook/hermes/issues/277) |  [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 105 | JerryScript | b6fc4e1 | [jerry_report1](https://github.com/jerryscript-project/jerryscript/issues/3001) |  [Yang Tian](https://github.com/ty5491003) | Fixed | |
+| 106 | JerryScript | 84a56ef | [jerry_report2](https://github.com/jerryscript-project/jerryscript/issues/3216) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 107 | JerryScript |40f7b1c | [jerry_report3](https://github.com/pando-project/jerryscript/issues/2817) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 108 | JerryScript | 40f7b1c | [jerry_report4](https://github.com/jerryscript-project/jerryscript/issues/2905) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers | |
+| 109 | JerryScript | 9ab4872 | [jerry_report5](https://github.com/jerryscript-project/jerryscript/issues/3173) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 110 | JerryScript | 7df87b7 | [jerry_report6](https://github.com/jerryscript-project/jerryscript/issues/3229) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 111 | JerryScript | b6fc4e1 | [jerry_report7](https://github.com/jerryscript-project/jerryscript/issues/2937) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 112 | JerryScript | 996bf76 | [jerry_report8](https://github.com/jerryscript-project/jerryscript/issues/3650) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 113 | JerryScript | 996bf76 | [jerry_report9](https://github.com/jerryscript-project/jerryscript/issues/3661) |[Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 114 | JerryScript | 996bf76 | [jerry_report10](https://github.com/jerryscript-project/jerryscript/issues/3393) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 115 | JerryScript | 7df87b7 | [jerry_report11](https://github.com/jerryscript-project/jerryscript/issues/3325) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 116 | JerryScript | 996bf76 | [jerry_report12](https://github.com/jerryscript-project/jerryscript/issues/3381) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 117 | JerryScript | 996bf76 | [jerry_report13](https://github.com/jerryscript-project/jerryscript/issues/3467) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 118 | JerryScript | 996bf76 | [jerry_report14](https://github.com/jerryscript-project/jerryscript/issues/3463) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 119 | JerryScript | 996bf76 | [jerry_report15](https://github.com/jerryscript-project/jerryscript/issues/3473) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 120 | JerryScript | 996bf76 | [jerry_report16](https://github.com/jerryscript-project/jerryscript/issues/3380) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 121 | JerryScript | 996bf76 | [jerry_report17](https://github.com/jerryscript-project/jerryscript/issues/3646) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 122 | JerryScript | 996bf76 | [jerry_report18](https://github.com/jerryscript-project/jerryscript/issues/3669) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 123 | JerryScript | 996bf76 | [jerry_report19](https://github.com/jerryscript-project/jerryscript/issues/3277) | [Yuan Wang](https://github.com/YuanWangC) | Rejected by developers | |
+| 124 | JerryScript | 7df87b7 | [jerry_report20](local-bugs/jerryscript/No.124.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered |
+| 125 | JerryScript | 9ab4872 | [jerry_report21](https://github.com/jerryscript-project/jerryscript/issues/3844) | [Xing Qu](https://github.com/QuXing9) | Fixed | |
+| 126 | JerryScript | 9ab4872 | [jerry_report22](https://github.com/jerryscript-project/jerryscript/issues/3878) |[Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 127 | JerryScript | 996bf76 | [jerry_report23](https://github.com/jerryscript-project/jerryscript/issues/3903) |[Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 128 | JerryScript | 996bf76 | [jerry_report24](https://github.com/jerryscript-project/jerryscript/issues/3903) |[Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 129 | JerryScript | 996bf76 | [jerry_report25](https://github.com/jerryscript-project/jerryscript/issues/3914) |[Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 130 | JerryScript | bd1c4df | [jerry_report26](https://github.com/jerryscript-project/jerryscript/issues/3927) |[Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 131 | JerryScript | bd1c4df | [jerry_report27](https://github.com/jerryscript-project/jerryscript/issues/3926) |[Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 132 | JerryScript | b6fc4e1 | [jerry_report28](https://github.com/jerryscript-project/jerryscript/issues/2914) |[Implementist](https://github.com/Implementist) | Fixed | |
+| 133 | JerryScript | b6fc4e1 | [jerry_report29](https://github.com/jerryscript-project/jerryscript/issues/2949) |[Houyou Yao](https://github.com/YaoHouyou) |Fixed | |
+| 134 | JerryScript | 351acdf | [jerry_report30](https://github.com/jerryscript-project/jerryscript/issues/2906) |[yeguixin](https://github.com/yeguixin) | Fixed | |
+| 135 | JerryScript | e944cda | [jerry_report31](https://github.com/pando-project/jerryscript/issues/2891) |[yeguixin](https://github.com/yeguixin) | Fixed | |
+| 136 | JerryScript | 9ab4872 | [jerry_report32](local-bugs/jerryscript/No.65.png) |[Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered|
+| 137| JerryScript | 351acdf | [jerry_report33](https://github.com/jerryscript-project/jerryscript/issues/2914) |[Implementist](https://github.com/Implementist) | Fixed |Not first discovered|
+| 138 | JerryScript | 9ab4872 | [jerry_report34](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/jerryscript/No.151.PNG) |[Wen Yi](https://github.com/YiWen-y) | Rejected by developers |Not first discovered|
+| 139 | JerryScript | bd1c4df | [jerry_report35](https://github.com/jerryscript-project/jerryscript/issues/3763) |[NWU-NISL](https://github.com/NWU-NISL) | Rejected by developers | |
+| 140 | QuickJS | quickjs-2019-09-18 | [qjs_report1](local-bugs/quickJS/No.22.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 141 | QuickJS | quickjs-2019-09-01 | [qjs_report2](local-bugs/quickJS/No.23.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 142 | QuickJS | quickjs-2019-09-01 | [qjs_report3](local-bugs/quickJS/No.24.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 143 | QuickJS | quickjs-2019-09-01 | [qjs_report4](local-bugs/quickJS/No.25.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 144 | QuickJS | quickjs-2019-09-01 | [qjs_report5](local-bugs/quickJS/No.26.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 145 | QuickJS | quickjs-2019-10-27 | [qjs_report6](local-bugs/quickJS/No.27.pdf) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 146 | QuickJS | quickjs-2019-10-27 | [qjs_report7](local-bugs/quickJS/No.28.pdf) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 147 | QuickJS | quickjs-2020-01-05 | [qjs_report8](local-bugs/quickJS/No.29.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 148 | QuickJS | quickjs-2020-04-12 | [qjs_report9](local-bugs/quickJS/No.30.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 149 | QuickJS | quickjs-2019-10-27 | [qjs_report10](local-bugs/quickJS/No.112.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 150 | QuickJS | quickjs-2020-01-05 | [qjs_report11](local-bugs/quickJS/No.113.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
+| 151 | QuickJS | quickjs-2019-07-09 | [qjs_report12](local-bugs/quickJS/No.4.PNG) | [Xing Qu](https://github.com/QuXing9) | Fixed |Not first discovered|
+| 152 | QuickJS | quickjs-2019-10-27 | [qjs_report13](local-bugs/quickJS/No.88.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers | |
+| 153 | QuickJS | quickjs-2019-09-18 | [qjs_report14](local-bugs/quickJS/No.89.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
+| 154 | QuickJS | quickjs-2019-07-09 | [qjs_report15](local-bugs/quickJS/No.90.PNG) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered|
+| 155 | QuickJS | quickjs-2019-07-09 | [qjs_report16](local-bugs/quickJS/No.91.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 156 | QuickJS | quickjs-2019-09-18 | [qjs_report17](local-bugs/quickJS/No.92.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers | |
+| 157 | Graaljs | graalvm-ce-java8-20.1.0  | [graaljs_report1](https://github.com/graalvm/graaljs/issues/300) |[Wen Yi](https://github.com/YiWen-y) | Fixed | |
+| 158 | Graaljs | graalvm-ce-java8-20.1.0 | [graaljs_report2](https://github.com/graalvm/graaljs/issues/299) |[Yuan Wang](https://github.com/YuanWangC) |Fixed | |
 
-| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    |
-| --- | ---------- | --------------| -----------------| ------------ | -------- |
-| 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 2 | V8 | 0e44fef | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=8088) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 3 | V8 | e39c701 | [v8_report3](https://bugs.chromium.org/p/v8/issues/detail?id=10268) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 4 | V8 | e39c701 | [v8_report4](https://bugs.chromium.org/p/v8/issues/detail?id=10589) | [Xing Qu](https://github.com/QuXing9) | Verified |
-| 5 | ChakraCore | v1.11.12 | [chakra_report1](https://github.com/microsoft/ChakraCore/issues/6278) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | 
-| 6 | ChakraCore | 8fcb0f1 | [chakra_report2](local-bugs/ChakraCore/No.86.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | 
-| 7 | ChakraCore | eaaf7ac | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6351) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | 
-| 8 | ChakraCore | eaaf7ac | [chakra_report4](https://github.com/microsoft/ChakraCore/issues/6383) |  [Yuan Wang](https://github.com/YuanWangC) | Verified | 
-| 9 | ChakraCore | eaaf7ac | [chakra_report5](https://github.com/microsoft/ChakraCore/issues/6342) | [Yuan Wang](https://github.com/YuanWangC) | Verified | 
-| 10 | ChakraCore | v1.11.8 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6467) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | 
-| 11 | ChakraCore | v1.11.8 | [chakra_report7](https://github.com/microsoft/ChakraCore/issues/6477) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | 
-| 12 | JavaScriptCore | d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=201910) | [Yang Tian](https://github.com/ty5491003) | Fixed |
-| 13 | JavaScriptCore | d940b47 | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=200190) | [Yang Tian](https://github.com/ty5491003) | Fixed |
-| 14 | JavaScriptCore | d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=199744) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 15 | JavaScriptCore | b96bf75 | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=204971) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 16 | JavaScriptCore | d940b47 | [JSC_report5](https://bugs.webkit.org/show_bug.cgi?id=203456) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 17 | JavaScriptCore | d940b47 | [JSC_report6](https://bugs.webkit.org/show_bug.cgi?id=199663) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 18 | JavaScriptCore | b96bf75 | [JSC_report7](https://bugs.webkit.org/show_bug.cgi?id=205498) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion	 |
-| 19 | JavaScriptCore | d940b47 | [JSC_report8](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/javascriptCore/No.73.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 20 | JavaScriptCore | 	b3fa4c5 | [JSC_report9](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/javascriptCore/No.74.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 21 | JavaScriptCore | 	d940b47 | [JSC_report10](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/javascriptCore/No.125.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 22 | JavaScriptCore | 	dbae081 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | Fixed |
-| 23 | JavaScriptCore | d940b47 | [JSC_report12](https://bugs.webkit.org/show_bug.cgi?id=213023) | [Yuan Wang](https://github.com/YuanWangC) | Fixed	 |
-| 24 | SpiderMonkey | v1.7.0 | [spidermonkey_report1](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.6.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |
-| 25 | SpiderMonkey | mozjs-52.9.1pre | [spidermonkey_report2](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.82.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |
-| 26 | SpiderMonkey | mozjs-38.3.0 | [spidermonkey_report3](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.84.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |
-| 27 | Rhino | 1.7.12 | [rhino_report1](https://github.com/mozilla/rhino/issues/664) | [Yang Tian](https://github.com/ty5491003) | Fixed | 
-| 28 | Rhino | 1.7.12 | [rhino_report2](https://github.com/mozilla/rhino/issues/665) | [Yang Tian](https://github.com/ty5491003) | Fixed | 
-| 29 | Rhino | 1.7.12 | [rhino_report3](https://github.com/mozilla/rhino/issues/670) | [Yang Tian](https://github.com/ty5491003) | Fixed | 
-| 30 | Rhino | 1.7.11 | [rhino_report4](https://github.com/mozilla/rhino/issues/570) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers | 
-| 31 | Rhino | 1.7.11 | [rhino_report5](https://github.com/mozilla/rhino/issues/587) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | 
-| 32 | Rhino | 1.7.11  | [rhino_report6](https://github.com/mozilla/rhino/issues/574) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 33 | Rhino | 1.7.11  | [rhino_report7](https://github.com/mozilla/rhino/issues/612) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 34 | Rhino | 1.7.11  | [rhino_report8](https://github.com/mozilla/rhino/issues/576) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers  |
-| 35 | Rhino | 1.7.11  | [rhino_report9](https://github.com/mozilla/rhino/issues/575) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-|36 | Rhino | 1.7.11  | [rhino_report10](https://github.com/mozilla/rhino/issues/580) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 37 | Rhino | 1.7.11  | [rhino_report11](https://github.com/mozilla/rhino/issues/571) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 38 |Rhino | 1.7.12  | [rhino_report12](https://github.com/mozilla/rhino/issues/667) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 39 | Rhino | 1.7.11  | [rhino_report13](local-bugs/Rhino/No.68.png) | [Xing Qu](https://github.com/QuXing9) | Fixed  |
-| 40 | Rhino | 1.7.11  | [rhino_report14](local-bugs/Rhino/No.69.png) | [Xing Qu](https://github.com/QuXing9) | Fixed  |
-| 41 | Rhino | 1.7.12 | [rhino_report15](https://github.com/mozilla/rhino/issues/673) | [Yang Tian](https://github.com/ty5491003) | Fixed |
-| 42 | Rhino | 1.7.12 | [rhino_report16](https://github.com/mozilla/rhino/issues/659) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 43 | Rhino | 1.7.12 | [rhino_report17](https://github.com/mozilla/rhino/issues/648) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 44 | Rhino | 1.7.12 | [rhino_report18](https://github.com/mozilla/rhino/issues/651) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 45 | Rhino | 1.7.12 | [rhino_report19](https://github.com/mozilla/rhino/issues/639) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 46 | Rhino | 1.7.12 | [rhino_report20](https://github.com/mozilla/rhino/issues/656) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 47 | Rhino | 1.7.12 | [rhino_report21](https://github.com/mozilla/rhino/issues/684) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 48 | Rhino | 1.7.12 | [rhino_report22](https://github.com/mozilla/rhino/issues/686) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 49 | Rhino | 1.7.12 | [rhino_report23](https://github.com/mozilla/rhino/issues/687) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 50 | Rhino | 1.7.12 | [rhino_report24](https://github.com/mozilla/rhino/issues/688) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 51 | Rhino | 1.7.12 | [rhino_report25](https://github.com/mozilla/rhino/issues/691) | [Wen Yi](https://github.com/YiWen-y) | Under discussion |
-| 52 | Rhino | 1.7.12 | [rhino_report26](https://github.com/mozilla/rhino/issues/692) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 53 | Rhino | 1.7.12 | [rhino_report27](https://github.com/mozilla/rhino/issues/697) | [Xing Qu](https://github.com/QuXing9) & [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 54 | Rhino | 1.7.12 | [rhino_report28](https://github.com/mozilla/rhino/issues/699) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |
-| 55 | Rhino | 1.7.12 | [rhino_report29](https://github.com/mozilla/rhino/issues/698) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 56 | Rhino | 1.7.12 | [rhino_report30](https://github.com/mozilla/rhino/issues/708) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 57 | Rhino | 1.7.12 | [rhino_report31](https://github.com/mozilla/rhino/issues/719) | [Haobin Li](1355878370@qq.com) | Under discussion |
-| 58 | Rhino | 1.7.12 | [rhino_report32](https://github.com/mozilla/rhino/issues/726) | [Wen Yi](https://github.com/YiWen-y)  |  Fixed |
-| 59 | Rhino | 1.7.12 | [rhino_report33](https://github.com/mozilla/rhino/issues/725) | [Wen Yi](https://github.com/YiWen-y)  |  Verified |
-| 60 | Rhino | 1.7.12 | [rhino_report34](https://github.com/mozilla/rhino/issues/746) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 61 | Rhino | 1.7.12 | [rhino_report35](https://github.com/mozilla/rhino/issues/750) | [Haobin Li](1355878370@qq.com) | Fixed |
-| 62 | Rhino | 1.7.11 | [rhino_report36](https://github.com/mozilla/rhino/issues/582) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 63 | Rhino | 1.7.11 | [rhino_report37](https://github.com/mozilla/rhino/issues/581) | [Implementist](https://github.com/Implementist) | Fixed |
-| 64 | Rhino | 1.7.10 | [rhino_report38](https://github.com/mozilla/rhino/issues/563) | [yeguixin](https://github.com/yeguixin) | Fixed |
-| 65 | Rhino | 1.7.10 | [rhino_report39](https://github.com/mozilla/rhino/issues/566) | [Implementist](https://github.com/Implementist) | Fixed |
-| 66 | Rhino | 1.7.11 | [rhino_report40](https://github.com/mozilla/rhino/issues/569) | [yeguixin](https://github.com/yeguixin) | Under discussion |
-| 67 | Rhino | 1.7.11 | [rhino_report41](https://github.com/mozilla/rhino/issues/573) | [Implementist](https://github.com/Implementist) | Verified |
-| 68 | Rhino | 1.7.11 | [rhino_report42](https://github.com/mozilla/rhino/issues/564) | [yeguixin](https://github.com/yeguixin) | Verified |
-| 69 | Rhino | 1.7.11 | [rhino_report43](https://github.com/mozilla/rhino/issues/577) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers |
-| 70 | Rhino | 1.7.11 | [rhino_report44](https://github.com/mozilla/rhino/issues/568) | [yeguixin](https://github.com/yeguixin) | Under discussion |
-| 71 | Nashorn | 12.0.1  | [nashorn_report1](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8228702) | [Houyou Yao](https://github.com/YaoHouyou) | Verified & Fixed |
-| 72 | Nashorn | 12.0.1  | [nashorn_report2](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8228703) | [Houyou Yao](https://github.com/YaoHouyou) | Verified & Fixed |
-| 73 | Nashorn | 12.0.1  | [nashorn_report3](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8227682) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 74 | Nashorn | 13.0.1  | [nashorn_report4](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8240298) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 75 | Nashorn | 13.0.1  | [nashorn_report5](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8240299) | [Wen Yi](https://github.com/YiWen-y) | Verified |
-| 76 | Nashorn | 12.0.1 | [nashorn_report6](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8227681) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 77 | Nashorn | 12.0.1 | [nashorn_report7](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8227428) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 78 | Nashorn | 13.0.1 | [nashorn_report8](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8235328) | [Yuan Wang](https://github.com/YuanWangC) | Verified |
-| 79 | Nashorn | 13.0.1 | [nashorn_report9](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8242340) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 80 | Nashorn | 12.0.1 | [nashorn_report10](local-bugs/nashorn/No.122.png) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 81 | Nashorn | 12.0.1 | [nashorn_report11](local-bugs/nashorn/report11.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |
-| 82 | Nashorn | 12.0.1 | [nashorn_report12](local-bugs/nashorn/report12.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |
-| 83 | Nashorn | 12.0.1 | [nashorn_report13](local-bugs/nashorn/report13.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |
-| 84 | Nashorn | 12.0.1 | [nashorn_report14](local-bugs/nashorn/report14.png) | [Yuan Wang](https://github.com/YuanWangC) | Under discussion |
-| 85 | Nashorn | 12.0.1 | [nashorn_report15](local-bugs/nashorn/report15.png) | [Wen Yi](https://github.com/YiWen-y) | Verified |
-| 86 | Nashorn | 12.0.1 | [nashorn_report16](local-bugs/nashorn/report16.png) | [Wen Yi](https://github.com/YiWen-y) | Under discussion |
-| 87 | Nashorn | 12.0.1 | [nashorn_report17](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8226554) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 88 | Nashorn | 12.0.1 | [nashorn_report18](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8226652) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 89 | Hermes | 3ed8340 | [hermes_report1](https://github.com/facebook/hermes/issues/188) | [Implementist](https://github.com/Implementist) |  Fixed |
-| 90 | Hermes | 3826084 | [hermes_report2](https://github.com/facebook/hermes/issues/143) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 91 | Hermes | 3826084 | [hermes_report3](https://github.com/facebook/hermes/issues/134) | [Houyou Yao](https://github.com/YaoHouyou) | Verified |
-| 92 | Hermes | 3ed8340 | [hermes_report4](https://github.com/facebook/hermes/issues/102) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 93 | Hermes | 3ed8340 | [hermes_report5](https://github.com/facebook/hermes/issues/120) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 94 | Hermes | 3ed8340 | [hermes_report6](https://github.com/facebook/hermes/issues/107) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 95 | Hermes | 3826084 | [hermes_report7](https://github.com/facebook/hermes/issues/153) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 96 | Hermes | 3ed8340 | [hermes_report8](local-bugs/hermes/No.80.png) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 97 | Hermes | 3ed8340 | [hermes_report9](local-bugs/hermes/No.81.png) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 98 | Hermes | 044cf4b | [hermes_report10](https://github.com/facebook/hermes/issues/165) | [Wen Yi](https://github.com/YiWen-y) | Verified |
-| 99 | Hermes | 3826084 | [hermes_report11](https://github.com/facebook/hermes/issues/159) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 100 | Hermes | b6530ae | [hermes_report12](https://github.com/facebook/hermes/issues/252) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 101 | Hermes | 3826084 | [hermes_report13](https://github.com/facebook/hermes/issues/154) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 102 | Hermes | 3ed8340 | [hermes_report14](local-bugs/hermes/No.114.png) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 103 | Hermes | 3826084 | [hermes_report15](local-bugs/hermes/No.127.png) | [Yang Tian](https://github.com/ty5491003) | Fixed |
-| 104 | Hermes | b6530ae | [hermes_report16](https://github.com/facebook/hermes/issues/277) |  [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 105 | JerryScript | b6fc4e1 | [jerry_report1](https://github.com/jerryscript-project/jerryscript/issues/3001) |  [Yang Tian](https://github.com/ty5491003) | Fixed |
-| 106 | JerryScript | 84a56ef | [jerry_report2](https://github.com/jerryscript-project/jerryscript/issues/3216) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 107 | JerryScript |40f7b1c | [jerry_report3](https://github.com/pando-project/jerryscript/issues/2817) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 108 | JerryScript | 40f7b1c | [jerry_report4](https://github.com/jerryscript-project/jerryscript/issues/2905) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers |
-| 109 | JerryScript | 9ab4872 | [jerry_report5](https://github.com/jerryscript-project/jerryscript/issues/3173) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 110 | JerryScript | 7df87b7 | [jerry_report6](https://github.com/jerryscript-project/jerryscript/issues/3229) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 111 | JerryScript | b6fc4e1 | [jerry_report7](https://github.com/jerryscript-project/jerryscript/issues/2937) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 112 | JerryScript | 996bf76 | [jerry_report8](https://github.com/jerryscript-project/jerryscript/issues/3650) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 113 | JerryScript | 996bf76 | [jerry_report9](https://github.com/jerryscript-project/jerryscript/issues/3661) |[Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 114 | JerryScript | 996bf76 | [jerry_report10](https://github.com/jerryscript-project/jerryscript/issues/3393) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 115 | JerryScript | 7df87b7 | [jerry_report11](https://github.com/jerryscript-project/jerryscript/issues/3325) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 116 | JerryScript | 996bf76 | [jerry_report12](https://github.com/jerryscript-project/jerryscript/issues/3381) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 117 | JerryScript | 996bf76 | [jerry_report13](https://github.com/jerryscript-project/jerryscript/issues/3467) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 118 | JerryScript | 996bf76 | [jerry_report14](https://github.com/jerryscript-project/jerryscript/issues/3463) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 119 | JerryScript | 996bf76 | [jerry_report15](https://github.com/jerryscript-project/jerryscript/issues/3473) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 120 | JerryScript | 996bf76 | [jerry_report16](https://github.com/jerryscript-project/jerryscript/issues/3380) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 121 | JerryScript | 996bf76 | [jerry_report17](https://github.com/jerryscript-project/jerryscript/issues/3646) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 122 | JerryScript | 996bf76 | [jerry_report18](https://github.com/jerryscript-project/jerryscript/issues/3669) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 123 | JerryScript | 996bf76 | [jerry_report19](https://github.com/jerryscript-project/jerryscript/issues/3277) | [Yuan Wang](https://github.com/YuanWangC) | Rejected by developers |
-| 124 | JerryScript | 7df87b7 | [jerry_report20](local-bugs/jerryscript/No.124.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 125 | JerryScript | 9ab4872 | [jerry_report21](https://github.com/jerryscript-project/jerryscript/issues/3844) | [Xing Qu](https://github.com/QuXing9) | Fixed |
-| 126 | JerryScript | 9ab4872 | [jerry_report22](https://github.com/jerryscript-project/jerryscript/issues/3878) |[Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 127 | JerryScript | 996bf76 | [jerry_report23](https://github.com/jerryscript-project/jerryscript/issues/3903) |[Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 128 | JerryScript | 996bf76 | [jerry_report24](https://github.com/jerryscript-project/jerryscript/issues/3903) |[Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 129 | JerryScript | 996bf76 | [jerry_report25](https://github.com/jerryscript-project/jerryscript/issues/3914) |[Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 130 | JerryScript | bd1c4df | [jerry_report26](https://github.com/jerryscript-project/jerryscript/issues/3927) |[Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 131 | JerryScript | bd1c4df | [jerry_report27](https://github.com/jerryscript-project/jerryscript/issues/3926) |[Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 132 | JerryScript | b6fc4e1 | [jerry_report28](https://github.com/jerryscript-project/jerryscript/issues/2914) |[Implementist](https://github.com/Implementist) | Fixed |
-| 133 | JerryScript | b6fc4e1 | [jerry_report29](https://github.com/jerryscript-project/jerryscript/issues/2949) |[Houyou Yao](https://github.com/YaoHouyou) |Fixed |
-| 134 | JerryScript | 351acdf | [jerry_report30](https://github.com/jerryscript-project/jerryscript/issues/2906) |[yeguixin](https://github.com/yeguixin) | Fixed |
-| 135 | JerryScript | e944cda | [jerry_report31](https://github.com/pando-project/jerryscript/issues/2891) |[yeguixin](https://github.com/yeguixin) | Fixed |
-| 136 | JerryScript | 9ab4872 | [jerry_report32](local-bugs/jerryscript/No.65.png) |[Houyou Yao](https://github.com/YaoHouyou) | Verified & Fixed |
-| 137| JerryScript | 351acdf | [jerry_report33](https://github.com/jerryscript-project/jerryscript/issues/2914) |[Implementist](https://github.com/Implementist) | Fixed |
-| 138 | JerryScript | 9ab4872 | [jerry_report34](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/jerryscript/No.151.PNG) |[Wen Yi](https://github.com/YiWen-y) | Rejected by developers |
-| 139 | JerryScript | bd1c4df | [jerry_report35](https://github.com/jerryscript-project/jerryscript/issues/3763) |[NWU-NISL](https://github.com/NWU-NISL) | Rejected by developers |
-| 140 | QuickJS | quickjs-2019-09-18 | [qjs_report1](local-bugs/quickJS/No.22.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 141 | QuickJS | quickjs-2019-09-01 | [qjs_report2](local-bugs/quickJS/No.23.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 142 | QuickJS | quickjs-2019-09-01 | [qjs_report3](local-bugs/quickJS/No.24.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 143 | QuickJS | quickjs-2019-09-01 | [qjs_report4](local-bugs/quickJS/No.25.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 144 | QuickJS | quickjs-2019-09-01 | [qjs_report5](local-bugs/quickJS/No.26.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 145 | QuickJS | quickjs-2019-10-27 | [qjs_report6](local-bugs/quickJS/No.27.pdf) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 146 | QuickJS | quickjs-2019-10-27 | [qjs_report7](local-bugs/quickJS/No.28.pdf) | [Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 147 | QuickJS | quickjs-2020-01-05 | [qjs_report8](local-bugs/quickJS/No.29.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 148 | QuickJS | quickjs-2020-04-12 | [qjs_report9](local-bugs/quickJS/No.30.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 149 | QuickJS | quickjs-2019-10-27 | [qjs_report10](local-bugs/quickJS/No.112.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 150 | QuickJS | quickjs-2020-01-05 | [qjs_report11](local-bugs/quickJS/No.113.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
-| 151 | QuickJS | quickjs-2019-07-09 | [qjs_report12](local-bugs/quickJS/No.4.PNG) | [Xing Qu](https://github.com/QuXing9) | Fixed |
-| 152 | QuickJS | quickjs-2019-10-27 | [qjs_report13](local-bugs/quickJS/No.88.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers |
-| 153 | QuickJS | quickjs-2019-09-18 | [qjs_report14](local-bugs/quickJS/No.89.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion |
-| 154 | QuickJS | quickjs-2019-07-09 | [qjs_report15](local-bugs/quickJS/No.90.PNG) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 155 | QuickJS | quickjs-2019-07-09 | [qjs_report16](local-bugs/quickJS/No.91.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
-| 156 | QuickJS | quickjs-2019-09-18 | [qjs_report17](local-bugs/quickJS/No.92.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers |
-| 157 | Graaljs | graalvm-ce-java8-20.1.0  | [graaljs_report1](https://github.com/graalvm/graaljs/issues/300) |[Wen Yi](https://github.com/YiWen-y) | Fixed |
-| 158 | Graaljs | graalvm-ce-java8-20.1.0 | [graaljs_report2](https://github.com/graalvm/graaljs/issues/299) |[Yuan Wang](https://github.com/YuanWangC) |Fixed |
 
 ### TEST-262 accepted test cases
 A list of COMFORT-generated test cases that are accepted by the [Test262 conformance test suite](https://github.com/tc39/test262).  Note that some of the Test-262 submissions
