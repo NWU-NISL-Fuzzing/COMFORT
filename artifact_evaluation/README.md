@@ -25,7 +25,7 @@ Note that if a bug is marked as "Verified", it means the bug has been confirmed 
 
 We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. We have also identified some new bugs after our PLDI submission, which are also noted. 
 
-*his section corresponds to Tables 2 and 7 of the submitted paper*
+*This section corresponds to Tables 2 and 7 of the submitted paper*
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
