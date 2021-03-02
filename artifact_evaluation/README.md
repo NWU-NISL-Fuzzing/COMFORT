@@ -199,10 +199,10 @@ A list of bugs exposed by COMFORT-generated test case. Note that if a bug is mar
 A list of COMFORT-generated test cases that are accepted by the [Test262 conformance test suite](https://github.com/tc39/test262).  Note that some of the Test-262 submissions
 were made by the relevant JS vendor after we reported a COMFORT-found bug. 
 
-| No. | Bug Report Link | COMFORT Team Member (Contributor) | Remarks|
+| No. | Bug Report Link | |Link in Test-262 |COMFORT Team Member (Contributor) | Remarks|
 |---- |-------------|-------------|--------|
-| 1 | [V8_report1](https://github.com/tc39/test262/issues/2660) | [Houyou Yao](https://github.com/YaoHouyou)| |
-| 2 | [chakra_report3](https://github.com/tc39/test262/issues/2661) | [Yuan Wang](https://github.com/YuanWangC) |
+| 1 | [V8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [issue_2660](https://github.com/tc39/test262/issues/2660) | [Houyou Yao](https://github.com/YaoHouyou)| |
+| 2 | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6351) | [issue_2661](https://github.com/tc39/test262/issues/2661) | [Yuan Wang](https://github.com/YuanWangC) |
 | 3 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=201910) | [Yang Tian](https://github.com/ty5491003) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
 | 4 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=199744) | [Houyou Yao](https://github.com/YaoHouyou) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
 | 5 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | Test-262 test case was created by COMFORT and sumitted to TEST-262 by the developer |
