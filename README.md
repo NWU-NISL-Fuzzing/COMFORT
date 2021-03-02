@@ -20,3 +20,7 @@ COMFORT is a deep-learning-based compiler fuzzer for testing Javascript conforma
 
 # Resources
 See [//COMFORT/artifact_evaluation/](/artifact_evaluation/) for the supporting artifact of the paper.
+
+# Licenses
+Released under the terms of the Apache-2.0 License. See [LICENSE](LICENSE) for details.
+
