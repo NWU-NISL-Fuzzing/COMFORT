@@ -1,6 +1,6 @@
 # Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing
 
-# Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing: Artifact
+COMFORT is a deep-learning-based compiler fuzzer for testing Javascript conformance bugs - i.e., JS implementantions that violates a specification defined in the supported [ECMAScript standard](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/). 
 
 ## Abstract
 > JavaScript (JS) is a popular, platform-independent program-ming language. To ensure the interoperability ofJSpro-grams across different platforms, the implementation of a JS engine should conform to the ECMAScript standard. However, doing so is challenging as there are many subtle definitions of API behaviors, and the definitions keep evolving. 
@@ -18,3 +18,5 @@
 }
 ```
 
+# Resources
+See [//artifact_evaluation/](//artifact_evaluation/) for the supporting artifact of the paper.
