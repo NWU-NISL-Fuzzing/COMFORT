@@ -1,6 +1,6 @@
 # Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing
 
-COMFORT is a deep-learning-based compiler fuzzer for testing Javascript (JS) conformance bugs - i.e., A JS compiler implementantions that violates a specification defined in the relevant [ECMAScript standard](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/). 
+COMFORT is a deep-learning-based compiler fuzzer for testing Javascript (JS) conformance bugs - i.e., a JS compiler implementantions that violates a specification defined in the relevant [ECMAScript standard](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/). 
 
 ## Abstract
 > JavaScript (JS) is a popular, platform-independent program-ming language. To ensure the interoperability ofJSpro-grams across different platforms, the implementation of a JS engine should conform to the ECMAScript standard. However, doing so is challenging as there are many subtle definitions of API behaviors, and the definitions keep evolving. 
