@@ -60,7 +60,7 @@ A list of bugs exposed by COMFORT-generated test case. Note that if a bug is mar
 | 21 | JavaScriptCore | 	d940b47 | [JSC_report10](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/javascriptCore/No.125.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
 | 22 | JavaScriptCore | 	dbae081 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | Fixed |
 | 23 | JavaScriptCore | d940b47 | [JSC_report12](https://bugs.webkit.org/show_bug.cgi?id=213023) | [Yuan Wang](https://github.com/YuanWangC) | Fixed	 |
-| 24 | SpiderMonkey | spidermonkey_v1.7.0(Older) | [spidermonkey_report1](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.6.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |
+| 24 | SpiderMonkey | v1.7.0 | [spidermonkey_report1](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.6.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |
 | 25 | SpiderMonkey | mozjs-52.9.1pre | [spidermonkey_report2](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.82.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |
 | 26 | SpiderMonkey | mozjs-38.3.0 | [spidermonkey_report3](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.84.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |
 | 27 | Rhino | 1.7.12 | [rhino_report1](https://github.com/mozilla/rhino/issues/664) | [Yang Tian](https://github.com/ty5491003) | Fixed | 
