@@ -174,7 +174,7 @@ A list of bugs exposed by COMFORT-generated test case. Note that if a bug is mar
 | 135 | JerryScript | e944cda | [jerry_report31](https://github.com/pando-project/jerryscript/issues/2891) |[yeguixin](https://github.com/yeguixin) | Fixed |
 | 136 | JerryScript | 9ab4872 | [jerry_report32](local-bugs/jerryscript/No.65.png) |[Houyou Yao](https://github.com/YaoHouyou) | Verified & Fixed |
 | 137| JerryScript | 351acdf | [jerry_report33](https://github.com/jerryscript-project/jerryscript/issues/2914) |[Implementist](https://github.com/Implementist) | Fixed |
-| 138 | JerryScript | 9ab4872 | [jerry_report34](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/jerryscript/No.151.PNG) |[Wen Yi](https://github.com/YiWen-y) | No bug |
+| 138 | JerryScript | 9ab4872 | [jerry_report34](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/jerryscript/No.151.PNG) |[Wen Yi](https://github.com/YiWen-y) | Rejected by developers |
 | 139 | QuickJS | quickjs-2019-09-18 | [qjs_report1](local-bugs/quickJS/No.22.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed |
 | 140 | QuickJS | quickjs-2019-09-01 | [qjs_report2](local-bugs/quickJS/No.23.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
 | 141 | QuickJS | quickjs-2019-09-01 | [qjs_report3](local-bugs/quickJS/No.24.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |
