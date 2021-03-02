@@ -17,9 +17,11 @@ Note that we do not log IP addresses or other accessing information, but if you 
 To run our Jupyter Notebook locally, please see [xx]. 
 
 
-## Bug List 
+## Main Results - Bug List 
 
-A list of bugs exposed by COMFORT-generated test case. Note that if a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. 
+A list of bugs exposed by COMFORT-generated test case. Note that if a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. Some of our submitted bugs have been previously discovered by other users and are marked as "Not first discovered". A small number of bug reports (9) were rejected by the vendor as the feature was either not well defined in ECMA-262 or not supported by the testing compiler. There are also bug reports waiting to be confirmed by the vendor (marked as "Under discussion"). 
+
+This section corresponds to Tables 2 and 7 of the submitted paper. 
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
