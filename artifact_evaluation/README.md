@@ -234,7 +234,8 @@ The Docker image contains the following scripts for evaluation.
 
 
 ## Evaluate the JS program generator
-(**approximate runtime: 3 hours**)
+(*approximate runtime: 3 hours*)
+
 Evaluate GPT-2 program synthesizer by running the following command:
 ``` Command ```
 
