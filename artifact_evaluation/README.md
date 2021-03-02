@@ -199,26 +199,26 @@ A list of bugs exposed by COMFORT-generated test case. Note that if a bug is mar
 A list of COMFORT-generated test cases that are accepted by the [Test262 conformance test suite](https://github.com/tc39/test262).  Note that some of the Test-262 submissions
 were made by the relevant JS vendor after we reported a COMFORT-found bug. 
 
-| No. | Bug Report Link | |Link in Test-262 |COMFORT Team Member (Contributor) | Remarks|
-|---- |-------------|-------------|--------|
+| No. | Bug Report Link | Link in Test-262 |COMFORT Team Member (Contributor) | Remarks |
+|---- |-----------------|------------------|----------------------------------|---------|
 | 1 | [V8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [issue_2660](https://github.com/tc39/test262/issues/2660) | [Houyou Yao](https://github.com/YaoHouyou)| |
-| 2 | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6351) | [issue_2661](https://github.com/tc39/test262/issues/2661) | [Yuan Wang](https://github.com/YuanWangC) |
-| 3 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=201910) | [Yang Tian](https://github.com/ty5491003) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
-| 4 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=199744) | [Houyou Yao](https://github.com/YaoHouyou) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
-| 5 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | Test-262 test case was created by COMFORT and sumitted to TEST-262 by the developer |
-| 6 | [rhino_report1](https://github.com/mozilla/rhino/issues/664) | [Yang Tian](https://github.com/ty5491003)| |
-| 7 | [rhino_report7](https://github.com/mozilla/rhino/issues/612) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 8 | [rhino_report12](https://github.com/mozilla/rhino/issues/667) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 9 | [rhino_report32](https://github.com/mozilla/rhino/issues/726) | [Wen Yi](https://github.com/YiWen-y) | |
-| 10 | [nashorn_report4](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8240298) | [Houyou Yao](https://github.com/YaoHouyou)| |
-| 11 | [hermes_report4](https://github.com/facebook/hermes/issues/102) | [Houyou Yao](https://github.com/YaoHouyou)| |
-| 12 | [hermes_report5](https://github.com/facebook/hermes/issues/120) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 13 | [hermes_report12](https://github.com/facebook/hermes/issues/252) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 14 | [hermes_report16](https://github.com/facebook/hermes/issues/277) |  [Wen Yi](https://github.com/YiWen-y) | |
-| 15 | [jerry_report5](https://github.com/jerryscript-project/jerryscript/issues/3173) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 16 | [jerry_report16](https://github.com/jerryscript-project/jerryscript/issues/3380) | [Yuan Wang](https://github.com/YuanWangC) | |
-| 17 | [jerry_report25](https://github.com/jerryscript-project/jerryscript/issues/3914) |[Yuan Wang](https://github.com/YuanWangC) | |
-| 18 | [qjs_report3](local-bugs/quickJS/No.24.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 19 | [qjs_report4](local-bugs/quickJS/No.25.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 20 | [qjs_report5](local-bugs/quickJS/No.26.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 21 | [qjs_report7](local-bugs/quickJS/No.28.pdf) | [Wen Yi](https://github.com/YiWen-y)  | |
+| 2 | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6351) | [issue_2661](https://github.com/tc39/test262/issues/2661) | [Yuan Wang](https://github.com/YuanWangC) | |
+| 3 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=201910) | | [Yang Tian](https://github.com/ty5491003) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
+| 4 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=199744) | | [Houyou Yao](https://github.com/YaoHouyou) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
+| 5 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | | [Xing Qu](https://github.com/QuXing9) | Test-262 test case was created by COMFORT and sumitted to TEST-262 by the developer |
+| 6 | [rhino_report1](https://github.com/mozilla/rhino/issues/664) | | [Yang Tian](https://github.com/ty5491003)| |
+| 7 | [rhino_report7](https://github.com/mozilla/rhino/issues/612) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 8 | [rhino_report12](https://github.com/mozilla/rhino/issues/667) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 9 | [rhino_report32](https://github.com/mozilla/rhino/issues/726) | | [Wen Yi](https://github.com/YiWen-y) | |
+| 10 | [nashorn_report4](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8240298) | | [Houyou Yao](https://github.com/YaoHouyou)| |
+| 11 | [hermes_report4](https://github.com/facebook/hermes/issues/102) | | [Houyou Yao](https://github.com/YaoHouyou)| |
+| 12 | [hermes_report5](https://github.com/facebook/hermes/issues/120) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 13 | [hermes_report12](https://github.com/facebook/hermes/issues/252) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 14 | [hermes_report16](https://github.com/facebook/hermes/issues/277) | | [Wen Yi](https://github.com/YiWen-y) | |
+| 15 | [jerry_report5](https://github.com/jerryscript-project/jerryscript/issues/3173) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 16 | [jerry_report16](https://github.com/jerryscript-project/jerryscript/issues/3380) | | [Yuan Wang](https://github.com/YuanWangC) | |
+| 17 | [jerry_report25](https://github.com/jerryscript-project/jerryscript/issues/3914) | | [Yuan Wang](https://github.com/YuanWangC) | |
+| 18 | [qjs_report3](local-bugs/quickJS/No.24.pdf) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 19 | [qjs_report4](local-bugs/quickJS/No.25.pdf) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 20 | [qjs_report5](local-bugs/quickJS/No.26.pdf) | | [Houyou Yao](https://github.com/YaoHouyou) | |
+| 21 | [qjs_report7](local-bugs/quickJS/No.28.pdf) | | [Wen Yi](https://github.com/YiWen-y)  | |
