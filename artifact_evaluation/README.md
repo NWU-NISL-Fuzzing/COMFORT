@@ -7,7 +7,7 @@ A copy of our PLDI submission can be found at: [URL]()
 # Overview of Results
 As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have indentified 158 unique bugs, of which 129 have been verified, and 115 have been fixed by the developers. Furthermore, 21 of the Comfort generated test cases were added into Test-262, the official Javascript conformance test suite.
 
-A list of bugs discovered by our techniques can be found at the [Bug List](#bug-list) section. We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262-accepted-test-case). We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. We have also identified some new bugs after our PLDI submission, which are also noted. 
+A list of bugs discovered by our techniques can be found at the [Bug List](#bug-list) section. We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262-accepted-test-case). 
 
 # Getting Start Guide
 For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted] use the password [redacted] (Please see the instructions and the AE submission website for the url and password). The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
@@ -23,7 +23,9 @@ Here we provide a list of bugs exposed by COMFORT-generated test cases.
 
 Note that if a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. Some of our submitted bugs have been previously discovered by other users and are marked as "Not first discovered". A small number of bug reports (9) were rejected by the vendor as the feature was either not well defined in ECMA-262 or not supported by the testing compiler. There are also bug reports waiting to be confirmed by the vendor (marked as "Under discussion"). 
 
-This section corresponds to Tables 2 and 7 of the submitted paper. 
+We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. We have also identified some new bugs after our PLDI submission, which are also noted. 
+
+*his section corresponds to Tables 2 and 7 of the submitted paper*
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
