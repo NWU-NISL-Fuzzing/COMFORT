@@ -31,7 +31,7 @@ To run our Jupyter Notebook locally, please see [xx].
 
 ## Bug List 
 
-A list of bugs exposed by COMFORT-generated test case. Note that if a bug is marked as "Verified", it means the bug has been confirmed by not yet fixed by the vendor. 
+A list of bugs exposed by COMFORT-generated test case. Note that if a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. 
 
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    |
