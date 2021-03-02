@@ -239,17 +239,17 @@ Evaluate GPT-2 program synthesizer by running the following command:
 
 The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus, and generates 1024 new JS test cases. 
 
-We have reduced the size of the corpus so that it takes around 4 hours to train on a CPU. We trained our model on more data (140,000 JS programs rather tan 2,000) for longer (50 epochs rather than 10). As such, the quality of output of this model is lower, with shorter and few syntactically correct programs being generated. 
+We have reduced the size of the corpus so that it takes around 3 hours to train on a CPU. For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and few syntactically correct programs. 
 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. The trained model is stored in /tmp/pldi2021/artifact_evaluation/gpt-2.
 
 Generated programs are written to the directory /tmp/pldi2021/artifact_evaluation/generated_programs. 
 
 ### Evaluation of Our JS Program Generator (optional)
-We provided the full-trained GPT-2 JS program generator. You can use the following command to generate test 1,000 test programs and inspect the quality of the generated programs. You can run the test by using the following command: 
+We also provid the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate 1,000 test programs and inspect the quality of the generated programs. You can run the test by using the following command: 
 ``` command ```
 
-We also report the percentage of the program that has passed the syntax checker performed by JSHint, and the coverage. This data corresponds to Figure 8. You can obtain the data by using the following command:
+You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). This data corresponds to Figure 8. 
 ``` command ```
 
 ## Demonstration of test program mutation
