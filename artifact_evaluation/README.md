@@ -203,9 +203,9 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 |---- |-------------|-------------|--------|
 | 1 | [V8_report1](https://github.com/tc39/test262/issues/2660) | [Houyou Yao](https://github.com/YaoHouyou)| |
 | 2 | [chakra_report3](https://github.com/tc39/test262/issues/2661) | [Yuan Wang](https://github.com/YuanWangC) |
-| 3 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=201910) | [Yang Tian](https://github.com/ty5491003) | |
-| 4 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=199744) | [Houyou Yao](https://github.com/YaoHouyou) | |
-| 5 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | |
+| 3 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=201910) | [Yang Tian](https://github.com/ty5491003) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
+| 4 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=199744) | [Houyou Yao](https://github.com/YaoHouyou) | Test case was created by COMFORT and submitted to Test-262 by the JSC developers|
+| 5 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | Test-262 test case was created by COMFORT and sumitted to TEST-262 by the developer |
 | 6 | [rhino_report1](https://github.com/mozilla/rhino/issues/664) | [Yang Tian](https://github.com/ty5491003)| |
 | 7 | [rhino_report7](https://github.com/mozilla/rhino/issues/612) | [Houyou Yao](https://github.com/YaoHouyou) | |
 | 8 | [rhino_report12](https://github.com/mozilla/rhino/issues/667) | [Houyou Yao](https://github.com/YaoHouyou) | |
