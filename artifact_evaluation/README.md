@@ -199,7 +199,7 @@ A list of bugs exposed by COMFORT-generated test case. Note that if a bug is mar
 A list of COMFORT-generated test cases that are accepted by the [Test262 conformance test suite](https://github.com/tc39/test262).  Note that some of the Test-262 submissions
 were made by the relevant JS vendor after we reported a COMFORT-found bug. 
 
-| No. | Bug Report Link | Link in Test-262 |COMFORT Team Member (Contributor) | Remarks |
+| No. | Bug Report | Test-262 Submission Report |COMFORT Team Member (Contributor) | Remarks |
 |---- |-----------------|------------------|----------------------------------|---------|
 | 1 | [V8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [issue_2660](https://github.com/tc39/test262/issues/2660) | [Houyou Yao](https://github.com/YaoHouyou)| |
 | 2 | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6351) | [issue_2661](https://github.com/tc39/test262/issues/2661) | [Yuan Wang](https://github.com/YuanWangC) | |
