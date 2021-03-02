@@ -1,17 +1,25 @@
 # Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing: Artifact
 
-This directory contains the supporting artifact for our paper on Automated Conformance Testing for JavaScript Compilers. 
-It contains reduced-size data sets for evaluating
-our testcase generator, testcase harness, and differential tester. The full
-dataset is quite large (>200 GB uncompressed), and we are working on finding a
-method for sharing it with the community. The idea is that this directory
-contains minimal working examples which can be evaluated in a reasonable amount
-of time. All of our code is open source and has been developed with
-extensibility as a primary goal. Please see Section XX of this document for
-more details.
+This directory contains the supporting artifact for our paper on PLDI 2021 paper on Javascript Conformance Testing. It contains reduced-size data sets for evaluating our testcase generator, testcase harness, and differential tester. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
 
+# PLDI Submission
+A copy of our PLDI submission can be found at: [URL]()
 
-## 1. Artifact Contents
+# Overview of Results
+As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have indentified 158 unique bugs, of which 129 have been verified, and 115 have been fixed by the developers. Furthermore, 21 of the Comfort generated test cases were added into Test-262, the official Javascript conformance test suite.
+
+A list of bugs discovered by our techniques can be found at the [Bug List](#bug-list) section. We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. We have also identified some new bugs after our PLDI submission, which are also noted. 
+
+# Getting Start Guide
+For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted] use the password [redacted] (Please see the instructions and the AE submission website for the url and password). The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
+
+Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could either choose to run the Jupyter Notebook locally on your machine or using a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
+
+To run our Jupyter Notebook locally, please see [xx]. 
+
+# Step-by-Step Instructions
+
+## Artifact Contents
 
  * .[XX](01_evaluate_generator.py): A demonstration of training a GPT-2 model to generate JS programs. 
  
@@ -24,7 +32,8 @@ more details.
 
 ## Bug List 
 
-A list of bug reports submitted by us, which were exposed by COMFORT. Where "Verified" in the "State" column means the bug is confirmed but has not been fixed by the vendor.
+A list of bugs exposed by COMFORT-generated test case. Note that if a bug is marked as "Verified", it means the bug has been confirmed by not yet fixed by the vendor. 
+
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |
