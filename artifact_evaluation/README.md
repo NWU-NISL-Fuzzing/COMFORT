@@ -12,10 +12,7 @@ A list of bugs discovered by our techniques can be found at the [Bug List](#bug-
 # Getting Start Guide
 For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted] use the password [redacted] (Please see the instructions and the AE submission website for the url and password). The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
 
-Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could either choose to run the Jupyter Notebook locally on your machine or using a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
-
-To run our Jupyter Notebook locally, please see [xx]. 
-
+Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could use a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
 
 ## Main Results - Bug List <span id = "bug-list">
 
