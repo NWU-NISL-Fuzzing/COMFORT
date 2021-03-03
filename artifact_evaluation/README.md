@@ -116,7 +116,7 @@ We note that some bug reports were later confirmed by the developers after our P
 | 88 | Nashorn | 12.0.1 | [nashorn_report18](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8226652) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | |
 | 89 | Hermes | 3ed8340 | [hermes_report1](https://github.com/facebook/hermes/issues/188) | [Implementist](https://github.com/Implementist) |  Fixed | |
 | 90 | Hermes | 3826084 | [hermes_report2](https://github.com/facebook/hermes/issues/143) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
-| 91 | Hermes | 3826084 | [hermes_report3](https://github.com/facebook/hermes/issues/134) | [Houyou Yao](https://github.com/YaoHouyou) | Verified | **List 2** in the manuscript |
+| 91 | Hermes | 3826084 | [hermes_report3](https://github.com/facebook/hermes/issues/134) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | **List 2** in the manuscript |
 | 92 | Hermes | 3ed8340 | [hermes_report4](https://github.com/facebook/hermes/issues/102) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
 | 93 | Hermes | 3ed8340 | [hermes_report5](https://github.com/facebook/hermes/issues/120) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
 | 94 | Hermes | 3ed8340 | [hermes_report6](https://github.com/facebook/hermes/issues/107) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
