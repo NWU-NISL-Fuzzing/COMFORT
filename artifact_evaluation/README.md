@@ -1,6 +1,6 @@
 # Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing: Artifact
 
-This directory contains the supporting artifact for our paper on PLDI 2021 paper on Javascript Conformance Testing. It contains reduced-size data sets for evaluating our testcase generator, testcase harness, and differential tester. The full dataset and testing infrastructure are quite large (350+ GB uncompressed), and we are working on finding a method for sharing it with the community. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
+This directory contains the supporting artifact for our paper on PLDI 2021 paper on Javascript Conformance Testing. It contains reduced-size data sets for evaluating our testcase generator, testcase harness, and differential tester. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
 
 A copy of our PLDI submission can be found at: [URL]()
 
