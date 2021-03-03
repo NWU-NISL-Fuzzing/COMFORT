@@ -1,6 +1,6 @@
 # Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing: Artifact
 
-This directory contains the supporting artifact for our paper (COMFORT) on PLDI 2021 paper on Javascript Conformance Testing. It contains reduced-size data sets for evaluating our testcase generator, testcase harness, and differential tester. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
+This directory contains the supporting artifact for our paper (COMFORT) on PLDI 2021 paper on Javascript Conformance Testing. It contains reduced-size data sets for evaluating our GPT-2 based test program generator, test case mutation and reduction, and differential tester. The full dataset is quite large (>100 GB uncompressed), and we are working on finding a method for sharing it with the community. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
 
 A copy of our PLDI submission can be found at: [URL]()
 
@@ -244,7 +244,7 @@ Evaluate GPT-2 program synthesizer by running the following command:
 
 The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus, and generates 1024 new JS test cases. 
 
-We have reduced the size of the corpus so that it takes around 3 hours to train on a CPU. For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and few syntactically correct programs. 
+We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU. For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and few syntactically correct programs. 
 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. The trained model is stored in /tmp/pldi2021/artifact_evaluation/gpt-2.
 
