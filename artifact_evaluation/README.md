@@ -188,6 +188,11 @@ We note that some bug reports were later confirmed by the developers after our P
 | 157 | Graaljs | graalvm-ce-java8-20.1.0  | [graaljs_report1](https://github.com/graalvm/graaljs/issues/300) |[Wen Yi](https://github.com/YiWen-y) | Fixed | |
 | 158 | Graaljs | graalvm-ce-java8-20.1.0 | [graaljs_report2](https://github.com/graalvm/graaljs/issues/299) |[Yuan Wang](https://github.com/YuanWangC) |Fixed | |
 
+### New bug exposing test cases after PLDI submission <span id = "newly-discovered">
+
+| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
+| --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
+| 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | Not first discovered |
 
 ### TEST-262 accepted test cases <span id = "test-262">
 A list of COMFORT-generated test cases that are accepted by the [Test262 conformance test suite](https://github.com/tc39/test262).  Note that some of the Test-262 submissions
@@ -217,11 +222,7 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 20 | [qjs_report5](local-bugs/quickJS/No.26.pdf) |[issue_2763](https://github.com/tc39/test262/issues/2763) | [Houyou Yao](https://github.com/YaoHouyou) | |
 | 21 | [qjs_report7](local-bugs/quickJS/No.28.pdf) |[issue_2687](https://github.com/tc39/test262/issues/2687) | [Wen Yi](https://github.com/YiWen-y)  | |
 
-### Newly discovered bugs after manuscript submission <span id = "newly-discovered">
 
-| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
-| --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
-| 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
 
 # Step-by-Step Instructions
 
