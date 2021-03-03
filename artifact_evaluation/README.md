@@ -240,9 +240,9 @@ Evaluate GPT-2 program synthesizer by running the following command:
 
 ``` Command ```
 
-The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus, and generates 1024 new JS test cases. 
+The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate 1024 new JS test cases. 
 
-We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU. For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and few syntactically correct programs. 
+We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU. For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs. 
 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. The trained model is stored in /tmp/pldi2021/artifact_evaluation/gpt-2.
 
