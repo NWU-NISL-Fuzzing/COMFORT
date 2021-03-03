@@ -7,7 +7,7 @@ A copy of our PLDI submission can be found at: [URL]()
 # Overview of Results
 As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have indentified 158 unique bugs, of which 129 have been verified, and 115 have been fixed by the developers. Furthermore, 21 of the Comfort generated test cases were added into Test-262, the official Javascript conformance test suite.
 
-A list of bugs discovered by our techniques can be found at the [Bug List](#bug-list) section. We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262). 
+A list of bugs discovered by our techniques can be found at the [Bug List](#bug-list) section. We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262). In addition, we also list the [newly discovered bugs](#newly-discovered) found by COMFORT after the manuscript submission.
 
 # Getting Start Guide
 For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted] use the password [redacted] (Please see the instructions and the AE submission website for the url and password). The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
@@ -217,7 +217,7 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 20 | [qjs_report5](local-bugs/quickJS/No.26.pdf) |[issue_2763](https://github.com/tc39/test262/issues/2763) | [Houyou Yao](https://github.com/YaoHouyou) | |
 | 21 | [qjs_report7](local-bugs/quickJS/No.28.pdf) |[issue_2687](https://github.com/tc39/test262/issues/2687) | [Wen Yi](https://github.com/YiWen-y)  | |
 
-### Newly discovered bugs after manuscript submission
+### Newly discovered bugs after manuscript submission <span id = "newly-discovered">
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
