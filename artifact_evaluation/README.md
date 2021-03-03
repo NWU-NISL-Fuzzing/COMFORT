@@ -217,6 +217,12 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 20 | [qjs_report5](local-bugs/quickJS/No.26.pdf) |[issue_2763](https://github.com/tc39/test262/issues/2763) | [Houyou Yao](https://github.com/YaoHouyou) | |
 | 21 | [qjs_report7](local-bugs/quickJS/No.28.pdf) |[issue_2687](https://github.com/tc39/test262/issues/2687) | [Wen Yi](https://github.com/YiWen-y)  | |
 
+### Newly discovered bugs after manuscript submission
+
+| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
+| --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
+| 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+
 # Step-by-Step Instructions
 
 ## Docker Image
