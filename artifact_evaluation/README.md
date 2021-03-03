@@ -29,7 +29,7 @@ We note that some bug reports were later confirmed by the developers after our P
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
-| 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
+| 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | **List 1** in the manuscript |
 | 2 | V8 | 0e44fef | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=8088) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
 | 3 | V8 | e39c701 | [v8_report3](https://bugs.chromium.org/p/v8/issues/detail?id=10268) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
 | 4 | V8 | e39c701 | [v8_report4](https://bugs.chromium.org/p/v8/issues/detail?id=10589) | [Xing Qu](https://github.com/QuXing9) | Verified | |
