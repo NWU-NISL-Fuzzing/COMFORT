@@ -9,7 +9,7 @@ COMFORT is a deep-learning-based compiler fuzzer for testing Javascript (JS) eng
 
 ## Citation
 ```
-  @inproceedings{gui2021,
+  @inproceedings{automated2021ye,
   title={Automated Conformance Testing for JavaScriptEngines via Deep Compiler Fuzzing},
   author={G. Ye, Z. Tang, S. Tan, S. Huang, D. Fang, X. Sun, L. Bian,  H. Wang, Z. Wang},
   booktitle={PLDI},
