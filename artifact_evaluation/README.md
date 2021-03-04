@@ -8,7 +8,7 @@ As stated in Section 5 of the PLDI submission, we have started experimenting wit
 A list of bugs discovered by COMFORT can be found at the [Bug List](#bug-list) section. We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262). In addition, we also list the [newly discovered bugs](#newly-discovered) found by COMFORT after the PLDI submission.
 
 # Getting Start Guide
-For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through the main results: https://[redacted] use the password [redacted] (Please see the instructions and the AE submission website for the url and password). The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
+For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through our techiques (Please see the ReadMe document on the AE submission website on how to access the Notebook). The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
 
 Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could use a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
 
