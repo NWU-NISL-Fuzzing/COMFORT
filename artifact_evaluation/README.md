@@ -80,7 +80,7 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 | 56 | Rhino | 1.7.12 | [rhino_report30](https://github.com/mozilla/rhino/issues/708) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
 | 57 | Rhino | 1.7.12 | [rhino_report31](https://github.com/mozilla/rhino/issues/719) | [Haobin Li](1355878370@qq.com) | Under discussion | |
 | 58 | Rhino | 1.7.12 | [rhino_report32](https://github.com/mozilla/rhino/issues/726) | [Wen Yi](https://github.com/YiWen-y)  |  Fixed | |
-| 59 | Rhino | 1.7.12 | [rhino_report33](https://github.com/mozilla/rhino/issues/725) | [Wen Yi](https://github.com/YiWen-y)  |  Verified | |
+| 59 | Rhino | 1.7.12 | [rhino_report33](https://github.com/mozilla/rhino/issues/725) | [Wen Yi](https://github.com/YiWen-y)  | Fixed | |
 | 60 | Rhino | 1.7.12 | [rhino_report34](https://github.com/mozilla/rhino/issues/746) | [Wen Yi](https://github.com/YiWen-y) | Fixed | |
 | 61 | Rhino | 1.7.12 | [rhino_report35](https://github.com/mozilla/rhino/issues/750) | [Haobin Li](1355878370@qq.com) | Fixed | |
 | 62 | Rhino | 1.7.11 | [rhino_report36](https://github.com/mozilla/rhino/issues/582) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | Fix [String.prototype.includes](local-bugs/Rhino/No.152.png) at the same time |
@@ -88,8 +88,8 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 | 64 | Rhino | 1.7.10 | [rhino_report38](https://github.com/mozilla/rhino/issues/563) | [yeguixin](https://github.com/yeguixin) | Fixed | |
 | 65 | Rhino | 1.7.10 | [rhino_report39](https://github.com/mozilla/rhino/issues/566) | [Implementist](https://github.com/Implementist) | Fixed | |
 | 66 | Rhino | 1.7.11 | [rhino_report40](https://github.com/mozilla/rhino/issues/569) | [yeguixin](https://github.com/yeguixin) | Under discussion | |
-| 67 | Rhino | 1.7.11 | [rhino_report41](https://github.com/mozilla/rhino/issues/573) | [Implementist](https://github.com/Implementist) | Verified | |
-| 68 | Rhino | 1.7.11 | [rhino_report42](https://github.com/mozilla/rhino/issues/564) | [yeguixin](https://github.com/yeguixin) | Verified | |
+| 67 | Rhino | 1.7.11 | [rhino_report41](https://github.com/mozilla/rhino/issues/573) | [Implementist](https://github.com/Implementist) | Fixed | |
+| 68 | Rhino | 1.7.11 | [rhino_report42](https://github.com/mozilla/rhino/issues/564) | [yeguixin](https://github.com/yeguixin) | Fixed | |
 | 69 | Rhino | 1.7.11 | [rhino_report43](https://github.com/mozilla/rhino/issues/577) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers | |
 | 70 | Rhino | 1.7.11 | [rhino_report44](https://github.com/mozilla/rhino/issues/568) | [yeguixin](https://github.com/yeguixin) | Under discussion | |
 | 71 | Nashorn | 12.0.1  | [nashorn_report1](https://bugs.java.com/bugdatabase/view_bug.do?bug_id=JDK-8228702) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
