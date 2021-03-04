@@ -18,7 +18,7 @@ Here we provide a list of bugs exposed by COMFORT-generated test cases.
 
 If a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. Some of our submitted bugs have been previously discovered by other users and are marked as "Not first discovered". A small number of bug reports (9) were rejected by the vendor as the feature was either not well defined in ECMA-262 or not supported by the testing compiler. There are also bug reports waiting to be confirmed by the vendor (marked as "Under discussion"). 
 
-We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. We have also identified some new bugs after our PLDI submission, which are also noted. 
+We note that some bug reports were later confirmed by the developers after our PLDI submission, moving our confirmed and verified bugs to xx and xx, respectively. We have also identified some [new bugs](#newly-discovered) after our PLDI submission, which are also noted. 
 
 *This section corresponds to Tables 2 and 7 of the submitted paper*
 
@@ -48,7 +48,7 @@ We note that some bug reports were later confirmed by the developers after our P
 | 22 | JavaScriptCore | 	dbae081 | [JSC_report11](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9) | Fixed | **List 5** in the manuscript |
 | 23 | JavaScriptCore | d940b47 | [JSC_report12](https://bugs.webkit.org/show_bug.cgi?id=213023) | [Yuan Wang](https://github.com/YuanWangC) | Fixed	 | |
 | 24 | SpiderMonkey | v1.7.0 | [spidermonkey_report1](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.6.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |Not first discovered|
-| 25 | SpiderMonkey | mozjs-52.9.1pre | [spidermonkey_report2](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.82.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |**List 3** in the manuscript / Not first discovered|
+| 25 | SpiderMonkey | mozjs-52.9.1pre | [spidermonkey_report2](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.82.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |**List 3** in the manuscript <br> Not first discovered|
 | 26 | SpiderMonkey | mozjs-38.3.0 | [spidermonkey_report3](https://github.com/NWU-NISL-Fuzzing/NWU-NISL-Fuzzer/blob/master/local-bugs/spiderMonkey/No.84.png) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed	 |Not first discovered|
 | 27 | Rhino | 1.7.12 | [rhino_report1](https://github.com/mozilla/rhino/issues/664) | [Yang Tian](https://github.com/ty5491003) | Fixed |  |
 | 28 | Rhino | 1.7.12 | [rhino_report2](https://github.com/mozilla/rhino/issues/665) | [Yang Tian](https://github.com/ty5491003) | Fixed |  |
@@ -174,7 +174,7 @@ We note that some bug reports were later confirmed by the developers after our P
 | 148 | QuickJS | quickjs-2020-04-12 | [qjs_report9](local-bugs/quickJS/No.30.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
 | 149 | QuickJS | quickjs-2019-10-27 | [qjs_report10](local-bugs/quickJS/No.112.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
 | 150 | QuickJS | quickjs-2020-01-05 | [qjs_report11](local-bugs/quickJS/No.113.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
-| 151 | QuickJS | quickjs-2019-07-09 | [qjs_report12](local-bugs/quickJS/No.4.PNG) | [Xing Qu](https://github.com/QuXing9) | Fixed |**List 9** in the manuscript / Not first discovered|
+| 151 | QuickJS | quickjs-2019-07-09 | [qjs_report12](local-bugs/quickJS/No.4.PNG) | [Xing Qu](https://github.com/QuXing9) | Fixed |**List 9** in the manuscript <br> Not first discovered|
 | 152 | QuickJS | quickjs-2019-10-27 | [qjs_report13](local-bugs/quickJS/No.88.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Rejected by developers | |
 | 153 | QuickJS | quickjs-2019-09-18 | [qjs_report14](local-bugs/quickJS/No.89.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Under discussion | |
 | 154 | QuickJS | quickjs-2019-07-09 | [qjs_report15](local-bugs/quickJS/No.90.PNG) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered|
