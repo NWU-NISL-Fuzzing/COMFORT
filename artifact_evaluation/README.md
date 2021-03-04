@@ -181,7 +181,7 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 | 157 | Graaljs | graalvm-ce-java8-20.1.0  | [graaljs_report1](https://github.com/graalvm/graaljs/issues/300) |[Wen Yi](https://github.com/YiWen-y) | Fixed | |
 | 158 | Graaljs | graalvm-ce-java8-20.1.0 | [graaljs_report2](https://github.com/graalvm/graaljs/issues/299) |[Yuan Wang](https://github.com/YuanWangC) |Fixed | |
 
-### Newly discovered bugs after PLDI submission <span id = "newly-discovered">
+### New COMPORT-exposed bugs after PLDI submission <span id = "newly-discovered">
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
