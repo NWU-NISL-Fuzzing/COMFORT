@@ -159,7 +159,7 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 | 135 | JerryScript | e944cda | [jerry_report31](https://github.com/pando-project/jerryscript/issues/2891) |[yeguixin](https://github.com/yeguixin) | Fixed | |
 | 136 | JerryScript | 9ab4872 | [jerry_report32](local-bugs/jerryscript/No.65.png) |[Houyou Yao](https://github.com/YaoHouyou) | Fixed |Not first discovered|
 | 137| JerryScript | 351acdf | [jerry_report33](https://github.com/jerryscript-project/jerryscript/issues/2914) |[Implementist](https://github.com/Implementist) | Fixed |Not first discovered|
-| 138 | JerryScript | 9ab4872 | [jerry_report34](https://github.com/jerryscript-project/jerryscript/issues/3664) |[Wen Yi](https://github.com/YiWen-y) | No bug ||
+| 138 | JerryScript | 9ab4872 | [jerry_report34](https://github.com/jerryscript-project/jerryscript/issues/3664) |[Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
 | 139 | JerryScript | bd1c4df | [jerry_report35](https://github.com/jerryscript-project/jerryscript/issues/3763) |[NWU-NISL](https://github.com/NWU-NISL) | Rejected by developers | |
 | 140 | QuickJS | quickjs-2019-09-18 | [qjs_report1](local-bugs/quickJS/No.22.pdf) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | **List 6** in the manuscript |
 | 141 | QuickJS | quickjs-2019-09-01 | [qjs_report2](local-bugs/quickJS/No.23.pdf) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | |
@@ -192,7 +192,7 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 |  5   |ChakraCore| V1.11.24 | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) |   [Wen Yi](https://github.com/YiWen-y)  |  Verified |Not first discovered|
 |  6   |ChakraCore| V1.11.24 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003)  |  Verified |Not first discovered|
 | 7 |ChakraCore| V1.11.24 | [chakra_report7](https://github.com/chakra-core/ChakraCore/issues/6582) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
-| 8 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | No bug ||
+| 8 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
 | 9 |ChakraCore| V1.11.24 | [chakra_report9](https://github.com/chakra-core/ChakraCore/issues/6590) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
 | 10 |JavaScriptCore| d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=220142) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
 | 11 |JavaScriptCore| d940b47 | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=220506) | [Wen Yi](https://github.com/YiWen-y) | Fixed |Not first discovered|
