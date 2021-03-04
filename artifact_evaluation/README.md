@@ -187,7 +187,13 @@ We note that some bug reports were later confirmed by the developers after our P
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
-| 1 | XX | XX | [XX](XX) | [XX](XX) | Fixed | |
+|  1   |ChakraCore|  v1.11.12   | [chakra_report1](https://github.com/chakra-core/ChakraCore/issues/6546) | [Yang Tian](https://github.com/ty5491003) | Verified ||
+|  2   |ChakraCore|  v1.11.12/24   | [chakra_report2](https://github.com/chakra-core/ChakraCore/issues/6550) | [Yang Tian](https://github.com/ty5491003)  | Fixed ||
+|  3   |ChakraCore|  V1.11.24   | [chakra_report3](https://github.com/chakra-core/ChakraCore/issues/6553) | [Yang Tian](https://github.com/ty5491003)   |  Verified ||
+|  4   |ChakraCore|  9e2f198   | [chakra_report4](https://github.com/chakra-core/ChakraCore/issues/6567) |   [Wen Yi](https://github.com/YiWen-y)   |  Fixed ||
+|  5   |ChakraCore|  9e2f198   | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) |   [Wen Yi](https://github.com/YiWen-y)  |  Verified ||
+|  6   |ChakraCore|  1_11_latest | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003)  |  Verified ||
+
 
 ### TEST-262 accepted test cases <span id = "test-262">
 A list of COMFORT-generated test cases that are accepted by the [Test262 conformance test suite](https://github.com/tc39/test262).  Note that some of the Test-262 submissions
