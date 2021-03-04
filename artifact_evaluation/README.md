@@ -195,6 +195,14 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 | 8 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | No bug ||
 | 9 |ChakraCore| V1.11.24 | [chakra_report9](https://github.com/chakra-core/ChakraCore/issues/6590) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
 | 10 |JavaScriptCore| d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=220142) | [Yang Tian](https://github.com/ty5491003) | Verified ||
+| 11 |JavaScriptCore| d940b47 | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=220506) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
+| 12 |JavaScriptCore| d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=220574) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 13 |JavaScriptCore| d940b47 | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=220507) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
+| 14 |JavaScriptCore| d940b47 | [JSC_report5](https://bugs.webkit.org/show_bug.cgi?id=220842) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
+| 15 |JavaScriptCore| d940b47 | [JSC_report6](https://bugs.webkit.org/show_bug.cgi?id=221177) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
+| 16 |JavaScriptCore| d940b47 | [JSC_report7](https://bugs.webkit.org/show_bug.cgi?id=221176) | [Jinqiu Wang](https://github.com/qiudaoyuyesok) | Verified ||
+| 17 |V8| d891c59 | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=11294) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 18 |V8| e39c701 | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=11359) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
 
 
 ### TEST-262 accepted test cases <span id = "test-262">
