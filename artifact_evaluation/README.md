@@ -20,7 +20,7 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 
 *This section corresponds to Tables 2 and 7 of the submitted paper*
 
-| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
+| No. | JS Engines | Build Version | Bug Report Link  | COMFORT Team Member (Contributor)  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
 | 1 | V8 | 0e44fef | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed | **List 1** in the manuscript |
 | 2 | V8 | 0e44fef | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=8088) | [Yuan Wang](https://github.com/YuanWangC) | Fixed | |
