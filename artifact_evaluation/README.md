@@ -190,9 +190,13 @@ We note that some bug reports were later confirmed by the developers after our P
 |  1   |ChakraCore|  v1.11.12   | [chakra_report1](https://github.com/chakra-core/ChakraCore/issues/6546) | [Yang Tian](https://github.com/ty5491003) | Verified ||
 |  2   |ChakraCore|  v1.11.12/24   | [chakra_report2](https://github.com/chakra-core/ChakraCore/issues/6550) | [Yang Tian](https://github.com/ty5491003)  | Fixed ||
 |  3   |ChakraCore|  V1.11.24   | [chakra_report3](https://github.com/chakra-core/ChakraCore/issues/6553) | [Yang Tian](https://github.com/ty5491003)   |  Verified ||
-|  4   |ChakraCore|  9e2f198   | [chakra_report4](https://github.com/chakra-core/ChakraCore/issues/6567) |   [Wen Yi](https://github.com/YiWen-y)   |  Fixed ||
-|  5   |ChakraCore|  9e2f198   | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) |   [Wen Yi](https://github.com/YiWen-y)  |  Verified ||
-|  6   |ChakraCore|  1_11_latest | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003)  |  Verified ||
+|  4   |ChakraCore| V1.11.24 | [chakra_report4](https://github.com/chakra-core/ChakraCore/issues/6567) |   [Wen Yi](https://github.com/YiWen-y)   |  Fixed ||
+|  5   |ChakraCore| V1.11.24 | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) |   [Wen Yi](https://github.com/YiWen-y)  |  Verified ||
+|  6   |ChakraCore| V1.11.24 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003)  |  Verified ||
+| 7 |ChakraCore| V1.11.24 | [chakra_report7](https://github.com/chakra-core/ChakraCore/issues/6582) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
+| 8 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | No bug ||
+| 9 |ChakraCore| V1.11.24 | [chakra_report9](https://github.com/chakra-core/ChakraCore/issues/6590) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
+| 10 |JavaScriptCore| d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=220142) | [Yang Tian](https://github.com/ty5491003) | Verified ||
 
 
 ### TEST-262 accepted test cases <span id = "test-262">
