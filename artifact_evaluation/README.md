@@ -185,24 +185,24 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 
 | No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
 | --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
-|  1   |ChakraCore|  v1.11.12   | [chakra_report1](https://github.com/chakra-core/ChakraCore/issues/6546) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
-|  2   |ChakraCore|  v1.11.12/24   | [chakra_report2](https://github.com/chakra-core/ChakraCore/issues/6550) | [Yang Tian](https://github.com/ty5491003)  | Fixed |Not first discovered|
-|  3   |ChakraCore|  V1.11.24   | [chakra_report3](https://github.com/chakra-core/ChakraCore/issues/6553) | [Yang Tian](https://github.com/ty5491003)   |  Verified |Not first discovered|
-|  4   |ChakraCore| V1.11.24 | [chakra_report4](https://github.com/chakra-core/ChakraCore/issues/6567) |   [Wen Yi](https://github.com/YiWen-y)   |  Fixed ||
-|  5   |ChakraCore| V1.11.24 | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) |   [Wen Yi](https://github.com/YiWen-y)  |  Verified |Not first discovered|
-|  6   |ChakraCore| V1.11.24 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003)  |  Verified |Not first discovered|
-| 7 |ChakraCore| V1.11.24 | [chakra_report7](https://github.com/chakra-core/ChakraCore/issues/6582) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
-| 8 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
-| 9 |ChakraCore| V1.11.24 | [chakra_report9](https://github.com/chakra-core/ChakraCore/issues/6590) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
-| 10 |JavaScriptCore| d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=220142) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
-| 11 |JavaScriptCore| d940b47 | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=220506) | [Wen Yi](https://github.com/YiWen-y) | Fixed |Not first discovered|
-| 12 |JavaScriptCore| d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=220574) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
-| 13 |JavaScriptCore| d940b47 | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=220507) | [Wen Yi](https://github.com/YiWen-y) | Fixed |Not first discovered|
-| 14 |JavaScriptCore| d940b47 | [JSC_report5](https://bugs.webkit.org/show_bug.cgi?id=220842) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
-| 15 |JavaScriptCore| d940b47 | [JSC_report6](https://bugs.webkit.org/show_bug.cgi?id=221177) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
-| 16 |JavaScriptCore| d940b47 | [JSC_report7](https://bugs.webkit.org/show_bug.cgi?id=221176) | [Jinqiu Wang](https://github.com/qiudaoyuyesok) | Verified |Not first discovered|
-| 17 |V8| d891c59 | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=11294) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
-| 18 |V8| e39c701 | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=11359) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+|  1   |ChakraCore|  v1.11.12/24   | [chakra_report2](https://github.com/chakra-core/ChakraCore/issues/6550) | [Yang Tian](https://github.com/ty5491003)  | Fixed |Not first discovered|
+|  2   |ChakraCore| V1.11.24 | [chakra_report4](https://github.com/chakra-core/ChakraCore/issues/6567) |   [Wen Yi](https://github.com/YiWen-y)   |  Fixed ||
+| 3 |ChakraCore| V1.11.24 | [chakra_report7](https://github.com/chakra-core/ChakraCore/issues/6582) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
+| 4   | JavaScriptCore | d940b47       | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=220506) | [Wen Yi](https://github.com/YiWen-y)            | Fixed                  |Not first discovered|
+| 5   | JavaScriptCore | d940b47       | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=220507) | [Wen Yi](https://github.com/YiWen-y)            | Fixed                  |Not first discovered|
+| 6 |JavaScriptCore| d940b47 | [JSC_report5](https://bugs.webkit.org/show_bug.cgi?id=220842) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
+| 7 |JavaScriptCore| d940b47 | [JSC_report6](https://bugs.webkit.org/show_bug.cgi?id=221177) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
+| 8 |JavaScriptCore| d940b47 | [JSC_report7](https://bugs.webkit.org/show_bug.cgi?id=221176) | [Jinqiu Wang](https://github.com/qiudaoyuyesok) | Verified |Not first discovered|
+| 9 |ChakraCore| v1.11.12 | [chakra_report1](https://github.com/chakra-core/ChakraCore/issues/6546) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 10 |ChakraCore| V1.11.24 | [chakra_report3](https://github.com/chakra-core/ChakraCore/issues/6553) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 11 |ChakraCore| V1.11.24 | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
+| 12 |ChakraCore| V1.11.24 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 13 |ChakraCore| V1.11.24 | [chakra_report9](https://github.com/chakra-core/ChakraCore/issues/6590) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
+| 14 |JavaScriptCore| d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=220142) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 15 |V8| d891c59 | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=11294) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 16 |V8| e39c701 | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=11359) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 17 |JavaScriptCore| d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=220574) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 18 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
 
 
 ### TEST-262 accepted test cases <span id = "test-262">
