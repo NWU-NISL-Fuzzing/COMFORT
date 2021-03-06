@@ -253,7 +253,7 @@ The Docker image contains the following scripts for evaluation.
 
 Evaluate GPT-2 program synthesizer by running the following command:
 
-``` Command ```
+``` python /root/src/01_evaluata_generator.py --mode=finetune ```
 
 The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate 1024 new JS test cases. 
 
@@ -270,15 +270,21 @@ We also provid the full-trained GPT-2 JS program generator used by our paper. Yo
 
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
-``` command ```
+``` python /root/src/01_evaluata_generator.py --mode=finetune ```
 
 This data corresponds to Figure 8. 
 
 ## Demonstration of test program mutation
 (*approximate runtime: 10 minutes*)
+Evaluate our ECMAScript-guided test data generator by running the following command:
+
+```python 02_evaluate_mutator.py```
 
 ## Demonstration of automated testing
 (*approximate runtime: 2 hours*)
 
 ## Demonstration of Differential testing
 (*approximate runtime: 5 minutes*)
+Evaluate our differential fuzzer by running the following command:
+
+```python 03_evaluate_harness.py```
