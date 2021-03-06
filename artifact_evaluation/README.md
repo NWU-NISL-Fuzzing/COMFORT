@@ -262,7 +262,7 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 
 Generated programs are written to the directory /tmp/pldi2021/artifact_evaluation/generated_programs. 
 
-### Evaluation of Our JS Program Generator (optional)
+### Evaluation of Our JS Program Generator 
 We also provid the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate 1,000 test programs and inspect the quality of the generated programs. You can run the test by using the following command: 
 
 ``` python /root/src/01_evaluata_generator.py --mode=generate ```
