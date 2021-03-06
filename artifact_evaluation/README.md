@@ -239,7 +239,6 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 
 ## Docker Image
 We prepare our artifact is as a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
-We have tested the Docker image using docker version xx. 
 
 ## Artifact Contents
 The Docker image contains the following scripts for evaluation. 
