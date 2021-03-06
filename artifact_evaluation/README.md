@@ -266,11 +266,11 @@ Generated programs are written to the directory /tmp/pldi2021/artifact_evaluatio
 ### Evaluation of Our JS Program Generator (optional)
 We also provid the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate 1,000 test programs and inspect the quality of the generated programs. You can run the test by using the following command: 
 
-``` command ```
+``` python /root/src/01_evaluata_generator.py --mode=generate ```
 
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
-``` python /root/src/01_evaluata_generator.py --mode=finetune ```
+``` command ```
 
 This data corresponds to Figure 8. 
 
