@@ -278,13 +278,10 @@ This data corresponds to Figure 8.
 (*approximate runtime: 10 minutes*)
 Evaluate our ECMAScript-guided test data generator by running the following command:
 
-```python 02_evaluate_mutator.py```
-
-## Demonstration of automated testing
-(*approximate runtime: 2 hours*)
+```python /root/src/02_evaluate_mutator.py```
 
 ## Demonstration of Differential testing
 (*approximate runtime: 5 minutes*)
 Evaluate our differential fuzzer by running the following command:
 
-```python 03_evaluate_harness.py```
+```python /root/src/03_evaluate_harness.py```
