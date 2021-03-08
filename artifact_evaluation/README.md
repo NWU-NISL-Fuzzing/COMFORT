@@ -260,9 +260,9 @@ The program uses a small JS corpus of 2000 JS programs randomly selected from ou
 
 We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU. For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs. 
 
-Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. The trained model is stored in /tmp/pldi2021/artifact_evaluation/gpt-2.
+Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. The trained model is stored in /root/src/generate_model/models/nisl_model.
 
-Generated programs are written to the directory /tmp/pldi2021/artifact_evaluation/generated_programs. 
+Generated programs are written to the directory /root/data/generated_data/complete_samples/. 
 
 ### Evaluation of Our JS Program Generator 
 We also provid the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate about 2,000 test programs and inspect the quality of the generated programs. You can run the test by using the following command: 
