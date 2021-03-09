@@ -261,7 +261,7 @@ The program uses a small JS corpus of 2000 JS programs randomly selected from ou
 
 We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). *As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs*. 
 
-Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. The trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
+Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. 
 
 Generated programs are written to directory ```/root/data/generated_data/complete_samples/```. 
 
@@ -275,7 +275,8 @@ To use the trained model to [trained model](#generator) to generate the test pro
 The  ```--nsamples``` parameter controls how many test programs to generate. 
 
 #### Program generation using our pre-trained model
-We also provided the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
+We also provided the full-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
+ You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
 
 You can run the test on the GPU by using the following command (set ```--multi_gpu=0``` to run on the CPU)：
 
