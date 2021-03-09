@@ -274,7 +274,7 @@ You can run the test by using the following command using a GPU:
 
 Or using the following command to run the test on a CPU (which will take longer): 
 
-``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --nsamples=512 ```
+``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --multi_gpu=0 --nsamples=512 ```
 
 
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
