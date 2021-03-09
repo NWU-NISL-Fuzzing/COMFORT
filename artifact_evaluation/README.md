@@ -283,7 +283,7 @@ You can run the test on the GPU by using the following command (set ```--multi_g
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=1 --nsamples=512 ```
 
-All generated programs are written to directory ```/root/data/generated_data/complete_samples/```. 
+All generated test cases are written to directory ```/root/data/generated_data/complete_samples/```. 
 
 #### Evaluation of the code coverage 
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
