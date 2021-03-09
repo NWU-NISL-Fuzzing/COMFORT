@@ -250,7 +250,7 @@ The Docker image contains the following scripts for evaluation.
 ## Setup
 After importing the docker image, run ``` ~/.bashrc``` to setup the environmental variables.
 
-## Demonstration of the JS program generator
+## Demonstration of the JS program generator <br id="generator">
 (*approximate runtime: 4 hours*)
 
 Evaluate GPT-2 program synthesizer by running the following command:
@@ -276,6 +276,10 @@ Or using the following command to run the test on a CPU (which will take longer)
 
 ``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --multi_gpu=0 --nsamples=512 ```
 
+
+You can also use the fintuned model trained from [the former step](generator) to generate the test programs:
+
+``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 0 --multi_gpu=1 --nsamples=512 ```
 
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
