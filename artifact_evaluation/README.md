@@ -250,24 +250,28 @@ The Docker image contains the following scripts for evaluation.
 Note that after importing the docker image, using the command ``` ~/.bashrc``` to active some environment variables.
 
 ## Demonstration of the JS program generator
-(*approximate runtime: 3 hours*)
+(*approximate runtime: 4 hours*)
 
 Evaluate GPT-2 program synthesizer by running the following command:
 
 ``` python /root/src/01_evaluata_generator.py --mode=finetune ```
 
-The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate 1024 new JS test cases. 
+The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate 512 new JS test cases. 
 
-We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU. For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs. 
+We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs. 
 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. The trained model is stored in /root/src/generate_model/models/nisl_model.
 
 Generated programs are written to the directory /root/data/generated_data/complete_samples/. 
 
 ### Evaluation of Our JS Program Generator 
-We also provid the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate about 2,000 test programs and inspect the quality of the generated programs. You can run the test by using the following command: 
+We also provid the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate about 512 test programs (defined by nsamples) and inspect the quality of the generated programs. You can run the test by using the following command using a GPU: 
 
 ``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --multi_gpu=1 --nsamples=512 ```
+
+If you want to run only on the CPU, using the following command: 
+``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --nsamples=512 ```
+
 
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
