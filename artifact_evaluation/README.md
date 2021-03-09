@@ -16,7 +16,9 @@ Note that we do not log IP addresses or other accessing information, but if you 
 
 Here we provide a list of bugs exposed by COMFORT-generated test cases. 
 
-If a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. Some of our submitted bugs have been previously discovered by other users and are marked as "Not first discovered". A small number of bug reports (9) were rejected by the vendor as the feature was either not well defined in ECMA-262 or not supported by the testing compiler. There are also bug reports waiting to be confirmed by the vendor (marked as "Under discussion"). We aslo note that some bug reports were later confirmed by the developers after our PLDI submission. Futhermore, COMPORT-generated test cases have exposed addtional bugs after our PLDI submission during our continous testing process. These newly exposed bugs are listed at [here](#newly-discovered).
+If a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. Some of our submitted bugs have been previously discovered by other users and are marked as "Not first discovered". A small number of bug reports (9) were rejected by the vendor as the feature was either not well defined in ECMA-262 or not supported by the testing compiler. There are also bug reports waiting to be confirmed by the vendor (marked as "Under discussion"). 
+
+Futhermore, some COMPORT-generated test cases have exposed addtional bugs after our PLDI submission during our continous testing process. These newly exposed bugs are listed at [here](#newly-discovered).
 
 *This section corresponds to Tables 2 and 7 of the submitted paper*
 
