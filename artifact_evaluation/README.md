@@ -250,7 +250,7 @@ The Docker image contains the following scripts for evaluation.
 ## Setup
 After importing the docker image, run ``` ~/.bashrc``` to setup the environmental variables.
 
-## Demonstration of the JS program generator <br id="generator">
+## Train the JS program generator <br id="generator">
 (*approximate runtime: 4 hours*)
 
 Evaluate GPT-2 program synthesizer by running the following command:
