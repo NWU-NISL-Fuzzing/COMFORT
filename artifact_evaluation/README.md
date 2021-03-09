@@ -265,14 +265,13 @@ We have reduced the size of the corpus so that it takes around 3 hours to train 
 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. 
 
-Generated programs are written to directory ```/root/data/generated_data/complete_samples/```. 
 
 ### Evaluation of Our JS Program Generator 
 
 #### Program generation using the trained model
 To use the trained model to [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference): 
 
-``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 0 --multi_gpu=1 --nsamples=512 ```
+``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
 
 The  ```--nsamples``` parameter controls how many test programs to generate. 
 
@@ -282,8 +281,9 @@ We also provided the full-trained GPT-2 JS program generator used by our paper. 
 
 You can run the test on the GPU by using the following command (set ```--multi_gpu=0``` to run on the CPU)：
 
-``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --multi_gpu=1 --nsamples=512 ```
+``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=1 --nsamples=512 ```
 
+All generated programs are written to directory ```/root/data/generated_data/complete_samples/```. 
 
 #### Evaluation of the code coverage 
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
