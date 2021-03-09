@@ -272,6 +272,7 @@ You can run the test by using the following command using a GPU:
 ``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --multi_gpu=1 --nsamples=512 ```
 
 Or using the following command to run the test on a CPU (which will take longer): 
+
 ``` python /root/src/01_evaluata_generator.py --mode=generate --use_nisl_model = 1 --nsamples=512 ```
 
 
