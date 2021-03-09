@@ -62,7 +62,7 @@ class DataBase:
         finally:
             session.close()
 
-    # Insert a piece of data
+    # Insert a piece of result
     def add(self, ErrorType: ErrorType) -> int:
         Session = sessionmaker(bind=self.engine)
         session = Session()

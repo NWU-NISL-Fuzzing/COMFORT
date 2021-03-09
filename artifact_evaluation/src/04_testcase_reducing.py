@@ -12,7 +12,7 @@
 
 from FuzzingEngines.step4_testcaseReducer.simplify import Simplify
 
-with open("/root/data/testcase.js", "r", encoding="utf-8") as f:
+with open("/root/result/testcase.js", "r", encoding="utf-8") as f:
     testcase = f.read()
 
 print("\nSimplifying test cases (approx. 2 minutes)...\n")

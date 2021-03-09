@@ -1,0 +1,44 @@
+{
+	// 强制选项(Enforcing options) 如果设为true会产生更多错误提示。
+    "bitwise": false ,  //禁用位运算符，位运算符&在 JavaScript 中使用较少，经常是把 && 错输成 &
+    "curly": false , //循环或者条件语句必须使用花括号包围
+    "freeze": false , //禁止重写原生对象的原型，比如 Array，Date
+    "latedef": false , //允许定义之前使用变量
+    "newcap": false , //构造器函数首字母大写
+    "noarg": false , //禁止使用 arguments.caller 和 arguments.callee，未来会被弃用， ECMAScript 5 禁止使用 arguments.callee
+    "quotmark": false , //为 true 时，禁止单引号和双引号混用
+    "undef": true , //变量未定义
+    "esversion": 10,
+	"unused": false , //变量未使用
+    "strict":false , //严格模式
+    "shadow": true, // 允许同一变量名的多次定义
+    "proto": true, // 允许__proto__ 属性
+    "-W018": false, // 去除Confusing use of '!'
+    "-W067": false, // 去除Bad invocation
+    "-W007": false, // 去除 Confusing plusses.
+    "-W053": false, // 允许 var a = new String("abc")
+
+
+	//Relaxing options, 若设置为true, 错误会减少。
+	"asi": true , //控制“缺少分号”的警告
+    "boss": true , //控制“期望赋值”的警告
+    "debug": true ,//"debug": true
+	"elision": true , //这个选项告诉JSHint，您的代码使用ES3的数组省略元素或空元素
+	"eqnull": true , //此选项禁止关于== null比较的警告。
+	"expr": true , //此选项禁止在通常希望看到赋值或函数调用的地方使用表达式时，所警告的错误。
+    "evil": true , //控制 eval 使用警告
+    "funcscope": true, // 控制全局和函数内声明相同函数名是否报错
+    "scripturl": true, // script-targeted URLs
+    "laxbreak": true, // 控制不规范的换行
+    "node": true, // 控制jshint在nodejs环境下运行时的一些特征
+	
+    "lastsemic": true ,//检查一行代码最后声明后面的分号是否遗漏
+    "laxcomma": true , //检查不安全的折行，忽略逗号在最前面的编程风格
+    "loopfunc": true , //检查循环内嵌套 function
+    "multistr": true ,//检查多行字符串
+    "notypeof": true , //检查无效的 typeof 操作符值
+    "sub": true , //person['name'] vs. person.name
+    "supernew": true , //new function () { ... } 和 new Object;
+    "validthis": true , //在非构造器函数中使用 this
+	"passfail": true
+}

@@ -1,0 +1,11 @@
+{"/d8":"v8",
+"/dist/bin/js":"spiderMonkey",
+"/ch":"chakra",
+"/bin/jsc":"javascriptCore",
+"/bin/hermes":"hermes",
+"quickjs":"quickjs",
+"/jerry":"jerryscript",
+"rhino":"rhino",
+"/bin/jjs":"nashorn",
+"graalvm": "graaljs"
+}

@@ -16,7 +16,7 @@ from FuzzingEngines.step5_filterTestcase.errorinfo_classifier.errorinfo_db_opera
 
 def errorinfo_classify(info_list: typing.List, db_connection) -> [bool, int]:
     """
-    Filter suspicious use cases, which compares incoming data with data in the database (automatically created if the
+    Filter suspicious use cases, which compares incoming result with result in the database (automatically created if the
     database does not exist) and returns False if it already exists. Inserts the new type into the database if it does
     not exist and returns True.
     Args:

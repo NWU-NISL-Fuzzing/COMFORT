@@ -37,7 +37,7 @@ class Classifier:
 
         # Hermes could not close the note caused a false positive counter
         self.note_false_positive_counter = 0
-        # [Type 1, Type 2, Type 3], the total amount of data for the test results of Type 1 and Type 2 before filtering
+        # [Type 1, Type 2, Type 3], the total amount of result for the test results of Type 1 and Type 2 before filtering
         self.all_differential_result_filter_types_counter = [0, 0, 0]
         # [Type 1, Type 2, Type 3], the total number of test results for Type 1 and Type 2 that need to be manually
         # analyzed after filtering

@@ -16,11 +16,11 @@ import sys
 
 from FuzzingEngines.Utils.config import Hparams_Coverage
 
-os.chdir("/root/data/codeCoverage")
+os.chdir("/root/result/codeCoverage")
 
 def coverage(file_path):
     # calculate the coverage of simple file
-    cmd = ["timeout", "-s9", "60", "/root/data/codeCoverage/node_modules/nyc/bin/nyc.js",
+    cmd = ["timeout", "-s9", "60", "/root/result/codeCoverage/node_modules/nyc/bin/nyc.js",
            "--reporter=json-summary", "--cache=false", "--report-dir=" + report_dir, "--temp-dir=" + temp_dir,
            "--clean=false", "node", file_path]
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -28,7 +28,7 @@ def coverage(file_path):
 
 
 def extractCoverage():
-    parent_dir = "/root/data/codeCoverage/report"
+    parent_dir = "/root/result/codeCoverage/report"
     coverage_file = os.path.join(parent_dir, "coverage-summary.json")
 
     with open(coverage_file, "r", encoding="utf-8") as f:
@@ -56,9 +56,9 @@ if __name__ == '__main__':
     testcases_saved_path = hparams.coverage_files
 
     # NYC will only collect coverage for files that are located under pwd, so the execution path needs to be changed.
-    corpus_dir = r"/root/data/codeCoverage/corpus"
-    report_dir = r"/root/data/codeCoverage/report"
-    temp_dir = r"/root/data/codeCoverage/nyc_output"
+    corpus_dir = r"/root/result/codeCoverage/corpus"
+    report_dir = r"/root/result/codeCoverage/report"
+    temp_dir = r"/root/result/codeCoverage/nyc_output"
 
     if os.path.exists(corpus_dir):
         shutil.rmtree(corpus_dir)
@@ -83,5 +83,5 @@ if __name__ == '__main__':
     print("branch coverages: %s" % coverages[2])
     print("line coverages: %s" % coverages[3])
     print(f"\n------------------------------------------------------")
-    print("Coverage messages has been saved to '/root/data/codeCoverage/report/coverage-summary.json'")
+    print("Coverage messages has been saved to '/root/result/codeCoverage/report/coverage-summary.json'")
     print(f"------------------------------------------------------\n")

@@ -1,0 +1,8 @@
+{
+  "ESApis": {
+    "function": "./data/function.txt",
+    "constructor": "./data/constructor.txt",
+    "classMethod": "./data/classMethod.txt",
+    "prototypeMethod": "./data/prototypeMethod.txt"
+  }
+}
