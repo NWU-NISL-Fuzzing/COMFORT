@@ -257,7 +257,7 @@ Evaluate GPT-2 program synthesizer by running the following command:
 
 ``` python /root/src/01_evaluata_generator.py --mode=finetune ```
 
-The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate 2000 new JS test cases. 
+The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate ~2000 new JS test cases (where each test case contains one JS API). 
 
 We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs. 
 
