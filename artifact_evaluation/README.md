@@ -266,7 +266,7 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 Generated programs are written to directory ```/root/data/generated_data/complete_samples/```. 
 
 ### Evaluation of Our JS Program Generator 
-We also provid the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
+We also provided the full-trained GPT-2 JS program generator used by our paper. You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
 
 You can run the test by using the following command using a GPU: 
 
