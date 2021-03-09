@@ -1,0 +1,143 @@
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = 37;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(nislMutationParameter0).toString('Hello') === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = false;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(nislMutationParameter0).toString('Hello') === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = null;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(nislMutationParameter0).toString('Hello') === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = undefined;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = 10;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = 122828;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = 1;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(nislMutationParameter0).toString('Hello') === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = "G_`V%kbkZ`";
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(nislMutationParameter0).toString('Hello') === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = [true,1026137,"-"];
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = 0;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = 7;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(nislMutationParameter0).toString('Hello') === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = 656745;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = {"0":true,"35328":false,"57807":null,"64097":true,"138043":"2EzriRFkYUnsZK","138699":false,"166671":null,"167778":532567,"175767":"<bq&ycg#GcroS^0tG","186818":null,"253360":855954,"368190":"%ED%AF%BF","410985":"","547256":[],"588924":null,"624173":886237,"631625":[],"636241":true,"673354":true,"688312":"%ED%AF%BF","712329":null,"763833":"4vH5","812973":"YLHQlkA+","819514":[],"821022":802398,"830753":false,"860929":"0","878092":[],"906417":724620,"916127":"","935675":"Y04FnOosgQ^1?%BG%vemejZa","956302":"VPXuR@o6(Llx","1021678":"ZBhqZr%LO)P6Bw","1029438":[],"fhyVxxg":null,"Erbe<RLXPfUI*%`inOae_sY":[],"":[],"-":[],"VSd0":37019,"l_Y":245032,"fah1K*kazdLx5#!5M":[],"%ED%AF%BF":[],"1wNx5~T5rXVC(?zSYI#a~lNMz":null,"IXjpkA>!gZUtL)xi*VJI9J":null,"(^YCNb`mT5RL*Gpl^0RO*~E$f_dC*":[],"NH66KLp504zZ~C~j$^4J*9nnVMeVvc":"%ED%AF%BF","Fy%tUtNRL(":"0","RdE2AJb&RMd+<pHfO>TX3%X3g2C":[],"VkzdfU^W>bxp":199745,"`cMJu7JwKz%C*>D*v6oe4CKnAgzWZcaV":[],"+ls*H@I@Wl8WK47!#nHq":506357,"s#`2":"-","%RzvA<MkefOwdYKD<ur8(qCK":true,"mC>m~Tkr>U&@":true,"gbCdex2vp9d":"#t91bYwKU!(iIM5K>ac("};
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function () {
+    var newobj = Number(1).toString('Hello') === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var NISLCallingResult = NISLFuzzingFunc();
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = null;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = "~ewSXY_f0kD?F4@Exr4x~";
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = true;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
+==================================================
+var NISLFuzzingFunc = function (nislMutationParameter0) {
+    var newobj = Number(1).toString(nislMutationParameter0) === '{2}';
+    var prefix = 'new ' + newobj + prefix;
+};
+var nislMutationArgument0 = undefined;
+var NISLCallingResult = NISLFuzzingFunc(nislMutationArgument0);
+print(NISLCallingResult);
