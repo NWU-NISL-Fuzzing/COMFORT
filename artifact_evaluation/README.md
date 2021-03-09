@@ -238,7 +238,7 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 # Step-by-Step Instructions
 
 ## Docker Image
-We prepare our artifact is as a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
+We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 
 ## Artifact Contents
 The Docker image contains the following scripts for evaluation. 
