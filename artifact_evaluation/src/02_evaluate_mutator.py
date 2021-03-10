@@ -30,6 +30,7 @@ def save_files_from_file(js_file):
             f.write(i)
             f.close()
         counter += 1
+    return counter
 
 def save_files_from_dir(js_file, file_name):
     with open(js_file, 'r', encoding='utf-8') as f:
@@ -61,9 +62,12 @@ if __name__ == "__main__":
 
     if os.path.isfile(file_path):
         js_file = file_path
-        save_files_from_file(js_file)
-        print('=' * 50)
-        print(f"The mutated results are stored in {hparams.save_path}.")
+        mutation_result = save_files_from_file(js_file)
+        if mutation_result:
+            print('=' * 50)
+            print(f"The mutated results are stored in {hparams.save_path}.")
+        else:
+            print("This test case can not be mutated.")
 
     elif os.path.isdir(file_path):
         file_list = os.listdir(file_path)
