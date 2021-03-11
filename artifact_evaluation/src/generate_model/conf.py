@@ -8,14 +8,14 @@ class Hparams:
     parser.add_argument('--mode', default='generate', type=str, help='Running mode, either "finetune" or "generate")')
 
     # finetuning phase
-    parser.add_argument('--data_path', default='/root/result/top10000.txt', type=str,
-                        help='Finetuning result path')
+    parser.add_argument('--data_path', default='/root/data/top10000.txt', type=str,
+                        help='Finetuning data path')
     parser.add_argument('--data_prefix', default='//JavascriptTop2000Functions\n', type=str,
-                        help='Finetuning result prefix')
+                        help='Finetuning data prefix')
     parser.add_argument('--gpt2_model_dir', default='/root/src/generate_model/models', type=str,
                         help='Pretrained gpt2 model path')
     parser.add_argument('--gpt2_model_name', default='117M', type=str,
-                        help='Pretrained gpt2 model name, either "117M" or "345M"')
+                        help='Pretrained gpt2 model name, only "117M" is available')
     parser.add_argument('--finetuned_model_dir', default='/root/src/generate_model/models', type=str,
                         help='Finetuned model path')
     parser.add_argument('--finetuned_model_name', default='finetuned_model', type=str,
@@ -38,7 +38,7 @@ class Hparams:
     parser.add_argument('--temperature', default=0.7, type=float, help='Temperature of the generated texts')
     parser.add_argument('--generate_prefix', default="//JavascriptTop2000Functions\n", type=str,
                         help='Prefix used for generation, needs to be consist with data_prefix')
-    parser.add_argument('--sample_dir', default='/root/result/generated_data/original_samples', type=str,
+    parser.add_argument('--sample_dir', default='/root/data/generated_data/original_samples', type=str,
                         help='All generated functions by gpt2 are saved in here')
-    parser.add_argument('--testcase_dir', default='/root/result/generated_data/complete_testcases', type=str,
+    parser.add_argument('--testcase_dir', default='/root/data/generated_data/complete_testcases', type=str,
                         help='All generated testcases are saved in here')

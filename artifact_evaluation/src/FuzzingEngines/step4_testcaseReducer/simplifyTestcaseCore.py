@@ -11,15 +11,15 @@
 import re
 
 from FuzzingEngines.step3_executeTestcase import Result
-from FuzzingEngines.step3_executeTestcase.harness import harness
+from FuzzingEngines.step3_executeTestcase.harness import Harness
 
 
 def check_effective_with_differential_test(testcase: str, normal_outputs: list, suspicious_outputs: list, with_output_info=False):
     testbed = []
     for output in (normal_outputs + suspicious_outputs):
         testbed.append(output.testbed)
-    Harness = harness()
-    harness_result = Harness.run_testcase(testcase)
+    harness = Harness()
+    harness_result = harness.run_testcase(testcase)
     bug_info = Result.differential_test(harness_result)
     if len(bug_info) != len(suspicious_outputs):
         return False

@@ -9,10 +9,19 @@
 """
 
 # step4. Test Case Reduction
+import os
 
 from FuzzingEngines.step4_testcaseReducer.simplify import Simplify
+from FuzzingEngines.Utils.config import Hparams_Reduce
 
-with open("/root/result/testcase.js", "r", encoding="utf-8") as f:
+hparams = Hparams_Reduce().parser.parse_args()
+
+file_path = hparams.file_path
+
+if not os.path.exists(file_path):
+    print("file path not exists !!!")
+
+with open(file_path, "r", encoding="utf-8") as f:
     testcase = f.read()
 
 print("\nSimplifying test cases (approx. 2 minutes)...\n")

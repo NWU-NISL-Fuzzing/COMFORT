@@ -108,7 +108,10 @@ if __name__ == '__main__':
     if hparams.testsuite:
         testcases = read_testcases(hparams.testsuite)
 
-        result_saved_path = os.path.join(hparams.testsuite, f'{uuid4()}.log')
+        if not os.path.exists(hparams.log_save_dir):
+            os.mkdir(hparams.log_save_dir)
+
+        result_saved_path = os.path.join(hparams.log_save_dir, f'{uuid4()}.log')
 
         evaluate_testcase(testcases, result_saved_path, hparams.clear_classifier)
     else:

@@ -1,5 +1,6 @@
 import gpt_2_simple as gpt2
 import time
+import datetime
 import shutil
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Mask prompts for TensorFlow
@@ -41,7 +42,7 @@ def gpt2_finetune(hparams):
                   steps=hparams.steps)
 
 
-def function_generate(hparams, saved_file_path):
+def function_generate(hparams, saved_dir):
     sess = gpt2.start_tf_sess()
     sess = gpt2.reset_session(sess)
 
@@ -59,8 +60,8 @@ def function_generate(hparams, saved_file_path):
             raise FileNotFoundError("The specified model doesn't exist, please finetune first or set 'use_nisl_model=1'")
     time.sleep(2)
 
-    info_print("Generating JS test program (approx 15 minutes with gpus- including model load time)...\n")
-
+    info_print("Generating JS test program (approx 15 minutes with gpus when nsamples=512 - including model load time)...\n")
+    info_print(transform(hparams.multi_gpu))
     gpt2.load_gpt2(sess,
                    model_dir=generate_model_dir,
                    model_name=generate_model_name,
@@ -100,15 +101,20 @@ def function_generate(hparams, saved_file_path):
 
         info_print(f'Generating {i+1}/{batches}.')
 
-    # save all generated functions by gpt2 to a new file
+    # formatting
     all_functions = [i.strip() + '\n' for i in all_functions]
-    with open(saved_file_path, 'w', encoding='utf-8') as f:
-        f.write(('='*50 + '\n').join(all_functions))
+
+    # save all generated functions by gpt2 to a new file
+    if not os.path.exists(saved_dir):
+        os.makedirs(saved_dir)
+    for idx, function in enumerate(all_functions, start=1):
+        with open(os.path.join(saved_dir, f'{idx}.js'), 'w', encoding='utf-8') as f:
+            f.write(function)
 
     return all_functions
 
 
-def testcase_assemble(functions, testcases_saved_path):
+def testcase_assemble(functions, saved_dir):
     info_print(f"Assembly test program (approx 30 seconds)...\n")
     time.sleep(2)
     callable_processor = CallableProcessor()
@@ -122,10 +128,15 @@ def testcase_assemble(functions, testcases_saved_path):
         print(testcase)
         print('=' * 50)
 
-    # save all testcase to a new file
+    # formatting
     testcases = [i.strip() + '\n' for i in testcases]
-    with open(testcases_saved_path, 'w', encoding='utf-8') as f:
-        f.write(('='*50 + '\n').join(testcases))
+
+    # save all testcase to a new file
+    if not os.path.exists(saved_dir):
+        os.makedirs(saved_dir)
+    for idx, testcase in enumerate(testcases, start=1):
+        with open(os.path.join(saved_dir, f'{idx}.js'), 'w', encoding='utf-8') as f:
+            f.write(testcase)
 
     return testcases
 
@@ -143,18 +154,24 @@ if __name__ == '__main__':
         gpt2_finetune(hparams)
     elif hparams.mode == 'generate':
 
-        # generate JS function by gpt2
         start_time = time.time()
-        samples_saved_path = os.path.join(hparams.sample_dir, f'{uuid4()}.txt')
-        generated_functions = function_generate(hparams, samples_saved_path)
+
+        # new a directory name
+        time_stamp = datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
+        identifier = str(uuid4())[:8]
+        new_dir_name = f'{time_stamp}_{identifier}'
+
+        # generate JS function by gpt2
+        samples_saved_dir = os.path.join(hparams.sample_dir, new_dir_name)
+        generated_functions = function_generate(hparams, samples_saved_dir)
 
         # assemble JS testcase
-        testcases_saved_path = os.path.join(hparams.testcase_dir, f'{uuid4()}.txt')
-        testcase_assemble(generated_functions, testcases_saved_path)
+        testcases_saved_dir = os.path.join(hparams.testcase_dir, new_dir_name)
+        testcase_assemble(generated_functions, testcases_saved_dir)
         end_time = time.time()
         info_print(f"A total of {len(generated_functions)} testcases were generated, taking {int(end_time-start_time)} seconds.")
-        info_print(f"All generated functions by gpt2 are saved in: {samples_saved_path}")
-        info_print(f"All generated testcases are saved in: {testcases_saved_path}")
+        info_print(f"All generated functions by gpt2 are saved in: {samples_saved_dir}")
+        info_print(f"All generated testcases are saved in: {testcases_saved_dir}")
 
     else:
         raise ValueError('The "mode" parameter is invalid. Please enter it again!')
