@@ -257,7 +257,7 @@ After importing the docker image, run ``` . ~/.bashrc``` to setup the environmen
 
 Evaluate GPT-2 program synthesizer by running the following command:
 
-``` python /root/src/01_evaluata_generator.py --mode=finetune ```
+``` python /root/src/01_evaluate_generator.py --mode=finetune ```
 
 The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate ~2000 new JS test cases (where each test case contains one JS API). 
 
