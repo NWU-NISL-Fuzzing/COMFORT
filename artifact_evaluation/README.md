@@ -20,7 +20,7 @@ If a bug is marked as "Verified", it means the bug has been confirmed but not ye
 
 Futhermore, some COMPORT-generated test cases have exposed addtional bugs after our PLDI submission during our continous testing process. These newly exposed bugs are listed at [here](#newly-discovered).
 
-*This section corresponds to Tables 2 and 7 of the submitted paper*
+*This section corresponds to Tables 2 and Figure 7 of the submitted paper*
 
 | No.  | JS Engines     | Build Version           | Bug Report Link                                              | COMFORT Team Member (Contributor)                            | State                  | Remarks                                                      |
 | ---- | -------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ |
