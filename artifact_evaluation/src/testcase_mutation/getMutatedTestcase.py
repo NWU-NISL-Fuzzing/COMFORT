@@ -8,7 +8,7 @@ def mutate_testcase(file_path):
     :return: the mutated tastcases
     """
     mutation = execjs.compile("""
-        let {testcaseMutation} = require("./testcase_mutation/mutation")
+        let {testcaseMutation} = require("/root/src/testcase_mutation/mutation")
 
         function mutation(filePath){
             return testcaseMutation(filePath);
@@ -18,7 +18,7 @@ def mutate_testcase(file_path):
 
 def get_info(file_path):
     getter = execjs.compile("""
-        let {get_senmantic_info} = require("./testcase_mutation/mutation")
+        let {get_senmantic_info} = require("/root/src/testcase_mutation/mutation")
         function get(filePath){
             return get_senmantic_info(filePath);
         }
