@@ -1,22 +1,29 @@
-import gpt_2_simple as gpt2
+import os
 import time
 import datetime
 import shutil
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Mask prompts for TensorFlow
-
 from uuid import uuid4
-
 from generate_model.callable_processor import CallableProcessor
 from generate_model.conf import Hparams
 
 
-def transform(value):
-    return value == 1
-
-
 def info_print(str):
     print(f"\033[1;34;48m{str}\033[0m")
+
+
+# init params
+hparams = Hparams().parser.parse_args()
+if hparams.multi_gpu == 1:
+    info_print('GPU enabled.')
+    hparams.multi_gpu = True  # enable gpu
+else:
+    info_print('GPU disabled.')
+    hparams.multi_gpu = False
+    os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # disable gpu
+time.sleep(1)
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Mask prompts for TensorFlow
+import gpt_2_simple as gpt2
 
 
 def gpt2_finetune(hparams):
@@ -38,7 +45,7 @@ def gpt2_finetune(hparams):
                   model_name=hparams.gpt2_model_name,
                   checkpoint_dir=hparams.finetuned_model_dir,
                   run_name=hparams.finetuned_model_name,
-                  multi_gpu=transform(hparams.multi_gpu),
+                  multi_gpu=hparams.multi_gpu,
                   steps=hparams.steps)
 
 
@@ -56,19 +63,18 @@ def function_generate(hparams, saved_dir):
         info_print('The new model is selected.')
         generate_model_dir = hparams.finetuned_model_dir
         generate_model_name = hparams.finetuned_model_name
-        if not os.path.exists(os.path.join(generate_model_dir, generate_model_name)):
+        if not os.path.exists(os.path.join(os.path.join(generate_model_dir, generate_model_name), 'checkpoint')):
             raise FileNotFoundError("The specified model doesn't exist, please finetune first or set 'use_nisl_model=1'")
-    time.sleep(2)
+    time.sleep(1)
 
     info_print("Generating JS test program (approx 15 minutes with gpus when nsamples=512 - including model load time)...\n")
-    info_print(transform(hparams.multi_gpu))
     gpt2.load_gpt2(sess,
                    model_dir=generate_model_dir,
                    model_name=generate_model_name,
-                   multi_gpu=transform(hparams.multi_gpu))
+                   multi_gpu=hparams.multi_gpu)
 
     if hparams.nsamples % hparams.batch_size != 0:
-        raise ValueError('you have to make sure nsamples % batch_size == 0, please enter again!')
+        raise ValueError('You have to make sure nsamples % batch_size == 0, please enter again!')
     all_functions = []
     batches = int(hparams.nsamples / hparams.batch_size)
 
@@ -142,18 +148,9 @@ def testcase_assemble(functions, saved_dir):
 
 
 if __name__ == '__main__':
-    hparams = Hparams().parser.parse_args()
-
-    if transform(hparams.multi_gpu):
-        info_print('GPU enabled.')
-    else:
-        info_print('GPU disabled.')
-    time.sleep(3)
-
     if hparams.mode == 'finetune':
         gpt2_finetune(hparams)
     elif hparams.mode == 'generate':
-
         start_time = time.time()
 
         # new a directory name
