@@ -29,7 +29,7 @@ docker load -i 53.tar
 ```
 
 ## Configure the GPU running environment
-To use GPUs (if available) on the hosted computer, using the following steps to configure the GPU running environment:
+To use GPUs (if available) on the host computer, using the following steps to configure the GPU running environment:
 
 > - Copy [bash](../data/nvidia-container-runtime-script.sh) to the user directory with sudo permission . Then run the following command:
 > 
