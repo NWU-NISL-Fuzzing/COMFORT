@@ -295,7 +295,7 @@ To use the [trained model](#generator) to generate the test programs, run the fo
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
 
-The  ```--nsamples``` parameter controls how many test programs to generate. The value of ```--nsamples``` chould be a multiply of the bach size 16 (e.g., 16, 32, 64, etc.).
+The  ```--nsamples``` parameter controls how many test programs to generate. *The value of ```--nsamples``` should be a multiply of the bach size 16 (e.g., 16, 32, 64, etc.)*.
 
 #### Program generation using our pre-trained model
 We also provided the full-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
