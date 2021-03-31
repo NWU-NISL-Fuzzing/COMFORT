@@ -316,7 +316,7 @@ You can use the following command to compute the percentage of the generated tes
 
 You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
 
-Note that we randomly selected ~1000 test cases for each fuzzer. All the test cases (10,000) for each fuzzer used in our paper are stored in  ``` /root/data/codeCoverage/totalFiles```. You can also use all the test cases using the following command for longer (approximate ~12 hours):
+Note that we randomly selected ~1000 test cases for each fuzzer. All the test cases (10,000) for each fuzzer used in our paper are stored in  ``` /root/data/codeCoverage/totalFiles```. You can also use all the test cases using the following command for longer evaluation (12+ hours):
 
 ``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
@@ -331,7 +331,7 @@ Evaluate our ECMAScript-guided test data generator by running the following comm
 python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result
 ```
 
-Note that mutator works when the test case contains APIs. If the test case to be mutated does not contain any API, it will yield `This test case can not be mutated.`
+Note that the mutator works when the test case contains APIs. If the test case to be mutated does not contain any API, it will yield `This test case can not be mutated.` In that case, re-run the generator to generate a new test case. 
 
 
 ## Demonstration of Differential testing
