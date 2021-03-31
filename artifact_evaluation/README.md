@@ -322,6 +322,7 @@ This data corresponds to Figure 8. Note that since the test programs are randonm
 
 ## Demonstration of test program mutation
 (*approximate runtime: 5 minutes*)
+
 Evaluate our ECMAScript-guided test data generator by running the following command:
 
 ```
@@ -333,6 +334,7 @@ Note that mutator works when the test case contains APIs. If the test case to be
 
 ## Demonstration of Differential testing
 (*approximate runtime: 10 minutes*)
+
 Evaluate our differential fuzzer on a JS test bed by running the following command:
 
 ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
