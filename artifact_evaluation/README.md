@@ -254,6 +254,8 @@ To use GPUs (if available) on the hosted computer, using the following steps to 
 > - Test whether the GPU running exvironment is successfully configured:
 >  
 >   ```docker run --help | grep -i gpus  ```
+>   
+>     If yes, it will yield the GPU information.
 >  
 > - Run the following ommand to import the docker image:
 >  
@@ -286,11 +288,12 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 ### Evaluation of Our JS Program Generator 
 
 #### Program generation using the trained model
-To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference): 
+(*approximate runtime: 15 minutes for using GPU*)
+To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference, approximate 1 hour): 
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
 
-The  ```--nsamples``` parameter controls how many test programs to generate. The value of ```--nsamples``` need to be set to integer times (e.g., 16, 23, 64, etc.) of 16 which is the default value of the parameter ```batch size```.
+The  ```--nsamples``` parameter controls how many test programs to generate. The value of ```--nsamples``` need to be set to integer times (e.g., 16, 32, 64, etc.) of 16 which is the default value of the parameter ```batch_size```.
 
 #### Program generation using our pre-trained model
 We also provided the full-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
@@ -300,12 +303,20 @@ You can run the test on the GPU by using the following command (set ```--multi_g
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=1 --nsamples=512 ```
 
-All generated test cases are written to directory ```/root/data/generated_data/complete_samples/```. 
+All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
 #### Evaluation of the code coverage 
+(*approximate runtime: 15 minutes*)
+
 You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
-``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/mutation_result/ ```
+``` python /root/src/05_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
+
+You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
+
+Note that we randomly selected ~1000 test cases for each fuzzer. All the test cases (10,000) for each fuzzer used in our paper are stored in  ``` /root/data/codeCoverage/totalFiles```. You can using all the test cases using the following command for longer (approximate ~12 hours):
+
+``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
 This data corresponds to Figure 8. Note that since the test programs are randonmly chosen, the numbers may be slightly different from the ones reported in the paper. 
 
@@ -313,7 +324,12 @@ This data corresponds to Figure 8. Note that since the test programs are randonm
 (*approximate runtime: 5 minutes*)
 Evaluate our ECMAScript-guided test data generator by running the following command:
 
-```python /root/src/02_evaluate_mutator.py --input_path=./data/test.js --save_path=./data/mutation_result ```
+```
+python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result
+```
+
+Note that mutator works when the test case contains APIs. If the test case to be mutated does not contain any API, it will yield `This test case can not be mutated.`
+
 
 ## Demonstration of Differential testing
 (*approximate runtime: 10 minutes*)
