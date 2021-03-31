@@ -242,6 +242,23 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 ## Docker Image
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 
+## Configure GPU running environment
+To use GPUs (if available) on the hosted computer, using the following steps to configure the GPU running environment:
+
+> - Copy [bash](../data/nvidia-container-runtime-script.sh) to the user directory with sudo permission . Then run the following command:
+> 
+>     ```bash nvidia-container-runtime-script.sh```
+>      
+>      Note that this step may broke the existing docker environment.
+>  
+> - Test whether the GPU running exvironment is successfully configured:
+>  
+>   ```docker run --help | grep -i gpus  ```
+>  
+> - Run the following ommand to import the docker image:
+>  
+>   ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
+
 ## Artifact Contents
 The Docker image contains the following scripts for evaluation. 
 
@@ -253,15 +270,15 @@ The Docker image contains the following scripts for evaluation.
 After importing the docker image, make sure you run ``` source /root/.bash_profile``` to setup the environmental variables.
 
 ## Train the JS program generator <br id="generator">
-(*approximate runtime: 4 hours*)
+(*approximate runtime: 1 hours for using GPU*)
 
-Evaluate GPT-2 program synthesizer by running the following command:
+Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=0``` for using CPU for training):
 
-``` python /root/src/01_evaluate_generator.py --mode=finetune ```
+``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=1 ```
 
-The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus. It then uses the trained model to generate ~2000 new JS test cases (where each test case contains one JS API). 
+The program uses a small JS corpus of 2000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus.
 
-We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather tan 2,000) for longer (100 epochs rather than 5). *As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs*. 
+We have reduced the size of the corpus so that it takes around 3 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather than 2,000) for longer (100 epochs rather than 5). *As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs*. 
 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. 
 
@@ -273,7 +290,7 @@ To use the [trained model](#generator) to generate the test programs, run the fo
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
 
-The  ```--nsamples``` parameter controls how many test programs to generate. 
+The  ```--nsamples``` parameter controls how many test programs to generate. The value of ```--nsamples``` need to be set to integer times (e.g., 16, 23, 64, etc.) of 16 which is the default value of the parameter ```batch size```.
 
 #### Program generation using our pre-trained model
 We also provided the full-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
