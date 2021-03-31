@@ -117,7 +117,7 @@ Evaluate our ECMAScript-guided test data generator by running the following comm
 python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result
 ```
 
-Note that the mutator works only when the test case contains APIs. If the test case to be mutated does not contain any API, it will yield `This test case fails to be mutated as it does not contain any API.` When all test cases are mutated, you could see the number of test cases that are mutated successfully.
+**Note that our tool can only mutate test programs with a JS APIs. If the test program does not contain a JS API, it will yield an eror meassge `This test case fails to be mutated as it does not contain any API.`** When all test cases are mutated, you could see the number of test cases that are mutated successfully.
 
 
 ## Demonstration of Differential testing
