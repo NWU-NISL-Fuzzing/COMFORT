@@ -21,6 +21,13 @@ Note that we do not log IP addresses or other accessing information, but if you 
 ## Docker Image
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 
+After downloading the docker image, using the following commands to load the docker image on the hosted computer:
+```
+unzip 53.zip
+cd 53
+docker load -i 53.tar
+```
+
 ## Configure the GPU running environment
 To use GPUs (if available) on the hosted computer, using the following steps to configure the GPU running environment:
 
@@ -36,12 +43,12 @@ To use GPUs (if available) on the hosted computer, using the following steps to 
 >   
 >     You should be able to see the the GPU information if it is successfully configured.
 >  
-> - Finally, run the following command to import the docker image:
+> - Finally, run the following command to import the docker container:
 >  
 >   ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
 
 ## Setup
-After importing the docker image, make sure you run ``` source /root/.bash_profile``` to setup the environmental variables, before using any of the following scripts. 
+After importing the docker container, make sure you run ``` source /root/.bash_profile``` to setup the environmental variables, before using any of the following scripts. 
 
 
 ## Artifact Contents
