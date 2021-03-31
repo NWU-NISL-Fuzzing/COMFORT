@@ -251,7 +251,7 @@ To use GPUs (if available) on the hosted computer, using the following steps to 
 >      
 >      Note that this step may broke the existing docker environment.
 >  
-> - Test whether the GPU running exvironment is successfully configured:
+> - Test whether the GPU running environment is successfully configured:
 >  
 >   ```docker run --help | grep -i gpus  ```
 >   
