@@ -242,9 +242,6 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 ## Docker Image
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 
-## Setup
-After importing the docker image, make sure you run ``` source /root/.bash_profile``` to setup the environmental variables.
-
 ## Configure the GPU running environment
 To use GPUs (if available) on the hosted computer, using the following steps to configure the GPU running environment:
 
@@ -252,7 +249,7 @@ To use GPUs (if available) on the hosted computer, using the following steps to 
 > 
 >     ```bash nvidia-container-runtime-script.sh```
 >      
->      Note that this step may broke the existing docker environment.
+>      Note that this step may break the existing docker environment.
 >  
 > - Test whether the GPU running environment is successfully configured:
 >  
@@ -263,6 +260,10 @@ To use GPUs (if available) on the hosted computer, using the following steps to 
 > - Run the following ommand to import the docker image:
 >  
 >   ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
+
+## Setup
+After importing the docker image, make sure you run ``` source /root/.bash_profile``` to setup the environmental variables, before using any of the following scripts. 
+
 
 ## Artifact Contents
 The Docker image contains the following scripts for evaluation. 
