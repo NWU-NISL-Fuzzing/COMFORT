@@ -11,6 +11,8 @@ These newly exposed bugs are listed at [here](#newly-discovered).
 
 *This section corresponds to Tables 2 and Figure 7 of the submitted paper*
 
+### COMFORT-discovered Bugs
+
 | No.  | JS Engines     | Build Version           | Bug Report Link                                              | COMFORT Team Member (Contributor)                            | State                  | Remarks                                                      |
 | ---- | -------------- | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------- | ------------------------------------------------------------ |
 | 1    | V8             | 0e44fef                 | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=9460) | [Houyou Yao](https://github.com/YaoHouyou)                   | Fixed                  | **List 1** in the manuscript                                 |
@@ -172,31 +174,8 @@ These newly exposed bugs are listed at [here](#newly-discovered).
 | 157  | QuickJS        | quickjs-2019-10-27      | [qjs_report13](local-bugs/quickJS/No.88.pdf)                 | [Houyou Yao](https://github.com/YaoHouyou)                   | Rejected by developers |                                                              |
 | 158  | QuickJS        | quickjs-2019-09-18      | [qjs_report17](local-bugs/quickJS/No.92.pdf)                 | [Houyou Yao](https://github.com/YaoHouyou)                   | Rejected by developers |                                                              |
 
-## New COMPORT-exposed bugs after PLDI submission <span id = "newly-discovered">
 
-| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
-| --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
-|  1   |ChakraCore|  v1.11.12/24   | [chakra_report2](https://github.com/chakra-core/ChakraCore/issues/6550) | [Yang Tian](https://github.com/ty5491003)  | Fixed |Not first discovered|
-|  2   |ChakraCore| V1.11.24 | [chakra_report4](https://github.com/chakra-core/ChakraCore/issues/6567) |   [Wen Yi](https://github.com/YiWen-y)   |  Fixed ||
-| 3 |ChakraCore| V1.11.24 | [chakra_report7](https://github.com/chakra-core/ChakraCore/issues/6582) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
-| 4   | JavaScriptCore | d940b47       | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=220506) | [Wen Yi](https://github.com/YiWen-y)            | Fixed                  |Not first discovered|
-| 5   | JavaScriptCore | d940b47       | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=220507) | [Wen Yi](https://github.com/YiWen-y)            | Fixed                  |Not first discovered|
-| 6 |JavaScriptCore| d940b47 | [JSC_report5](https://bugs.webkit.org/show_bug.cgi?id=220842) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
-| 7 |JavaScriptCore| d940b47 | [JSC_report6](https://bugs.webkit.org/show_bug.cgi?id=221177) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
-| 8 |JavaScriptCore| d940b47 | [JSC_report7](https://bugs.webkit.org/show_bug.cgi?id=221176) | [Jinqiu Wang](https://github.com/qiudaoyuyesok) | Verified |Not first discovered|
-| 9 |ChakraCore| v1.11.12 | [chakra_report1](https://github.com/chakra-core/ChakraCore/issues/6546) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
-| 10 |ChakraCore| V1.11.24 | [chakra_report3](https://github.com/chakra-core/ChakraCore/issues/6553) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
-| 11 |ChakraCore| V1.11.24 | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
-| 12 |ChakraCore| V1.11.24 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
-| 13 |ChakraCore| V1.11.24 | [chakra_report9](https://github.com/chakra-core/ChakraCore/issues/6590) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
-| 14 |JavaScriptCore| d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=220142) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
-| 15 |V8| d891c59 | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=11294) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
-| 16 |V8| e39c701 | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=11359) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
-| 17 |JavaScriptCore| d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=220574) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
-| 18 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
-
-
-## TEST-262 accepted test cases <span id = "test-262">
+### TEST-262 accepted test cases <span id = "test-262">
 A list of COMFORT-generated test cases that are accepted by the [Test262 conformance test suite](https://github.com/tc39/test262).  Note that some of the Test-262 submissions
 were made by the relevant JS vendor after we reported a COMFORT-found bug. 
 
@@ -223,3 +202,29 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 19 | [qjs_report4](local-bugs/quickJS/No.25.pdf) | [issue_2814](https://github.com/tc39/test262/issues/2814)| [Houyou Yao](https://github.com/YaoHouyou) | |
 | 20 | [qjs_report5](local-bugs/quickJS/No.26.pdf) |[issue_2763](https://github.com/tc39/test262/issues/2763) | [Houyou Yao](https://github.com/YaoHouyou) | |
 | 21 | [qjs_report7](local-bugs/quickJS/No.28.pdf) |[issue_2687](https://github.com/tc39/test262/issues/2687) | [Wen Yi](https://github.com/YiWen-y)  | |
+
+
+
+## New COMPORT-exposed bugs after PLDI submission <span id = "newly-discovered">
+
+| No. | JS Engines | Build Version | Bug Report Link  | Contributor  | State    | Remarks |
+| --- | ---------- | --------------| -----------------| ------------ | -------- |-------- |
+|  1   |ChakraCore|  v1.11.12/24   | [chakra_report2](https://github.com/chakra-core/ChakraCore/issues/6550) | [Yang Tian](https://github.com/ty5491003)  | Fixed |Not first discovered|
+|  2   |ChakraCore| V1.11.24 | [chakra_report4](https://github.com/chakra-core/ChakraCore/issues/6567) |   [Wen Yi](https://github.com/YiWen-y)   |  Fixed ||
+| 3 |ChakraCore| V1.11.24 | [chakra_report7](https://github.com/chakra-core/ChakraCore/issues/6582) | [Wen Yi](https://github.com/YiWen-y) | Fixed ||
+| 4   | JavaScriptCore | d940b47       | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=220506) | [Wen Yi](https://github.com/YiWen-y)            | Fixed                  |Not first discovered|
+| 5   | JavaScriptCore | d940b47       | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=220507) | [Wen Yi](https://github.com/YiWen-y)            | Fixed                  |Not first discovered|
+| 6 |JavaScriptCore| d940b47 | [JSC_report5](https://bugs.webkit.org/show_bug.cgi?id=220842) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
+| 7 |JavaScriptCore| d940b47 | [JSC_report6](https://bugs.webkit.org/show_bug.cgi?id=221177) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
+| 8 |JavaScriptCore| d940b47 | [JSC_report7](https://bugs.webkit.org/show_bug.cgi?id=221176) | [Jinqiu Wang](https://github.com/qiudaoyuyesok) | Verified |Not first discovered|
+| 9 |ChakraCore| v1.11.12 | [chakra_report1](https://github.com/chakra-core/ChakraCore/issues/6546) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 10 |ChakraCore| V1.11.24 | [chakra_report3](https://github.com/chakra-core/ChakraCore/issues/6553) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 11 |ChakraCore| V1.11.24 | [chakra_report5](https://github.com/chakra-core/ChakraCore/issues/6569) | [Wen Yi](https://github.com/YiWen-y) | Verified |Not first discovered|
+| 12 |ChakraCore| V1.11.24 | [chakra_report6](https://github.com/microsoft/ChakraCore/issues/6503) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 13 |ChakraCore| V1.11.24 | [chakra_report9](https://github.com/chakra-core/ChakraCore/issues/6590) | [Wen Yi](https://github.com/YiWen-y) | Verified ||
+| 14 |JavaScriptCore| d940b47 | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=220142) | [Yang Tian](https://github.com/ty5491003) | Verified |Not first discovered|
+| 15 |V8| d891c59 | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=11294) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 16 |V8| e39c701 | [v8_report2](https://bugs.chromium.org/p/v8/issues/detail?id=11359) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 17 |JavaScriptCore| d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=220574) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
+| 18 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
+
