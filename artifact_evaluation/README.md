@@ -251,13 +251,13 @@ To use GPUs (if available) on the hosted computer, using the following steps to 
 >      
 >      Note that this step may break the existing docker environment.
 >  
-> - Test whether the GPU running environment is successfully configured:
+> - Next, test if the GPU running environment is successfully configured:
 >  
 >   ```docker run --help | grep -i gpus  ```
 >   
->     If yes, it will yield the GPU information.
+>     You should be able to see the the GPU information if it is successfully configured.
 >  
-> - Run the following ommand to import the docker image:
+> - Finally, run the following command to import the docker image:
 >  
 >   ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
 
