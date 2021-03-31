@@ -289,7 +289,8 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 ### Evaluation of Our JS Program Generator 
 
 #### Program generation using the trained model
-(*approximate runtime: 15 minutes for using GPU*)
+(*approximate runtime: 15 minutes for using a GPU*)
+
 To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference, approximate 1 hour): 
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
