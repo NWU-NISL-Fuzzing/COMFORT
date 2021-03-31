@@ -21,7 +21,7 @@ Note that we do not log IP addresses or other accessing information, but if you 
 ## Docker Image
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 
-After downloading the docker image, using the following commands to load the docker image on the hosted computer:
+After downloading the docker image, using the following commands to load the docker image on the host machine:
 ```
 unzip 53.zip
 cd 53
