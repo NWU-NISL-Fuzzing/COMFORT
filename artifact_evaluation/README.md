@@ -42,13 +42,18 @@ If you wish to use an NVIDIA GPU on the host machine to run the AE, please follo
 >   ```docker run --help | grep -i gpus  ```
 >   
 >     You should be able to see the the GPU information if it is successfully configured.
->  
-> - Finally, run the following command to import the docker container:
->  
->   ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
 
-## ★ Setup
-After importing the docker container, make sure you run ``` source /root/.bash_profile``` to setup the environmental variables, before using any of the following scripts. 
+Please note that this configuration is setup on **a host machine with Ubuntu OS**. The following scripts can executed on other Linux OS like Centos, Ubuntu, Detian, etc.
+
+## ★ Import Docker Image
+
+> - Run the following command to import the docker container:
+ 
+>  ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
+
+> - After importing the docker container, make sure you run the below command to setup the environmental variables, before using any of the following scripts:
+
+ >   ``` source /root/.bash_profile```
 
 
 ## ★ Artifact Contents
