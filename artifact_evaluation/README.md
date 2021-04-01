@@ -110,7 +110,7 @@ The  ```--nsamples``` parameter controls how many test programs to generate. **N
 
 ### ☆ Program generation using our pre-trained model (*Slightly quicker as no training is involved*)
 We provided the full-trained GPT-2 JS program generator used by our paper in our AE. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
- You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
+ You can use the following command to generate about 512 test programs (defined by nsamples). 
 
 * You can run the test on the CPU by using the following command (set ```--multi_gpu=1``` to run on the GPU)：
 
