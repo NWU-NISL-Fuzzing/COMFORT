@@ -11,7 +11,7 @@ A list of bugs discovered by COMFORT can be found at the [Bug List](#bug-list) s
 
 ## Bug List <span id = "bug-list">
 
-Here we provide a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
+**Main Results of the Paper**: The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
 
 # Getting Start Guide <br id = "jupyter" >
 For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through our techiques (Please see the ReadMe document on the AE submission website on how to access the Notebook). The notebook provides instructions on how to test our techniques on a small-scale dataset. 
