@@ -65,8 +65,9 @@ Note that if you use docker in **Windows**, you may have to use the image ID (sh
 > - **[!Important]Setup environmental parameters:** After importing the docker container and getting into **bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 >
 >     ``` source /root/.bash_profile``` 
+>  This script will also start the MYSQL database needed for program mutations. 
 
-**Running Docker Desktop in Windows:** Note that if you use docker Desktop in Windows, to get into bash, you need to first click into the CLI (command line interface) icon next to the running container - e.g., comfort, then run ```bash ``` under the CLI. Next, run ``` source /root/.bash_profile``` to setup the environmental parameters and the follow the instructions given below. 
+**Testing in Docker Desktop in Windows:** Note that if you use docker Desktop running in Windows, to get into bash, you need to first click into the CLI (command line interface) icon next to the running container - e.g., comfort in Docker Desktop; Next, run ```bash ``` under the CLI and then run ``` source /root/.bash_profile``` to setup the environmental parameters. You can then folow the AE instructions given below. 
 
 ## ★ Artifact Contents
 The Docker image contains the following scripts for evaluation. 
