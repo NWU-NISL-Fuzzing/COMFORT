@@ -1,0 +1,21 @@
+// Bug 770954.
+gczeal(4);
+var s = new Set();
+s.add(- -NaN);
+s.add(0);
+s.delete(-0);
+true;
+s.has(0);
+false;
+s.has(-0);
+false;
+var m = new Map();
+m.set(-0, 'x');
+m.has(0);
+true;
+m.get(0);
+'x';
+m.has(-0);
+true;
+m.delete(-0);
+true;

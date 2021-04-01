@@ -1,0 +1,6 @@
+var NISLFuzzingFunc = function(args) {
+            return this.action + this.path >= 0 ? this.room : this.latls && this.getName("scenal");
+        };
+var NISLParameter0 = ["KVBS5yt|XNmXn:\"5{;u+p\\`%BpEl~hLHgtp\"n1@RDEud$jAj<{s|yAbN8/7*0E [~GL<_JHvMoIV?hhA{Xp.;Nhw", "VeEf??>kZx1<'VgqW*0vd<%jMN!z<Q<+OL.#J8q.<z[@QKpH0PAuY^g(zc=)", "0?*8^3SG:=@", "X`D{[.'L4%bUaB`[s~+n2P^r@E;<K6/.{O0ygYh}6p$c[A6zS~JCiZ=i$NiqgKG&g3Sgljh.5!kjJa?venN&Lp'uxYyRvbRQwqcg'C7nyWy'xBt1c).=`kFEl*)", ";q3%5\\c%>^I5_Y=/J%pr.8\"&K}hVnjor%:|8o/y2/>Q", "%ojNmUcNm<q(,l1CNYe5Hw5*.E\"Os4.>FGPF 2;:%I--d7aR!]`JBZ]}M[aP4=^Q8Xc_K:!~V(;zh]p'aL>A<+5htf5 P5r/=]tT$Jgmy`rQ", "Bb*Kv;w:N!*M`f&%by+o]CIERy>xja|g{R9D*Ll^1QERV^giAT,^j8Q%G^v*z)>xdRRj[p[./$^?`", "z[|\"ma'_;qfS2\"X9g;/IzxbU26a<._443gZb@Xs:Qu@^L@Pe`{TKw6L{xD#Tn\\r6.iI.x&YB^>J>FF'`", "kmR\\F;_[pLb:fxEzvs.C}3;PvxN/C}z$&'$[{9g^Y*Q$[$_pr%09s[pulK-:R,:$!Z4Z+CKUVL6n\"_*dL:}", "{URp*t'Bt~19x3vizQ5XOI\\;<n9;ZUw+GM?>i'NtU7hz7+Z_cBBJh28p>WVU6+l5x/_+pJrx/sK .eFgO{$j.W4*k\\Z-=Y1#yNvLpR86|4nfBJ(n$G;GlW7,YCXr7", "1?e.uQ&Sc;d\\:skMav*.t+y/=)d%kgF(\"5o4R::5^(3k\\<z?DaJ`!\"Siu'=%", "D3pUB|GL^o&jDX/ L]w@f\"SwAR=mT7VT=(X?x2b_pudc[0Y&9^EYd4RV`&LD)!\"A4ZpQj&jh@e0<]c*FKg<;PgZ!)/_f&JmG^9]CDFE<C%~psy"];
+NISLFuzzingFunc(NISLParameter0);
+

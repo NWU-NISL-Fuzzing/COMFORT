@@ -1,0 +1,12 @@
+var v0 = '15.5.4.2-1';
+var v1 = 'ECMA_1';
+startTest();
+var v2 = 'String.prototype.toString';
+writeHeaderToLog(v0 + 10.1 + v2);
+new TestCase(v0, 'String.prototype.toString()', '', String.prototype.toString());
+new TestCase(v0, '(new String()).toString()', '', new String().toString());
+new TestCase(v0, '(new String("")).toString()', '', new String('').toString());
+new TestCase(v0, '(new String( String() )).toString()', '', new String(String()).toString());
+new TestCase(v0, '(new String( "h e l l o" )).toString()', 'h e l l o', new String('h e l l o').toString());
+new TestCase(v0, '(new String( 0 )).toString()', '0', new String(0).toString());
+test();

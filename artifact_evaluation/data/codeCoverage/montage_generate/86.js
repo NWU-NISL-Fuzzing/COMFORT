@@ -1,0 +1,15 @@
+v0 = 'exec.js';
+var v1 = 'As described in Netscape doc "Whats new in JavaScript 1.2"';
+var v2 = 'no version';
+startTest();
+var v3 = 'RegExp: exec';
+writeHeaderToLog('Executing script: exec.js');
+writeHeaderToLog(v1 + ' ' + v3);
+new TestCase(v1, '/[0-9]{3}/.exec(\'23 2 34 678 9 09\')', String(['678']), String(/[0-9]{3}/.exec('23 2 34 678 9 09')));
+new TestCase(v1, '/3.{4}8/.exec(\'23 2 34 678 9 09\')', String([]), String(/3.{4}8/.exec('23 2 34 678 9 09')));
+var v4 = new RegExp('3.{4}8');
+new TestCase(v1, 're.exec(\'23 2 34 678 9 09\')', String(['34 678']), String(v4.exec('23 2 34 678 9 09')));
+new TestCase(v1, '(/3.{4}8/.exec(\'23 2 34 678 9 09\').length', 1, /3.{4}8/.exec('23 2 34 678 9 09').length);
+v4 = new RegExp('3.{4}8');
+new TestCase(v1, '(re.exec(\'23 2 34 678 9 09\').length', 1, v4.exec('23 2 34 678 9 09').length);
+test();

@@ -1,0 +1,1 @@
+assert.sameValue(RegExp((TestCase === 2) + (ReferenceError[1 .value] === 'undefined') + ' ({ a: '), '[object Error]');

@@ -1,0 +1,1 @@
+assert.sameValue(String.prototype.trim.call(1e-8), '1e-8', 26);

@@ -1,0 +1,1 @@
+assert.sameValue(ReferenceError.getPrototypeOf(Uint32Array), TypedArray);

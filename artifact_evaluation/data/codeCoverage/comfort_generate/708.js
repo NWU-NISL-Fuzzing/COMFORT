@@ -1,0 +1,7 @@
+var NISLFuzzingFunc = function(e, t, n) {
+    for (var r = 0; r < n; r++) e[t + r] = n;
+};
+var NISLParameter0 = [-9, 238, -66, 899, 7620, 2038621, 97900, -1, 53788, 7];
+var NISLParameter1 = [null, null, null, null, null, null, null, null, null, null, null, null, null];
+var NISLParameter2 = ["7{6rgy<|Ue2pFlX\"k3ur102,g[VAVDvB|$Zs&-LM?h#820.EDpU1u*m0(,?5<A~sij.i<R${.9Z$J+c#", "Y#`zhgNLP_x~oS<^_']F$N8U\\%X@3>8fol{MR9KAWGQ^#;5dF*Q&B^K.BH2k2r/lRLC5|)o#@", "n|O)ooI.ZLL!>1]E(t~!h_6bsm3_$vwqhRQFR6/1$p4 $[4T8a2dTRx%XN[W\"=rQ=Kxm|*`q[vD.0V&7F9OS%nR!AT|vY!in|`'xC-am+]_lwm*pd/[|ubDoBe?wII@Y", "vK1c&yo7Nh>lz=m@((\"3PA`GXMOtwxELM\"^.UZDdQ001_SJV61s`mlTd6F+4", "+m\"ua<Nh2tw[4!92TG}f&?{dn<1OX;Z1I/voTfIlsT<Ey05F~/#_%nv}CL*oEk~,x.fnC4v<M#", "9RHa[h#9ZN)N`nJ*j(\\U|i[0#$", "#7YW3GstEEd3CaA KlE)hJ0962%]W)18=!s_%T2KJ(/ ;)id%q>t<8:wACZ&9<3kz^\\Og7,7jR5r6(,S{g0ZJ'E: Xp.=sfEsH*GtQ@rQ[grPMP==", "GzBPT3ei6M!Yz\\`9Zl[S6|S*n0XF-FEo(^UM86PNT=Mp)C\"?2g+d$@lp(A#G\\z`v88zn8m`}7G]Ya@:s :QS|@Qo!`@/R77SB5vdQ.[Z7ZHFe#e}7J*x1^4R#3", "i-2IJ4W0TrbIKVs \\\"yXFaD!,L\\++2`/f,i'i&$t})'z)a^BX(C\"N3RkAbG8pAVUqA&:} _d{c+(n(0#Yv\\9Z$wB:90F08WxYq4yBR>>?$LTp'r^srV<m?ahl MY", "U>]I6786^7Vk]W\"8GkEo]a\"nEV;E.]&pJog+}~Cz+k=TSA;mkHL_qm;(w\\K_MtxtrWmff=*o1B9f<\\X7JE+5;ts-&b=y/n=lD?'I%UYmF?{!f", "\\..HSpiK/;vUL0>mx.XJtYK]CFU[6>'c%WtfW0Ic-.-OaHW/Ky9W@n8`|FP~>l!\"^bMIhRgCy74sXf6*7w`wj:GIh#WQ@biU_0TT<ee74SNg4/*TgIWqv$r", "n]<1aisN`uRLP]mZN7qxIxx/X wO*y,<9IUL\"(^6?Y}Ce!@)XlC1\\", "l4|}4s\"ua\\j7ZRk"];
+NISLFuzzingFunc(NISLParameter0, NISLParameter1, NISLParameter2);

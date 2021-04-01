@@ -1,0 +1,10 @@
+v0 = '15.6.4-1.js';
+var v1 = 'ECMA_1';
+startTest();
+var v2 = '15.6.4-1';
+writeHeaderToLog(v2 + ' Properties of the Boolean Prototype Object');
+new TestCase(v2, 'typeof Boolean.prototype == typeof( new Boolean )', true, typeof Boolean.prototype == typeof new Boolean());
+new TestCase(v2, 'typeof( Boolean.prototype )', 'object', typeof Boolean.prototype);
+new TestCase(v2, 'Boolean.prototype.toString = Object.prototype.toString; Boolean.prototype.toString()', '[object Boolean]', eval('Boolean.prototype.toString = Object.prototype.toString; Boolean.prototype.toString()'));
+new TestCase(v2, 'Boolean.prototype.valueOf()', false, __defineSetter__[5]('pass'));
+test();

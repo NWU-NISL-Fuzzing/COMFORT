@@ -1,0 +1,1 @@
+isFinite ^= new Math(encodeURIComponent - Int32Array + Array[WScript[Uint8ClampedArray[Int8Array]]][Uint8ClampedArray[20 .v29]](Float64Array[(parseInt == true) + 0](escape(Uint8ClampedArray, RegExp)).undefined + 16).substr('', 30));

@@ -1,0 +1,6 @@
+var NISLFuzzingFunc = function(renderer) {
+            return reerable.head();
+        };
+var NISLParameter0 = [",}Ni&UN|HuFz]sr{qIa|G6,IJiTzW|y[<G'=MXoXe&~@}=SAY'Xv-c=A'lkC0<M", "CuOFn9^]@NF3lfO@O9+m2>QO `AE8y3.ySTkWOt+$|LH3m1('L", "'eMNSIKG?,w!jqpCu`l<\\l[_;FCdXB?#ZXoV 'N8Z1`R6C/Dg_~oaiGc'/yIjEBNs0GzR,\"*JhE/_ticfF", "ns2H7DOxRj;HYGS=T5KzG!~lj?Y!r[PW.\"+I;L1=r@d`<7Lsh,Du|60z:1z ^p+8Qq17Ukx|QCw.<spmRlmXB1`:S(d@P`&S5QA}$$", "t]xG@:@-7x$m7i3qh(vs]*G#E~sC~!=+5W`7!lv#lA@Zw|Tjm-_q#A(a)D#a\\aGB2p&kE`1c/!6A~6ib4(X3p'#3z)NSwfd-j?\\T& ot*1BYgc^ gUO", "3aft\"J H#xF'e?Ni(I2\\,$X\\HQtlMlqhc-izOnV>Q+>WOVKc5C`^LGJ8X%r_AHqXm@y>tE_>d%;8KeyF[)smQd Na4u,WZtq0_4.L_Z[l1L&+]&98/r1CeU9U6", "H:g>*1M6@CB-3f4#C?F0o|s4TVjPNp17gppAS+=u$ IBSZe8Fc9Vqb&<{Uy>;Q", "677GV5+.hVJL<)qTFJ^q_#Bq0aJ*VH%zL\"sx|K!qu(C1;CsV\\N2Z}[{c", "^I?rJ^tZHz-zwrd9uH]\\jWMr~jWZveZ}*x9?G6_)5ndk[iU", "T\"t1EAT^YcBjwPJU", "t}X]'x+L4(Ox;[$[<x8{L$N uI_ZAnS(QrEs%!n00q ?_vRG\"]\"LZrK@Oi[e5v7?wT/,rTT", "QUj`Z?%kb&m-Is'+J(fo6(OBu^C4'*0PGwHEbf}:t+.SwV[(/Upqup;<q[Ks7|SErqIsh]@ ", "`Q:i^jC+&)MtH95F\\,EIi7rT:X+10a_f}<]zg%s2q", ")=6t6'iz]*=:oP;E%f+Zy)oG8TlLzVw~m]@i+]}VWg.6H2/_}yE0oM&tk0R5A#`T#\"r\\E'W|Y-w{!TN~r-j;d>r'Fa5*0C)^tK}$TPD,0C^?)-y]{+|hU"];
+NISLFuzzingFunc(NISLParameter0);
+

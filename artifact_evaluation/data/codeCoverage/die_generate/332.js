@@ -1,0 +1,2 @@
+x = "\uDADA\uDADA";
+gc();

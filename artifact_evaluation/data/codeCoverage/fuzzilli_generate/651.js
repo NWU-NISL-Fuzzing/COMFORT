@@ -1,0 +1,51 @@
+function main() {
+const v0 = 0;
+// v0 = .integer
+const v1 = 5;
+// v1 = .integer
+const v2 = 1;
+// v2 = .integer
+const v4 = [13.37,13.37];
+// v4 = .object(ofGroup: Array, withProperties: ["constructor", "__proto__", "length"], withMethods: ["toString", "indexOf", "unshift", "shift", "concat", "sort", "reduceRight", "flatMap", "forEach", "entries", "every", "values", "push", "find", "fill", "toLocaleString", "join", "filter", "pop", "reverse", "some", "reduce", "splice", "includes", "lastIndexOf", "findIndex", "flat", "map", "slice", "keys", "copyWithin"])
+let v5 = v4;
+const v9 = new Int32Array("bigint");
+// v9 = .object(ofGroup: Int32Array, withProperties: ["__proto__", "constructor", "byteOffset", "byteLength", "length", "buffer"], withMethods: ["fill", "every", "set", "reduceRight", "sort", "join", "copyWithin", "find", "lastIndexOf", "values", "subarray", "reverse", "filter", "slice", "some", "indexOf", "includes", "findIndex", "keys", "forEach", "map", "reduce", "entries"])
+const v10 = v9.subarray(15224,15224);
+// v10 = .object(ofGroup: Int32Array, withProperties: ["buffer", "byteLength", "__proto__", "byteOffset", "length", "constructor"], withMethods: ["forEach", "reduceRight", "subarray", "findIndex", "slice", "entries", "some", "filter", "copyWithin", "every", "lastIndexOf", "keys", "reverse", "fill", "values", "includes", "indexOf", "join", "find", "set", "sort", "reduce", "map"])
+const v11 = v9[-2147483648];
+// v11 = .unknown
+const v12 = 1337;
+// v12 = .integer
+const v13 = 0;
+// v13 = .integer
+const v14 = 1;
+// v14 = .integer
+const v15 = 13.37;
+// v15 = .float
+const v16 = -65536;
+// v16 = .integer
+const v17 = 1024;
+// v17 = .integer
+const v19 = 10;
+// v19 = .integer
+let v20 = 0;
+const v21 = v20 + 1;
+// v21 = .primitive
+v20 = v21;
+const v23 = typeof MIN_VALUE;
+// v23 = .string
+const v24 = 0;
+// v24 = .integer
+const v25 = 9;
+// v25 = .integer
+const v26 = 1;
+// v26 = .integer
+const v28 = 7;
+// v28 = .integer
+let v29 = 0;
+const v30 = v29 + 1;
+// v30 = .primitive
+v29 = v30;
+}
+main();
+

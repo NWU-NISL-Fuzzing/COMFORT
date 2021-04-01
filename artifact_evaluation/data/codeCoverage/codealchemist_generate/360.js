@@ -1,0 +1,28 @@
+var v0 = (function (){
+this.addSlider('amount', 'Amount', 0, 1, 1, 0.01);
+});
+var v1 = (function (v1){
+var v2 = v1('https://management.azure.com:443').get('/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/providers/Microsoft.Compute/locations/southeastasia/publishers/MicrosoftSQLServer/artifacttypes/vmimage/offers/SQL2014SP1-WS2012R2-BYOL/skus/Standard/versions/12.0.444999?api-version=2017-03-30').reply(200, "{\r\n  \"properties\": {\r\n    \"osDiskImage\": {\r\n      \"operatingSystem\": \"Windows\"\r\n    },\r\n    \"dataDiskImages\": []\r\n  },\r\n  \"location\": \"southeastasia\",\r\n  \"name\": \"12.0.444999\",\r\n  \"id\": \"/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftSQLServer/ArtifactTypes/VMImage/Offers/SQL2014SP1-WS2012R2-BYOL/Skus/Standard/Versions/12.0.444999\"\r\n}", ({'cache-control' : 'no-cache', pragma : 'no-cache', 'content-length' : '413', 'content-type' : 'application/json; charset=utf-8', expires : '-1', 'strict-transport-security' : 'max-age=31536000; includeSubDomains', 'x-ms-served-by' : 'cba8a3bb-c820-4495-877e-baeb49ab5704_131330836479443416', 'x-ms-request-id' : '5c5ff606-875f-4779-9284-e12929a4b785', server : 'Microsoft-HTTPAPI/2.0', 'x-ms-ratelimit-remaining-subscription-reads' : '14881', 'x-ms-correlation-request-id' : '244d497e-5ac9-4f69-8fa9-e10e2b4495d8', 'x-ms-routing-request-id' : 'WESTUS:20170602T151923Z:244d497e-5ac9-4f69-8fa9-e10e2b4495d8', date : 'Fri, 02 Jun 2017 15:19:23 GMT', connection : 'close'}));
+return v2;
+});
+var v2 = (function (){
+return ({'position' : ({"x" : - 35, "y" : - 3, "w" : 70, "h" : 85}), 'thumb' : "iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM\/rhtAAAEgElEQVR42u2Y21KaVxTHeQMfIY\/g\nI\/AIuepNpx2bZMZWmwQ1nlCRgyKEgygqRxEQRAURQURRkUNEoYpEjUZjKJ22mV7yCP\/utQ3WmzLt\nZFq5YM+s2Wt\/7L3Wb\/3X\/rj4BIIvHAqJpFnc0yPs7HwhlEskQvKfPPmW27NnXz8SPOSQDw+2OGzW\nstU0jfvmdTu5versSD59+k3zgwEGFn1Fh80CjUoJrXoM5mkj7BYTjAY99Bo1XLN2eOddhgcDdM\/N\ntbgd9rJOo8KoXIaxETk309QkJINiTBrGiw6LpflB23xzeSb0eVzQa19LN0IWEVk+mwmplAoI6mGU\nSqWmgzepypJnHLGgAnazurwRCaGrQ+QU1Ms4yeebT\/btFaOuCx2iF2hvay22tn7VJKincX1sbUms\nj1Ymtc8rdQdXHamYKumYESUF9Tquji3JBUd3fQMGveIGYAOwAdgAbADWLWDBbFh09lTqFvC6YJX6\nHN1oADYAG4ANwP8Q0GXuqF\/Ao7RBaja01ydg6djatBGQOo3a7\/9\/wL2gonlvVS68bxFfjzC7qZQe\nxlXcCmm9NB5SwGRoA63ZnscLlpeiLf+QKBOh\/WKhbbzt9jyL90VAieDoo91Vecv2iiQUWx5EIiRF\nNqZkswzxgASb7NlOcBh7azL+jCwZUYMpCK\/bhqB7AOu+fqQiCrZHDhaHn6N11CfGpn+IP4\/7h0Lx\nleEWyvfPlGJV767KkpR8d1WKTHQE6fURDkNGiapAm8tDfI4tDWLZ0QO3XQv3rBpmo4z5DHZpgENR\nHAIKe\/sQ9vTxNVMV0UUxVt09WJ7thN\/RxfaLk5S\/JiAPyiBILVJne+UWLBmW34GRUQL6jfa7Z55D\nr2iBStaOCU0vN+XwD5hQfoeNxb8gqTiKSWfofGi+l6ks5gVGFvoR+9yVHb\/6779KFFITvH0UgAIT\nTNjbj8DcKw6UiY7yZBSompjgtwJDd62\/rzz51EpSj9QKuro5EMWnmaDoLOWJsmIItPantMIs3h2a\ncZKe5IfWPL0s0AC2GRAFJIA0u0eUkIKTIul1BQfZZ6qT8gRMalUBqCOkGsUhRek5xaP7eFukHIWk\nAbltDd5mjLUBL3PTKJ+68em9DwRbPnXg9M00zrImDh32ilmlkjsVyG5Vun15aE1tI0BSnF6unc\/w\nB3EN8jt6nB+YcLY\/xQBH8OHYxvKY2dqIXSZIIamtDRgPDBcvczP49Z0LF4eTuMobcZGz4NPVAn4u\n2nng0okVRwkdfr\/0cp+ssKdD6a0T7\/NmUJE3BTsyrMW\/nHvwx\/UiA9Pgt4t5HoOAKO7Z\/jg+HM3g\n4mCCqafi14K9LMWagDv+vqZEWCbNbqoqB1tjON83MOWMuP5pCqcZPYeh4FRp+XSW+2S57dccjHya\n32XZudQ4Pp7Y7vZTjOp+gqK5mNKxf4Au2CfaKs7pH\/\/dt+zcjvpxJjZqCC+Ik1RdwNnN2sXuDrtz\nRwkNzrOTdwnTUSVuji3crxZBoNdHJu5T64tpHVdpjd1fj\/kla6m0yHzDkr2z5l\/Ln2ZshWodU3bD\nAAAAAElFTkSuQmCC"});
+});
+var v3 = (function (v1){
+(v1.ig) = (v1.ig) || (({}));
+(v1.ig.VideoPlayer) = (v1.ig.VideoPlayer) || (({}));
+(v1.ig.locale) = (v1.ig.locale) || (({}));
+(v1.ig.locale.bg) = (v1.ig.locale.bg) || (({}));
+(v1.ig.locale.bg.VideoPlayer) = ({liveStream : "Видео на живо", live : "На живо", paused : "Паузирано", playing : "В прогрес", play : 'Пусни', volume : "Сила на звука", unsupportedVideoSource : "Подадените видео източници не съдържат формат поддържан от вашия браузър.", missingVideoSource : "Липсват видео източници.", progressLabelLongFormat : "$currentTime$ / $duration$", progressLabelShortFormat : "$currentTime$", enterFullscreen : "Цял екран", exitFullscreen : "Излез от цял екран", skipTo : "Отиди до", unsupportedBrowser : "Вашият браузър не поддържа HTML5 видео. <br/>Моля обновете до някоя от следните версии:", currentBrowser : "Вашият браузър: {0}", ie9 : "Microsoft Internet Explorer V 9+", chrome8 : "Google Chrome V 8+", firefox36 : "Mozilla Firefox V 3.6+", safari5 : "Apple Safari V 5+", opera11 : "Opera V 11+", ieDownload : "http://www.microsoft.com/windows/internet-explorer/default.aspx", operaDownload : "http://www.opera.com/download/", chromeDownload : "http://www.google.com/chrome", firefoxDownload : "http://www.mozilla.com/", safariDownload : "http://www.apple.com/safari/download/", buffering : 'Буфериране...', adMessage : 'Реклама: Видеото ще продължи след $duration$ секунди.', adMessageLong : 'Реклама: Видеото ще продължи след $duration$.', adMessageNoDuration : 'Реклама: Видеото ще продължи след рекламите.', adNewWindowTip : 'Реклама: Натиснете тук, за да отворите съдържанието в нов прозорец.', nonDivException : 'Infragistics HTML5 Video Player може да бъде инстанциран само на DIV елемент.', relatedVideos : 'Подобни видея', replayButton : 'Започни отначало', replayTooltip : 'Натиснете тук, за да пуснете видеото отначало.', noCommercials : 'Браузър контролите не поддържат реклами.'});
+(v1.ig.VideoPlayer.locale) = (v1.ig.VideoPlayer.locale) || (v1.ig.locale.bg.VideoPlayer);
+return v1.ig.locale.bg.VideoPlayer;
+});
+v3(v1, v0);
+var v4 = (v2.prototype) = new v3();
+(v4.property119) = 119;
+if((v0) && (v0.meta)){
+(v5) = v4.private$.history.get(v0.meta.id);
+if(v5){
+v5.reply(v0.err, v0.out, v0.meta);
+}
+}
