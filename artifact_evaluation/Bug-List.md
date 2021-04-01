@@ -5,7 +5,7 @@ by other users and are marked as "Not first discovered". A small number of bug r
 in ECMA-262 or not supported by the testing compiler. There are also bug reports waiting to be confirmed by the vendor (marked as "Under discussion"). 
 
 Futhermore, some COMPORT-generated test cases have exposed addtional bugs after our PLDI submission during our continous testing process. 
-These newly exposed bugs are listed at [here](#newly-discovered).
+These newly exposed bugs are listed at [here](#newly-discovered). We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262). 
 
 ## Main Results 
 
