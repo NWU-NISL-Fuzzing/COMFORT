@@ -89,7 +89,7 @@ We also provided the full-trained GPT-2 JS program generator used by our paper. 
 
 * You can run the test on the GPU by using the following command (set ```--multi_gpu=0``` to run on the CPU)：
 
-``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=1 --nsamples=512 ```
+   ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=1 --nsamples=512 ```
 
 All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
@@ -98,13 +98,13 @@ All generated test cases are written to directory ```/root/data/generated_data/c
 
 * You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
-``` python /root/src/05_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
+   ``` python /root/src/05_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
 You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
 
 * Note that we randomly selected ~1000 test cases for each fuzzer. All the test cases (10,000) for each fuzzer used in our paper are stored in  ``` /root/data/codeCoverage/totalFiles```. You can also use all the test cases using the following command for longer evaluation (12+ hours):
 
-``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
+   ``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
 This data corresponds to Figure 8. Note that since the test programs are randonmly chosen, the numbers may be slightly different from the ones reported in the paper. 
 
@@ -113,9 +113,7 @@ This data corresponds to Figure 8. Note that since the test programs are randonm
 
 * Evaluate our ECMAScript-guided test data generator by running the following command:
 
-```
-python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result
-```
+   ```python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result```
 
 **Note that our tool can only mutate test programs with a JS APIs. If the test program does not contain a JS API, it will yield an eror meassge `This test case fails to be mutated as it does not contain any API.`** When all test cases are mutated, you could see the number of test cases that are mutated successfully.
 
@@ -125,4 +123,4 @@ python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/c
 
 * Evaluate our differential fuzzer on a JS test bed by running the following command:
 
-```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
+   ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
