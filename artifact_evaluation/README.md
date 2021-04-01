@@ -7,7 +7,7 @@ It contains reduced-size data sets for evaluating our GPT-2 based test program g
 # Overview of Results
 As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have indentified 158 unique bugs, of which 129 have been verified, and 115 have been fixed by the developers. Furthermore, 21 of the COMFORT generated test cases were added into Test-262, the official Javascript conformance test suite.
 
-A list of bugs discovered by COMFORT can be found at the [Bug List](#bug-list) section. We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262). In addition, we also list the [newly discovered bugs](#newly-discovered) found by COMFORT after the PLDI submission.
+A list of bugs discovered by COMFORT can be found at the [Bug List](./Bug-List.md) section. 
 
 
 
