@@ -48,11 +48,11 @@ Please note that this configuration is setup on **a host machine with Ubuntu OS*
 ## ★ Import Docker Image
 
 > - Run the following command to import the docker container:
- 
+> 
 >     ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
-
+>
 > - After importing the docker container, make sure you run the below command to setup the environmental variables, before using any of the following scripts:
-
+>
 >     ``` source /root/.bash_profile```
 
 
