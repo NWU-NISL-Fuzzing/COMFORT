@@ -60,7 +60,7 @@ Please note that the above steps for configuring the GPU environment were only t
 >     
 >     ```docker run -itd --name comfort pldi2021:comfort /bin/bash  ```
 >     
-Note that if you use docker in **Windows**, you may have to use the image ID (sha256:xxxx) given after running  ```docker load -i 53.tar``` to import the docker image. For example, ```docker run -itd --name comfort sha256:[Follow by the sha-hash code given by docker] /bin/bash  ```
+Note that if you get an eror message of ```Unable to find image 'pldi2021:comfort' locally``` (known problem for loading our docker image in Windows), you can use the image ID (sha256:xxxx) given after running  ```docker load -i 53.tar``` to import the docker image. For example, ```docker run -itd --name comfort  sha256:73a15dc0bf7b29bc980845bf4514518176837bb964101b1f82a4fa98a956b1e9 /bin/bash  ``` (**Replace the sha256 checksum with the one shown on the host mache**).
 >
 > - **[!Important]Setup environmental parameters:** After importing the docker container and getting into **bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 >
