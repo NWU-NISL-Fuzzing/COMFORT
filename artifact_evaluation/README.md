@@ -127,7 +127,7 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
    ```python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result```
 
-**Note that our tool can only mutate test programs with a JS APIs. If the test program does not contain a JS API, it will yield an eror meassge `This test case fails to be mutated as it does not contain any API.`** When all test cases are mutated, you could see the number of test cases that are mutated successfully.
+**Note that our tool can only mutate test programs with a JS API. If the test program does not contain a JS API, it will yield an eror meassge `This test case fails to be mutated as it does not contain any API.`** When all test cases are processed, you could see the number of test cases that are mutated successfully.
 
 
 ## ★ Demonstration of Differential Testing
