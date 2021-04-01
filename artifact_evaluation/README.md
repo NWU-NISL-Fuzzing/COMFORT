@@ -99,6 +99,7 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 
 ### ☆ Program generation using the trained model (*optional*)
 (*approximate runtime: 20 minutes for using a GPU, ~4 hours when using a CPU*)
+
 **!Important:** To run this script, make sure you have trained a model using ```01_evaluate_generator.py``` dsescribed in the previous step.
 Alternatively, you can use a pre-trained model (see the next subsection).
 * To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=1``` for using a GPU for inference): 
