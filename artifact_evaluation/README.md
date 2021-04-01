@@ -61,7 +61,7 @@ The Docker image contains the following scripts for evaluation.
 ## Train the JS program generator <br id="generator">
 (*approximate runtime: ~1 hour for using a GPU*)
 
-Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=0``` for using CPU for training):
+* Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=0``` for using CPU for training):
 
 ``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=1 ```
 
@@ -77,17 +77,17 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 #### Program generation using the trained model
 (*approximate runtime: 15 minutes for using a GPU*)
 
-To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference, approximate 1 hour): 
+* To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference, approximate 1 hour): 
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
 
 The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
 
-#### Program generation using our pre-trained model
+#### Program generation using our pre-trained model (*Optional*)
 We also provided the full-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
  You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
 
-You can run the test on the GPU by using the following command (set ```--multi_gpu=0``` to run on the CPU)：
+* You can run the test on the GPU by using the following command (set ```--multi_gpu=0``` to run on the CPU)：
 
 ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=1 --nsamples=512 ```
 
@@ -96,13 +96,13 @@ All generated test cases are written to directory ```/root/data/generated_data/c
 #### Evaluation of the code coverage 
 (*approximate runtime: 15 minutes*)
 
-You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
+* You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
 ``` python /root/src/05_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
 You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
 
-Note that we randomly selected ~1000 test cases for each fuzzer. All the test cases (10,000) for each fuzzer used in our paper are stored in  ``` /root/data/codeCoverage/totalFiles```. You can also use all the test cases using the following command for longer evaluation (12+ hours):
+* Note that we randomly selected ~1000 test cases for each fuzzer. All the test cases (10,000) for each fuzzer used in our paper are stored in  ``` /root/data/codeCoverage/totalFiles```. You can also use all the test cases using the following command for longer evaluation (12+ hours):
 
 ``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
@@ -111,7 +111,7 @@ This data corresponds to Figure 8. Note that since the test programs are randonm
 ## Demonstration of test program mutation
 (*approximate runtime: 5 minutes*)
 
-Evaluate our ECMAScript-guided test data generator by running the following command:
+* Evaluate our ECMAScript-guided test data generator by running the following command:
 
 ```
 python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result
@@ -123,6 +123,6 @@ python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/c
 ## Demonstration of Differential testing
 (*approximate runtime: 10 minutes*)
 
-Evaluate our differential fuzzer on a JS test bed by running the following command:
+* Evaluate our differential fuzzer on a JS test bed by running the following command:
 
 ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
