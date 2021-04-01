@@ -12,7 +12,7 @@ A list of bugs discovered by COMFORT can be found at the [Bug List](#bug-list) s
 Here we provide a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
 
 # Getting Start Guide
-For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through our techiques (Please see the ReadMe document on the AE submission website on how to access the Notebook). The notebook provides instructions on how to configure and test our techniques on a small-scale dataset. 
+For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through our techiques (Please see the ReadMe document on the AE submission website on how to access the Notebook). The notebook provides instructions on how to test our techniques on a small-scale dataset. 
 
 Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could use a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
 
