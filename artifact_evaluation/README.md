@@ -97,7 +97,7 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 ## ★ Evaluation of Our JS Program Generator 
 
 ### ☆ Program generation using the trained model (*optional*)
-(*approximate runtime: 20 minutes for using a GPU, ~1 hour when using a CPU*)
+(*approximate runtime: 20 minutes for using a GPU, ~2 hours when using a CPU*)
 
 * To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=1``` for using a GPU for inference): 
 
