@@ -106,7 +106,7 @@ You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, 
 
    ``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
-This data corresponds to Figure 8. Note that since the test programs are randonmly chosen, the numbers may be slightly different from the ones reported in the paper. 
+This data corresponds to Figure 9 in our paper. Note that since the test programs are randonmly chosen, the numbers may be slightly different from the ones reported in the paper. 
 
 ## ★ Demonstration of test program mutation
 (*approximate runtime: 5 minutes*)
