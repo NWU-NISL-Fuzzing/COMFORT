@@ -63,7 +63,7 @@ The Docker image contains the following scripts for evaluation.
 
 * Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=0``` for using CPU for training):
 
-``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=1 ```
+> ``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=1 ```
 
 The program uses a small JS corpus of 2,000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus.
 
