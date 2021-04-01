@@ -64,7 +64,8 @@ Please note that the above steps for configuring the GPU environment were only t
 >     
 **Known issue in Windows:** Note that if you get an eror message of ```Unable to find image 'pldi2021:comfort' locally``` (a known problem for loading the docker image in Windows), you can use the image ID (sha256:xxxxxxxx...xxx) given after running  ```docker load -i 53.tar``` to run the docker container. For example, ```docker run -itd --name comfort  sha256:73a15dc0bf7b29bc980845bf4514518176837bb964101b1f82a4fa98a956b1e9 /bin/bash  ``` (**Make sure you replace the sha256 checksum with the one shown on the host manchine**).
 >
-> - **[!Important]Setup environmental parameters:** After importing the docker container and getting into **bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
+**[!IMPORTANT]**
+> - **Setup environmental parameters:** After importing the docker container and getting into **bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 >
 >     ``` source /root/.bash_profile``` 
 >  
