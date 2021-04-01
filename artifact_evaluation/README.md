@@ -9,9 +9,7 @@ As stated in Section 5 of the PLDI submission, we have started experimenting wit
 
 A list of bugs discovered by COMFORT can be found at the [Bug List](#bug-list) section. We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262). In addition, we also list the [newly discovered bugs](#newly-discovered) found by COMFORT after the PLDI submission.
 
-## Bug List <span id = "bug-list">
 
-**Main Results of the Paper**: The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
 
 # Getting Start Guide <br id = "jupyter" >
 For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through our techiques (Please see the ReadMe document on the AE submission website on how to access the Notebook). The notebook provides instructions on how to test our techniques on a small-scale dataset. 
@@ -19,6 +17,10 @@ For convenience, we have provided a pre-configured live server with a Python Jup
 Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could use a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
 
 # Step-by-Step Instructions <br id = "docker">
+
+## Main Results <span id = "bug-list">
+
+The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
 
 ## ★ Docker Image
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
