@@ -18,7 +18,7 @@ Note that we do not log IP addresses or other accessing information, but if you 
 
 # Step-by-Step Instructions <br id = "docker">
 
-## Main Results <span id = "bug-list">
+## ★ Main Results <span id = "bug-list">
 
 The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
 
