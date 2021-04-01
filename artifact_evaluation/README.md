@@ -67,7 +67,7 @@ Evaluate GPT-2 program synthesizer by running the following command (set ```--mu
 
 The program uses a small JS corpus of 2,000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus.
 
-We have reduced the size of the corpus so that it takes around 5 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather than 2,000) for longer (100 epochs rather than 5). *As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs*. 
+We have reduced the size of the corpus so that it takes around 5 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather than 2,000) for longer (~150,000 iterations rather than 1,000). *As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs*. 
 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. 
 
