@@ -45,8 +45,7 @@ If you wish to use an NVIDIA GPU on the host machine to run the AE, please follo
 >   
 >     You should be able to see the the GPU information if it is successfully configured.
 
-Please note that this configurations were setup on **a host machine with Ubuntu OS**. It will throw exceptions or errors when configuring in other Linux OS except Ubuntu. 
-But the following scripts can be correctly executed on multiple Linux OS like Centos, Ubuntu, Detian, etc.
+Please note that the above steps for configuring the GPU environment were only tested on **a host machine running Ubuntu OS**. It may throw exceptions or errors when configuring in other Linux distributions. However, the following scripts should be able to run on multiple Linux distributions like Centos, Ubuntu, Detian, etc.
 
 ## ★ Import Docker Image
 
