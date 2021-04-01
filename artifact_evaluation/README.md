@@ -62,7 +62,7 @@ Please note that the above steps for configuring the GPU environment were only t
 >     
 Note that if you use docker in **Windows**, you may have to use the image ID (sha256:xxxx) given after running  ```docker load -i 53.tar``` to import the docker image. For example, ```docker run -itd --name comfort sha256:[Follow by the sha-hash code given by docker] /bin/bash  ```
 >
-> - **[!Important]Setup environmental parameters:** After importing the docker container, make sure you run the below command to setup the environmental variables, before using any of the following scripts:
+> - **[!Important]Setup environmental parameters:** After importing the docker container and getting into the docker image CLI (if you use docker Desktop in Windows, click into the CLI icon next to the running container - e.g., comfort), make sure you run the below command to setup the environmental variables, before using any of the following scripts:
 >
 >     ``` source /root/.bash_profile```
 
