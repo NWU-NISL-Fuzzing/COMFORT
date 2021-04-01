@@ -110,13 +110,13 @@ All generated test cases are written to directory ```/root/data/generated_data/c
 
 * You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
-   ``` python /root/src/05_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
+   ``` python /root/src/04_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
 You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
 
 * Note that we randomly selected ~1000 test cases for each fuzzer. All the test cases (10,000) for each fuzzer used in our paper are stored in  ``` /root/data/codeCoverage/totalFiles```. You can also use all the test cases using the following command for longer evaluation (12+ hours):
 
-   ``` python /root/src/05_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
+   ``` python /root/src/04_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
 This data corresponds to Figure 9 in our paper. Note that since the test programs are randonmly chosen, the numbers may be slightly different from the ones reported in the paper. 
 
