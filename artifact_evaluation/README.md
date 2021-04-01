@@ -59,7 +59,7 @@ Please note that the above steps for configuring the GPU environment were only t
 >     
 >     ```docker run -itd --name comfort pldi2021:comfort /bin/bash  ```
 >
-> - **!Setup environmental parameters:** After importing the docker container, make sure you run the below command to setup the environmental variables, before using any of the following scripts:
+> - **[!Important]Setup environmental parameters:** After importing the docker container, make sure you run the below command to setup the environmental variables, before using any of the following scripts:
 >
 >     ``` source /root/.bash_profile```
 
