@@ -49,11 +49,11 @@ Please note that the above steps for configuring the GPU environment were only t
 
 ## ★ Importing the Docker Image
 
-> - **Using GPU:** Run the following command to import the docker container with GPUs:
+> - **Using GPU:** Run the following command to import the docker container with GPU support:
 > 
 >     ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
 >     
-> - **Using CPU:** Using the following command to import the docker container without GPUs:
+> - **Using CPU:** Using the following command to import the docker container using the CPU for testing:
 >     
 >     ```docker run -itd --name comfort pldi2021:comfort /bin/bash  ```
 >
