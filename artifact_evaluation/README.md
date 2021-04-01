@@ -59,6 +59,8 @@ Please note that the above steps for configuring the GPU environment were only t
 > - **Using CPU:** Using the following command to import the docker container using the CPU for testing:
 >     
 >     ```docker run -itd --name comfort pldi2021:comfort /bin/bash  ```
+>     
+Note that if you use docker in **Windows**, you may have to use the image ID (sha256:xxxx) given after running  ```docker load -i 53.tar``` to import the docker image. For example, ```docker run -itd --name comfort sha256:[Follow by the sha-hash code given by docker] /bin/bash  ```
 >
 > - **[!Important]Setup environmental parameters:** After importing the docker container, make sure you run the below command to setup the environmental variables, before using any of the following scripts:
 >
