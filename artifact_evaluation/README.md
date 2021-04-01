@@ -95,7 +95,7 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 
 The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
 
-### ☆ Program generation using our pre-trained model 
+### ☆ Program generation using our pre-trained model (*Quicker*)
 We provided the full-trained GPT-2 JS program generator used by our paper in our AE. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
  You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
 
