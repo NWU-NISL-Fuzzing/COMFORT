@@ -135,8 +135,8 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
 
 ## ★ Demonstration of Differential Testing
-(*approximate runtime: 1 min/120 test cases*)
+(*approximate runtime: 1 min per 120 test cases*)
 
-* Evaluate our differential fuzzer on a JS test bed by running the following command:
+* Evaluate our differential fuzzer on *one* JS test bed by running the following command (In our paper, we tested 102 test beds):
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
