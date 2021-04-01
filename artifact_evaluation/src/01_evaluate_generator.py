@@ -2,6 +2,7 @@ import os
 import time
 import datetime
 import shutil
+import math
 from uuid import uuid4
 from generate_model.callable_processor import CallableProcessor
 from generate_model.conf import Hparams
@@ -73,39 +74,49 @@ def function_generate(hparams, saved_dir):
                    model_name=generate_model_name,
                    multi_gpu=hparams.multi_gpu)
 
-    if hparams.nsamples % hparams.batch_size != 0:
-        raise ValueError('You have to make sure nsamples % batch_size == 0, please enter again!')
+    assert hparams.batch_size != 0, "'batch_size' cannot be 0!"
+    batches = int(math.ceil(hparams.nsamples / hparams.batch_size))
+    remainder = hparams.nsamples % hparams.batch_size
+
     all_functions = []
-    batches = int(hparams.nsamples / hparams.batch_size)
 
-    for i in range(batches):
-        texts = gpt2.generate(sess,
-                             model_dir=generate_model_dir,
-                             model_name=generate_model_name,
-                             nsamples=hparams.batch_size,
-                             batch_size=hparams.batch_size,
-                             prefix=hparams.generate_prefix,
-                             top_p=hparams.top_p,
-                             top_k=hparams.top_k,
-                             temperature=hparams.temperature,
-                             include_prefix=True,
-                             return_as_list=True)
+    for idx in range(batches):
+        try:
+            texts = gpt2.generate(sess,
+                                 model_dir=generate_model_dir,
+                                 model_name=generate_model_name,
+                                 nsamples=hparams.batch_size,
+                                 batch_size=hparams.batch_size,
+                                 prefix=hparams.generate_prefix,
+                                 top_p=hparams.top_p,
+                                 top_k=hparams.top_k,
+                                 temperature=hparams.temperature,
+                                 include_prefix=True,
+                                 return_as_list=True)
 
-        for text in texts:
-            functions = text.split(hparams.generate_prefix)[1:]
+            # when the last batch, intercepted by the remainder
+            if idx == batches - 1:
+                if remainder != 0:
+                    texts = texts[:remainder]
 
-            # get rid of the last one to prevent syntax errors
-            if len(functions) >= 2:
-                functions = functions[:-1]
+            for text in texts:
+                functions = text.split(hparams.generate_prefix)[1:]
 
-            all_functions += functions
+                # get rid of the last one to prevent syntax errors
+                if len(functions) >= 2:
+                    functions = functions[:-1]
 
-            # print
-            for function in functions:
-                print(function)
-                print('=' * 50)
+                all_functions += functions
 
-        info_print(f'Generating {i+1}/{batches}.')
+                # print
+                for function in functions:
+                    print(function)
+                    print('=' * 50)
+
+            info_print(f'Generating {idx+1}/{batches}.')
+
+        except:
+            continue
 
     # formatting
     all_functions = [i.strip() + '\n' for i in all_functions]
@@ -126,10 +137,13 @@ def testcase_assemble(functions, saved_dir):
     callable_processor = CallableProcessor()
     testcases = []
     for function in functions:
-        testcases.append(callable_processor.get_self_calling(function))
+        try:
+            testcases.append(callable_processor.get_self_calling(function))
+        except:
+            testcases.append('')  # Guarantee idx consistent
 
     # print info
-    info_print(f"Test program after creating the calling routine：\n")
+    info_print(f"Test program after creating the calling routine: \n")
     for testcase in testcases:
         print(testcase)
         print('=' * 50)

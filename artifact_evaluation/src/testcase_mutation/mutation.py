@@ -1,6 +1,7 @@
 import json
 import pathlib
 import tempfile
+import timeout_decorator
 
 from utils import config
 from testcase_mutation import getApisFromTestcase, getMutatedTestcase
@@ -10,6 +11,7 @@ class Mutator:
     def __init__(self):
         self.instance = getApisFromTestcase.ESAPI(get_config())
 
+    @timeout_decorator.timeout(10)
     def mutate(self, testcase):
         nodes = self.instance.parse_function_nodes(testcase)
         mutated_testcase_set = []

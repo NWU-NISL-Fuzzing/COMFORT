@@ -33,7 +33,12 @@ class Hparams_Evaluate:
 class Hparams_Coverage:
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--coverage_files', type=str, default=r"/root/data/mutation_result", help='path to the coverageFiles')
+    parser.add_argument('--fuzzer', type=str, default="comfort", help="select a fuzzer from [comfort, die, fuzzilli, montage, deepsmith, codealchemist]")
+
+    parser.add_argument('--reporter_dir', type=str, default="/root/data/codeCoverage/coverageReporters", help="Saved path of coverage results")
+
+    parser.add_argument('--coverage_files', type=str, default=r"", help='path to the coverageFiles')
+
 
 
 class Hparams_Reduce:

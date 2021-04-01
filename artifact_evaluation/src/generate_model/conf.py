@@ -28,7 +28,7 @@ class Hparams:
     parser.add_argument('--nsamples', default=512, type=int,
                         help='Controls the number of testcases generated, nsamples*4≈numberof testcases')
     parser.add_argument('--batch_size', default=16, type=int,
-                        help='Batch size for generation (increase for GPUs, 16 is recommended for RTX 2080)')
+                        help='Batch size for generation(increase for GPUs, 16 is recommended for RTX 2080)')
 
     parser.add_argument('--use_nisl_model', default=1, type=int,
                         help="Whether to use NISL trained generate model, 1 means enable(default)")

@@ -30,6 +30,7 @@ def evaluate_testcase(testcase_list, log_path, clear_classifier):
     suspicious_result_list = []
     test_result_num = 0
     count = 1
+    total = len(testcase_list)
 
     # Test case filter
     classify = Classifier()
@@ -38,7 +39,7 @@ def evaluate_testcase(testcase_list, log_path, clear_classifier):
         classify.clear_recorders()
 
     for test_case in testcase_list:
-        progress = "\rEvaluate Testcases Processing: %d " % (count)
+        progress = "\rEvaluate Testcases Processing: {current}/{total} ".format(current=count, total=total)
         sys.stdout.write(progress)
         count += 1
         # The differential testing outputs
