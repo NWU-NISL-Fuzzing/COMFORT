@@ -108,7 +108,7 @@ We provided the full-trained GPT-2 JS program generator used by our paper in our
 All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
 ### ☆ Evaluation of the code coverage 
-(*approximate runtime: 15 minutes*)
+(*approximate runtime: 20 minutes*)
 
 * You can use the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax chcker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
@@ -123,7 +123,7 @@ You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, 
 This data corresponds to Figure 9 in our paper. Note that since the test programs are randonmly chosen, the numbers may be slightly different from the ones reported in the paper. 
 
 ## ★ Demonstration of Test Program Mutation
-(*approximate runtime: 5 minutes*)
+(*approximate runtime: 20 minutes*)
 
 * Evaluate our ECMAScript-guided test data generator by running the following command:
 
@@ -133,7 +133,7 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
 
 ## ★ Demonstration of Differential Testing
-(*approximate runtime: 10 minutes*)
+(*approximate runtime: 1 min/120 test cases*)
 
 * Evaluate our differential fuzzer on a JS test bed by running the following command:
 
