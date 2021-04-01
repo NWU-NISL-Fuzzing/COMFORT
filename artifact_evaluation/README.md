@@ -34,7 +34,7 @@ docker load -i 53.tar
 ```
 
 ## ★ Configure the GPU Running Environment (optional)
-If you wish to use an NVIDIA GPU on the host machine to run the AE, please follow the instructions below to setup the GPU execution environment:
+If you wish to use an NVIDIA GPU on the host machine (that runns Ubuntu 18.04) to execute the AE, please follow the instructions below to setup the GPU execution environment:
 
 > - Copy [this bash script](../data/nvidia-container-runtime-script.sh) to the user directory with sudo permission. Then run the following command:
 > 
