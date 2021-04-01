@@ -24,6 +24,7 @@ The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COM
 
 ## ★ Docker Image
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
+Our docker image was tested on a host machine running Ubuntu 18.04. 
 
 After downloading the docker image, using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
 ```
