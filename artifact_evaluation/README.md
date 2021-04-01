@@ -63,7 +63,7 @@ The Docker image contains the following scripts for evaluation.
 
 * Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=0``` for using CPU for training):
 
-> ``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=1 ```
+    ``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=1 ```
 
 The program uses a small JS corpus of 2,000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus.
 
@@ -79,7 +79,7 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 
 * To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference, approximate 1 hour): 
 
-``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
+    ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
 
 The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
 
