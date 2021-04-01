@@ -72,7 +72,7 @@ We have reduced the size of the corpus so that it takes around 5 hours to train 
 Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. 
 
 
-## Evaluation of Our JS Program Generator 
+## ★ Evaluation of Our JS Program Generator 
 
 ### ☆ Program generation using the trained model
 (*approximate runtime: 15 minutes for using a GPU*)
