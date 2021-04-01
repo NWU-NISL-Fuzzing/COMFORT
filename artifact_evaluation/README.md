@@ -83,9 +83,9 @@ The Docker image contains the following scripts for evaluation.
 ## ★ Train the JS Program Generator (*Optional*) <br id="generator">
 (*approximate runtime: ~1 hour for using a GPU*)
 
-* Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=0``` for using CPU for training):
+* Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=1``` for using a GPU for training):
 
-    ``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=1 ```
+    ``` python /root/src/01_evaluate_generator.py --mode=finetune  --multi_gpu=0 ```
 
 The program uses a small JS corpus of 2,000 JS programs randomly selected from our entire training corpus to refine a scale-downed, pre-trained GPT-2 model (that was trained on natural language texts) on the JS corpus.
 
@@ -97,11 +97,11 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 ## ★ Evaluation of Our JS Program Generator 
 
 ### ☆ Program generation using the trained model (*optional*)
-(*approximate runtime: 20 minutes for using a GPU*)
+(*approximate runtime: 20 minutes for using a GPU, ~1 hour when using a CPU*)
 
-* To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=0``` for using the CPU for inference, approximate 1 hour): 
+* To use the [trained model](#generator) to generate the test programs, run the following command (set ```--multi_gpu=1``` for using a GPU for inference): 
 
-    ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=1 --nsamples=512 ```
+    ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=0 --nsamples=512 ```
 
 The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
 
@@ -109,9 +109,9 @@ The  ```--nsamples``` parameter controls how many test programs to generate. **N
 We provided the full-trained GPT-2 JS program generator used by our paper in our AE. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
  You can use the following command to generate about 512 test programs (defined by nsamples) where each test program contains around 4 JS APIs (which lead to ~4 * 512 = 2,000 test cases). 
 
-* You can run the test on the GPU by using the following command (set ```--multi_gpu=0``` to run on the CPU)：
+* You can run the test on the GPU by using the following command (set ```--multi_gpu=1``` to run on the GPU)：
 
-   ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=1 --nsamples=512 ```
+   ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=0 --nsamples=512 ```
 
 All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
