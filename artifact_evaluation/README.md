@@ -126,7 +126,6 @@ This takes around 4 hours to generate 512 test programs using a laptop CPU.
 
 You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
 
-* Since we just randomly selected ~1000 test cases to test each fuzzer, it is likely that none of the test case will trigger a bug.
 * In our paper, we used a larger dataset of 10,000 test case to test each fuzzer. The full test case dataset is stored in  ``` /root/data/codeCoverage/totalFiles```. You can also evaluate on this full dataset using the following command for longer run (12+ hours):
 
    ``` python /root/src/04_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
@@ -149,3 +148,5 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 * Evaluate our differential fuzzer on *one* JS test bed by running the following command (In our paper, we tested 102 test beds):
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
+
+Since we only test on <= 512 generated programs, it is likely that none of the test cases triggers a bug.
