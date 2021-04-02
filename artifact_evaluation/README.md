@@ -16,7 +16,7 @@ For convenience, we have provided a pre-configured live server with a Python Jup
 
 Note that we do not log IP addresses or other accessing information, but if you have concerns on this, you could use a [Tor Browser](https://www.torproject.org/download/) to access our demo website. 
 
-While it is possible to create your own copy of our Jupyter Notebook, we recommend to use the configured server as it is non-trivial to configure the Notebook locally within a docker container. 
+**While it is possible to create your own copy of our Jupyter Notebook, we recommend to use the configured server as it is non-trivial to configure the Notebook locally within a docker container**. 
 
 # Step-by-Step Instructions <br id = "docker">
 
