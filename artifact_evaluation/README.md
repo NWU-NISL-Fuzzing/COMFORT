@@ -62,7 +62,7 @@ Please note that the above steps for configuring the GPU environment were only t
 
 ## Evaluation Steps
 
-Follow the instructions below to use our AE scripts to showcase our techniques. 
+Follow the instructions below to use our AE scripts.
 
 ### ★ Importing the Docker Image
 
