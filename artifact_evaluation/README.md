@@ -131,7 +131,7 @@ The  ```--nsamples``` parameter controls how many test programs to generate. **N
 ### ☆ Evaluation of test program coverage 
 (*approximate runtime: 20 minutes*)
 
-* You can use the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/). This script runs on the 1,000 test programs used in our paper. 
+* You can use the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/). This script runs on 1,000 randomly chosen test programs from our full test dataset. 
 
    ``` python /root/src/04_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
@@ -141,7 +141,7 @@ You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, 
 
    ``` python /root/src/04_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
-This data corresponds to Figure 9 in our paper. Note that since the test programs are randonmly chosen, the numbers may be slightly different from the ones reported in the paper. 
+This data corresponds to Figure 8 in our paper. *Note that since the test programs are randonmly chosen and the test was performed on a smaller dataset (1000 instaed of 10,000),  the numbers may be  different from the ones reported in the paper*. 
 
 ## ★ Demonstration of Test Program Mutation
 (*approximate runtime: 20 minutes*)
