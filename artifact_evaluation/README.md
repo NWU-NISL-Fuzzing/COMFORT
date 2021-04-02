@@ -133,13 +133,13 @@ The  ```--nsamples``` parameter controls how many test programs to generate, **w
 #### ☆ Evaluation of test program coverage 
 (*approximate runtime: 20 minutes per fuzzer*)
 
-* You can use the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/). This script runs on 1,000 randomly chosen test programs from our full test dataset. 
+* Using the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/) for Comfort. This script runs on 1,000 randomly chosen test programs from our full test dataset. 
 
    ``` python /root/src/04_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
-You can change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
+Change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
 
-* In our paper, we used a larger dataset of 10,000 test case to test each fuzzer. The full test case dataset is stored in  ``` /root/data/codeCoverage/totalFiles```. You can also evaluate on this full dataset using the following command for longer run (12+ hours):
+* Note that in our paper, we used a larger dataset of 10,000 test case to test each fuzzer. The full test case dataset is stored in  ``` /root/data/codeCoverage/totalFiles```. You can also evaluate on this full dataset using the following command for longer run (12+ hours):
 
    ``` python /root/src/04_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
