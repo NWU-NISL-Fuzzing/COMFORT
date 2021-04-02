@@ -102,7 +102,7 @@ This takes around 4 hours to generate 512 test programs using a laptop CPU. The 
 This option involves two steps: (1) first fine-tune a GPT-2 model locally and then (2) use the trained model for test program generation.
 
 #### Step 1: Train the JS Program Generator (*Optional*) <br id="generator">
-(*approximate runtime: ~1 hour for using a GPU*)
+(*approximate runtime: ~1 hour using a GPU， 5 hours using a CPU*)
 
 * Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=1``` for using a GPU for training):
 
@@ -112,7 +112,7 @@ The program uses a small JS corpus of 10,000 JS programs randomly selected from 
 
 We have reduced the size of the corpus so that it takes around 5 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather than 2,000) for longer (~150,000 iterations rather than 1,000). *As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs*. 
 
-Training the model can be interrupted and resumed at any time. Once trained, the model does not need to be re-trained. 
+Training the model can be interrupted after the first training iteration. Once trained, the model does not need to be re-trained. *Note that it takes around 20 minutes to load the dataset and the model using a laptop CPU*. 
 
 
 #### Step 2: Program generation
@@ -124,7 +124,9 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 
     ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=0 --nsamples=512 ```
 
-The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
+The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**. 
+
+*Note that it takes around 20 minutes to load the model using a laptop CPU*. 
 
 ### ☆ Evaluation of the code coverage 
 (*approximate runtime: 20 minutes*)
