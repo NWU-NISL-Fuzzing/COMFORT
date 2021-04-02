@@ -69,7 +69,7 @@ Please note that the above steps for configuring the GPU environment were only t
 >
 >     ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile``` 
 >  
->  This script will also start the MYSQL database needed for program mutations. 
+>  This script will also start a MYSQL database deamon needed for program mutations and differentiated testing. 
 
 ## ★ Artifact Contents
 The Docker image contains the following scripts for evaluation. 
