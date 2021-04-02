@@ -4,12 +4,6 @@ This directory contains a pre-configured live server with a [Python Jupyter Note
 
 It contains reduced-size data sets for evaluating our GPT-2 based test program generator, test case mutation and reduction, and differential tester. The full dataset is quite large (>100 GB uncompressed), and we are working on finding a method for sharing it with the community. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
 
-# Overview of Results
-As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have indentified 158 unique bugs, of which 129 have been verified, and 115 have been fixed by the developers. Furthermore, 21 of the COMFORT generated test cases were added into Test-262, the official Javascript conformance test suite.
-
-A list of bugs discovered by COMFORT can be found at the [Bug List](./Bug-List.md) section. 
-
-
 
 # Getting Start Guide <br id = "jupyter" >
 For convenience, we have provided a pre-configured live server with a Python Jupyter Notebook to work through our techiques (Please see the ReadMe document on the AE submission website on how to access the Notebook). The notebook provides instructions on how to test our techniques on a small-scale dataset. 
