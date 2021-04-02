@@ -124,7 +124,7 @@ The  ```--nsamples``` parameter controls how many test programs to generate, **w
 
 *Note that it takes around 30 minutes to load the model using a laptop CPU*. 
 
-#### ☆ Evaluation of test program coverage 
+### ★ Evaluation of test program coverage 
 (*approximate runtime: 20 minutes per fuzzer*)
 
 * Using the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/) for Comfort. This script runs on 1,000 randomly chosen test programs from our full test dataset. 
