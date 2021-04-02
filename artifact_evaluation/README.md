@@ -72,8 +72,6 @@ Please note that the above steps for configuring the GPU environment were only t
 >  
 >  This script will also start the MYSQL database needed for program mutations. 
 
-**Testing in Docker Desktop in Windows:** Note that if you use docker Desktop running in Windows, to get into bash, you need to first click into the CLI (command line interface) icon next to the running container - e.g., comfort in Docker Desktop; Next, run ```bash ``` under the CLI and then run ``` source /root/.bash_profile``` to setup the environmental parameters. You can then folow the AE instructions given below. 
-
 ## ★ Artifact Contents
 The Docker image contains the following scripts for evaluation. 
 
