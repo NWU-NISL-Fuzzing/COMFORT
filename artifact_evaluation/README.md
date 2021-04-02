@@ -171,4 +171,4 @@ Since we only test on <= 512 generated programs ([nsamples](#generation) <= 512)
 
 2. Then, run ```service mysql start``` to start the Mysql service
 
-3. Install the Python dependencies: ```pip install sqlalchemy PyExecJS```
+3. Install the Python dependencies: ```pip install sqlalchemy PyExecJS```, and try the script again. 
