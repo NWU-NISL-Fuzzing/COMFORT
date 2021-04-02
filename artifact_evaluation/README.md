@@ -164,4 +164,6 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
 Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 512), it is likely that none of the test cases triggers a potential bug.
 
-**Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error, make sure you have run the setup script as ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
+**Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error, make sure you have run the setup script as:
+
+```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
