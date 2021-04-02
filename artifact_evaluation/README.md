@@ -98,10 +98,10 @@ All generated test cases are written to directory ```/root/data/generated_data/c
 
 This takes around 4 hours to generate 512 test programs using a laptop CPU. The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
 
-### ☆ Program generation using a locally trained model (*optional*)  <br id = "generation">
+### ☆ Optional: Program generation using a locally trained model  <br id = "generation">
 This option involves two steps: (1) first fine-tune a GPT-2 model locally and then (2) use the trained model for test program generation.
 
-#### Step 1: Train the JS Program Generator (*Optional*) <br id="generator">
+#### Step 1: Train the JS Program Generator <br id="generator">
 (*approximate runtime: ~1 hour using a GPU， 5 hours using a CPU*)
 
 * Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=1``` for using a GPU for training):
