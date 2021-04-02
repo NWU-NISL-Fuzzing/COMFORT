@@ -1,3 +1,6 @@
+# Overview of Results
+As stated in Section 5 of the PLDI submission, we have started experimenting with and refining our tool since May 2019. At the time of our PLDI 2021 submission (21 Nov 2020), we have indentified 158 unique bugs, of which 129 have been verified, and 115 have been fixed by the developers. Furthermore, 21 of the COMFORT generated test cases were added into Test-262, the official Javascript conformance test suite.
+
 # Bug List
 
 If a bug is marked as "Verified", it means the bug has been confirmed but not yet fixed by the vendor. Some of our submitted bugs have been previously discovered
