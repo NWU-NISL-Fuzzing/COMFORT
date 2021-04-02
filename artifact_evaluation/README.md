@@ -87,11 +87,11 @@ The Docker image contains the following scripts for evaluation.
 
 We provide a pre-trained GPT-2 JS program generator used by our paper for test program generation. 
 
-Using the following command to generate about 512 (defined by ```nsamples```) test programs on the CPU (set ```--multi_gpu=1``` to run on the GPU)：
+Using the following command to generate about 512 (defined by ```nsamples```) test programs running on the CPU (set ```--multi_gpu=1``` to run on the GPU)：
 
    ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=0 --nsamples=512 ```
 
-This takes around 4 hours to generate 512 test programs using a laptop CPU. The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
+This step takes around 4 hours to generate 512 test programs using a laptop CPU. The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
 
 All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
