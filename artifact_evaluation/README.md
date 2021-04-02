@@ -67,7 +67,7 @@ Please note that the above steps for configuring the GPU environment were only t
 **[!IMPORTANT]**
 > - **Setup environmental parameters:** After importing the docker container and getting into **bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 >
->     ``` source /root/.bash_profile``` 
+>     ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile``` 
 >  
 >  This script will also start the MYSQL database needed for program mutations. 
 
@@ -164,13 +164,4 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
 Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 512), it is likely that none of the test cases triggers a potential bug.
 
-**Known Issue:** If  you still get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error after running  ``` source /root/.bash_profile```,  try the following steps:
-
-1. Edit ```/etc/mysql/my.cnf``` under the container, and add the following lines:
-> [mysqld]
-> 
-> skip-grant-tables
-
-2. Then, run ```service mysql start``` to start the Mysql service
-
-3. Install the Python dependencies: ```pip install sqlalchemy PyExecJS```, and try the script again. 
+**Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error, make sure you have run the setup script as ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
