@@ -121,7 +121,7 @@ Training the model can be interrupted after the first training iteration. Once t
 
     ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=0 --multi_gpu=0 --nsamples=512 ```
 
-The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**. 
+The  ```--nsamples``` parameter controls how many test programs to generate, **which must be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**. 
 
 *Note that it takes around 20 minutes to load the model using a laptop CPU*. 
 
