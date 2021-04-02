@@ -1,0 +1,24 @@
+{
+  "simple_db": "/home/yhy/mutationData/qx_3rd/testcase.db",
+  "workspace": "/home/yhy/mutationData/qx_3rd/workspace",
+  "classify_db": "mysql://aliyun:xibeidaxue@localhost:3306/classify?charset=utf8",
+  "engine_parser_config_path": "./resources/enginesName.json",
+  "engines": [
+    "/mnt/aliyun/.jsvu/engines/v8-0e44fef/x64/v8-0e44fef",
+    "/mnt/aliyun/.jsvu/engines/spidermonkey-52.9.1pre1/mozjs-52.9.1pre1/js/src/build_OPT.OBJ/dist/bin/spidermonkey-52.9.1pre1",
+    "/mnt/aliyun/.jsvu/chakra-1.11.8",
+    "/mnt/aliyun/.jsvu/engines/WebKit-b3fa4c5/WebKit/WebKitBuild/Release/bin/javascriptCore-b3fa4c5",
+    "/mnt/aliyun/.jsvu/hermes-0.1.0 -w",
+    "/mnt/aliyun/.jsvu/quickjs-2019-09-01",
+    "/mnt/aliyun/.jsvu/graaljs-20.1.0",
+    "/mnt/aliyun/.jsvu/jerryscript-7df87b7",
+    "java -jar  /mnt/aliyun/.jsvu/rhino-1.7.11.jar -debug -version 200",
+    "/mnt/aliyun/.jsvu/engines/jdk-12.0.1/bin/jjs --no-syntax-extensions=true --no-deprecation-warning=true"
+  ],
+  "ESApis": {
+    "function": "./data/APIs/function.txt",
+    "constructor": "./data/APIs/constructor.txt",
+    "classMethod": "./data/APIs/classMethod.txt",
+    "prototypeMethod": "./data/APIs/prototypeMethod.txt"
+  }
+}
