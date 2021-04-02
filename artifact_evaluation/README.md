@@ -123,7 +123,7 @@ Training the model can be interrupted after the first training iteration. Once t
 
 The  ```--nsamples``` parameter controls how many test programs to generate, **which must be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**. 
 
-*Note that it takes around 20 minutes to load the model using a laptop CPU*. 
+*Note that it takes around 30 minutes to load the model using a laptop CPU*. 
 
 ### ☆ Evaluation of test program coverage 
 (*approximate runtime: 20 minutes*)
