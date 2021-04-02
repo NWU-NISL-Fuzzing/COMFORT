@@ -85,16 +85,15 @@ The Docker image contains the following scripts for evaluation.
 ### ☆ Program generation using our pre-trained model <br id="pregenerator">
 (*approximate runtime: 20 minutes for using a GPU, ~4 hours when using a CPU*)
 
-We provide a pre-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
-You can use the following command to generate about 512 test programs (defined by ```nsamples```) using this pre-trained model. 
+We provide a pre-trained GPT-2 JS program generator used by our paper for test program generation. 
 
-* You can run the test on the CPU by using the following command (set ```--multi_gpu=1``` to run on the GPU)：
+Using the following command to generate about 512 (defined by ```nsamples```) test programs on the CPU (set ```--multi_gpu=1``` to run on the GPU)：
 
    ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=0 --nsamples=512 ```
 
-All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
-
 This takes around 4 hours to generate 512 test programs using a laptop CPU. The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
+
+All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
 ### ☆ Optional: Program generation using a locally trained model  <br id = "generation">
 This option involves two steps: (1) first fine-tune a GPT-2 model locally and then (2) use the trained model for test program generation.
