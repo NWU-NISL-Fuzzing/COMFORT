@@ -116,7 +116,7 @@ Training the model can be interrupted after the first training iteration. Once t
 
 
 #### Step 2: Program generation
-(*approximate runtime: 20 minutes for using a GPU, ~4 hours when using a CPU*)
+(*approximate runtime: 20 minutes for using a  GPU, ~4 hours when using a CPU*)
 
 **!Important:** To run this script, make sure you have trained a model using ```01_evaluate_generator.py``` dsescribed in the previous step.
 
