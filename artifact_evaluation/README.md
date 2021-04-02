@@ -166,6 +166,7 @@ Since we only test on <= 512 generated programs ([nsamples](#generation) <= 512)
 
 1. Edit ```/etc/mysql/my.cnf``` under the container, and add the following lines:
 > [mysqld]
+> 
 > skip-grant-tables
 
 2. Then, run ```service mysql start``` to start the Mysql service
