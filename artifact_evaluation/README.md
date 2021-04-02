@@ -97,7 +97,7 @@ Training the model can be interrupted and resumed at any time. Once trained, the
 
 ## ★ Evaluation of Our JS Program Generator 
 
-### ☆ Program generation using the trained model (*optional*)
+### ☆ Program generation using the trained model (*optional*)  <br id = "generation">
 (*approximate runtime: 20 minutes for using a GPU, ~4 hours when using a CPU*)
 
 **!Important:** To run this script, make sure you have trained a model using ```01_evaluate_generator.py``` dsescribed in the previous step.
@@ -152,4 +152,4 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
 
-Since we only test on <= 512 generated programs (e.g., nsamples < 512), it is likely that none of the test cases triggers a potential conformance behavior.
+Since we only test on <= 512 generated programs ([nsamples](#generation) <= 512), it is likely that none of the test cases triggers a potential bug.
