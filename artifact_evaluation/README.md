@@ -167,3 +167,8 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 **Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error, make sure you have run the setup script as:
 
 ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
+
+
+## Remark
+
+The docker image provides a small-scale experiment to showcase the working mechanism of our work. Our main results (that run much longer – 200 hours per JS testbed on a larger test dataset) can be found at the [Bug List](./Bug-List.md) section. 
