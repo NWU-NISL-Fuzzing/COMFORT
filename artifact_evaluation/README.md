@@ -86,6 +86,7 @@ The Docker image contains the following scripts for evaluation.
 
 ### ☆ Program generation using our pre-trained model 
 (*approximate runtime: 20 minutes for using a GPU, ~4 hours when using a CPU*)
+
 We provide a pre-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
 You can use the following command to generate about 512 test programs (defined by ```nsamples```) using this pre-trained model. 
 
