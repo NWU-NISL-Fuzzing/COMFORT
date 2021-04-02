@@ -50,7 +50,7 @@ If you wish to use an NVIDIA GPU on the host machine (that runns Ubuntu 18.04) t
 >   
 >     You should be able to see the the GPU information if it is successfully configured.
 
-Please note that the above steps for configuring the GPU environment were only tested on **a host machine running Ubuntu OS**. It may throw exceptions or errors when configuring in other Linux distributions. However, the following scripts should be able to run on multiple Linux distributions like Centos, Ubuntu, Detian, etc. If you have difficulties in setting up the GPU, you can opt to use the CPU for AE testing or use the pre-configured, live server given in the getting start guide to go thorugh the setps. 
+Please note that the above steps for configuring the GPU environment were only tested on **a host machine running Ubuntu OS**. It may throw exceptions or errors when configuring in other Linux distributions. However, the following scripts should be able to run on multiple Linux distributions like Centos, Ubuntu, Detian, etc. If you have difficulties in setting up the GPU, you can opt to use the CPU for AE testing or use the pre-configured, live server given in the getting start guide to go through the setps. 
 
 ## ★ Importing the Docker Image
 
