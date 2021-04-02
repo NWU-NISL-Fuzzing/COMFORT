@@ -36,7 +36,7 @@ docker load -i 53.tar
 docker tag 73a15dc0bf7b pldi2021:comfort
 ```
 
-## ★ Configure the GPU Running Environment (optional)
+## ★ Configure the GPU Running Environment (optional) <br id = "gpusetup">
 If you wish to use an NVIDIA GPU on the host machine (running Ubuntu 18.04) to execute the AE, please follow the instructions below to setup the GPU execution environment:
 
 > - Copy [this bash script](../data/nvidia-container-runtime-script.sh) and run the following command in **the host environment** with sudo permission:
@@ -59,7 +59,7 @@ Please note that the above steps for configuring the GPU environment were only t
 >     
 >     ```docker run -it --name comfort pldi2021:comfort /bin/bash  ```
 >     
-> - **Using GPU:** Run the following command to import the docker container with GPU support:
+> - **Using GPU:** Run the following command to import the docker container with GPU support (Make sure you have setup the GPU environment - see [here](#gpusetup)):
 > 
 >     ```docker run -it --name comfort --gpus all pldi2021:comfort /bin/bash  ```
 >     
