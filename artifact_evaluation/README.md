@@ -128,10 +128,10 @@ The  ```--nsamples``` parameter controls how many test programs to generate. **N
 
 *Note that it takes around 20 minutes to load the model using a laptop CPU*. 
 
-### ☆ Evaluation of the code coverage 
+### ☆ Evaluation of test program coverage 
 (*approximate runtime: 20 minutes*)
 
-* You can use the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/). 
+* You can use the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/). This script runs on the 1,000 test programs used in our paper. 
 
    ``` python /root/src/04_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
@@ -162,4 +162,12 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
 Since we only test on <= 512 generated programs ([nsamples](#generation) <= 512), it is likely that none of the test cases triggers a potential bug.
 
-**Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error,  re-run ``` source /root/.bash_profile``` to start the MySQL deamon. 
+**Known Issue:** If  you still get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error after running  ``` source /root/.bash_profile```,  try the following steps:
+
+1. Edit ```/etc/mysql/my.cnf``` under the container, and add the following lines:
+> [mysqld]
+> skip-grant-tables
+
+2. Then, run ```service mysql start``` to start the Mysql service
+
+3. Install the Python dependencies: ```pip install sqlalchemy PyExecJS```
