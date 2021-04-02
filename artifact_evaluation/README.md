@@ -135,6 +135,10 @@ Change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmit
 
 This data corresponds to Figure 8 in our paper. *Note that since the test programs are randonmly chosen and the test was performed on a smaller dataset (1000 instaed of 10,000),  the numbers may be slightly different from the ones reported in the paper*. 
 
+* Optional*: You can use the following command to test the code coverage on 10,000 Comfort-generated test programs for longer run (6+ hours):
+   
+   ``` python /root/src/04_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
+
 ### ★ Demonstration of Test Program Mutation
 (*approximate runtime: 20 minutes*)
 
