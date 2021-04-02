@@ -84,7 +84,7 @@ The Docker image contains the following scripts for evaluation.
 
 ## ★ Evaluation of Our JS Program Generator 
 
-### ☆ Program generation using our pre-trained model 
+### ☆ Program generation using our pre-trained model <br id="pregenerator">
 (*approximate runtime: 20 minutes for using a GPU, ~4 hours when using a CPU*)
 
 We provide a pre-trained GPT-2 JS program generator used by our paper. Our pre-trained model is stored in ``` /root/src/generate_model/models/nisl_model```.
@@ -160,7 +160,7 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
 
-Since we only test on <= 512 generated programs ([nsamples](#generation) <= 512), it is likely that none of the test cases triggers a potential bug.
+Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 512), it is likely that none of the test cases triggers a potential bug.
 
 **Known Issue:** If  you still get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error after running  ``` source /root/.bash_profile```,  try the following steps:
 
