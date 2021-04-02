@@ -70,7 +70,7 @@ Follow the instructions below to use our AE scripts.
 >     
 
 **[!IMPORTANT]**
-> - **Setup environmental parameters:** After importing the docker container and getting into **bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
+> - **Setup environmental parameters:** After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 >
 >     ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile``` 
 >  
