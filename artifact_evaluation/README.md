@@ -162,4 +162,4 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
 Since we only test on <= 512 generated programs ([nsamples](#generation) <= 512), it is likely that none of the test cases triggers a potential bug.
 
-**Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error,  to re-run ``` source /root/.bash_profile``` to start the MySQL deamon. 
+**Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error,  re-run ``` source /root/.bash_profile``` to start the MySQL deamon. 
