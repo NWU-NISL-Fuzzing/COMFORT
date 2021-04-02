@@ -152,4 +152,4 @@ This data corresponds to Figure 9 in our paper. Note that since the test program
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
 
-Since we only test on <= 512 generated programs, it is likely that none of the test cases triggers a bug.
+Since we only test on <= 512 generated programs (e.g., nsamples < 512), it is likely that none of the test cases triggers a potential conformance behavior.
