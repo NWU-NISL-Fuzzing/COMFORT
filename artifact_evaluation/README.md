@@ -133,11 +133,7 @@ The  ```--nsamples``` parameter controls how many test programs to generate, **w
 
 Change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
 
-* Note that in our paper, we used a larger dataset of 10,000 test cases. The full test case dataset of our approach is stored in  ``` /root/data/codeCoverage/totalFiles```. You can also evaluate the coverage of the full comfort-generated test cases  using the following command for longer run (6+ hours):
-
-   ``` python /root/src/04_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
-
-This data corresponds to Figure 8 in our paper. *Note that since the test programs are randonmly chosen and the test was performed on a smaller dataset (1000 instaed of 10,000),  the numbers may be  different from the ones reported in the paper*. 
+This data corresponds to Figure 8 in our paper. *Note that since the test programs are randonmly chosen and the test was performed on a smaller dataset (1000 instaed of 10,000),  the numbers may be slightly different from the ones reported in the paper*. 
 
 ### ★ Demonstration of Test Program Mutation
 (*approximate runtime: 20 minutes*)
