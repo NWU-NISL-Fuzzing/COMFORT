@@ -121,9 +121,9 @@ All generated test cases are written to directory ```/root/data/generated_data/c
 This takes around 4 hours to generate 512 test programs using a laptop CPU. 
 
 ### ☆ Evaluation of the code coverage 
-(*approximate runtime: 40 minutes*)
+(*approximate runtime: 20 minutes*)
 
-* You can use the following command to  compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax checker), and the coverage repored by [Istanbul](https://istanbul.js.org/). 
+* You can use the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/). 
 
    ``` python /root/src/04_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
