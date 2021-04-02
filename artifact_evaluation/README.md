@@ -39,11 +39,11 @@ docker tag 73a15dc0bf7b pldi2021:comfort
 ## ★ Configure the GPU Running Environment (optional)
 If you wish to use an NVIDIA GPU on the host machine (that runns Ubuntu 18.04) to execute the AE, please follow the instructions below to setup the GPU execution environment:
 
-> - Copy [this bash script](../data/nvidia-container-runtime-script.sh) to the user directory with sudo permission. Then run the following command in **the host environment**:
+> - Copy [this bash script](../data/nvidia-container-runtime-script.sh) and run the following command in **the host environment** with sudo permission:
 > 
 >     ```bash nvidia-container-runtime-script.sh```
 >      
->      Note that this step may break the existing docker environment.
+>      Note that this step may break the existing GPU and docker setup of the host machine. 
 >  
 > - Next, test if the GPU running environment is successfully configured:
 >  
