@@ -33,6 +33,7 @@ After downloading the docker image, using the following commands to load the doc
 unzip 53.zip
 cd 53
 docker load -i 53.tar
+docker tag 73a15dc0bf7b pldi2021:comfort
 ```
 
 ## ★ Configure the GPU Running Environment (optional)
@@ -56,11 +57,11 @@ Please note that the above steps for configuring the GPU environment were only t
 
 > - **Using GPU:** Run the following command to import the docker container with GPU support:
 > 
->     ```docker run -itd --name comfort --gpus all pldi2021:comfort /bin/bash  ```
+>     ```docker run -it --name comfort --gpus all pldi2021:comfort /bin/bash  ```
 >     
 > - **Using CPU:** Using the following command to import the docker container using the CPU for testing:
 >     
->     ```docker run -itd --name comfort pldi2021:comfort /bin/bash  ```
+>     ```docker run -it --name comfort pldi2021:comfort /bin/bash  ```
 >     
 **Known issue in Windows:** Note that if you get an eror message of ```Unable to find image 'pldi2021:comfort' locally``` (a known problem for loading the docker image in Windows), you can use the image ID (sha256:xxxxxxxx...xxx) given after running  ```docker load -i 53.tar``` to run the docker container. For example, ```docker run -itd --name comfort  sha256:73a15dc0bf7b29bc980845bf4514518176837bb964101b1f82a4fa98a956b1e9 /bin/bash  ``` (**Make sure you replace the sha256 checksum with the one shown on the host manchine**).
 >
