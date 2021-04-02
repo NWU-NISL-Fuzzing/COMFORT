@@ -155,7 +155,7 @@ This data corresponds to Figure 8 in our paper. *Note that since the test progra
 
 **[!Important]**: This step must run after the program mutation step described in the previous section. 
 
-* Evaluate our differential fuzzer on *ten* JS test beds by running the following command (In our paper, we tested 102 testbeds on a much larger datasets for 200 hours):
+* Evaluate our differential fuzzer on *ten* JS test beds by running the following command (In our paper, we tested 102 testbeds on a much larger dataset for 200 hours):
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
 
