@@ -91,7 +91,7 @@ Using the following command to generate about 512 (defined by ```nsamples```) te
 
    ``` python /root/src/01_evaluate_generator.py --mode=generate --use_nisl_model=1 --multi_gpu=0 --nsamples=512 ```
 
-This step takes around 4 hours to generate 512 test programs using a laptop CPU and the model loading stage may take around 30 minutes. The  ```--nsamples``` parameter controls how many test programs to generate. **Note that the value of ```--nsamples``` should be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
+This step takes around 4 hours to generate 512 test programs using a laptop CPU and the model loading stage may take around 30 minutes. The  ```--nsamples``` parameter controls how many test programs to generate, **which must be a multiply of the default bach size of 16 (e.g., 16, 32, 64, etc.)**.
 
 All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
