@@ -1,3 +1,7 @@
+#
+# This utility provides APIs to collect JS APIs from a JS test program
+#
+
 import execjs
 import tempfile
 import pathlib
