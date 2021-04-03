@@ -137,7 +137,7 @@ This data corresponds to Figure 8 in our paper. *Note that since the test progra
 
 #### *Optional*: Code coverage on full datasets. 
 
-You can use the following command to test the code coverage on 10,000 Comfort-generated test programs for longer run (6+ hours):
+You can use the following command to test the code coverage on 10,000 Comfort-generated test programs for longer run (8+ hours):
    
    ``` python /root/src/04_coverage_calculate.py --coverage_files=/root/data/codeCoverage/totalFiles/comfort_generate --reporter_dir=/root/data/codeCoverage/coverageReporters ```
   
