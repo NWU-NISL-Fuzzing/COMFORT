@@ -179,7 +179,7 @@ The deviated behaviours found during differential testing are stored in the ```c
 > ```select * from exist_errortype;```
 
 
-Schema of table *exists_errortype* are:
+Schema of table *exists_errortype* is:
 
 > - `id` ：Categorize ID denoting which type the testing result belongs to;
 > - `error_type` ：The type of the error that the testing result belongs to (our implementation attribute the results to three error types)
