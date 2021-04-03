@@ -186,7 +186,7 @@ Then, check the data stored in the database:
 Schema of table *exists_errortype* is:
 
 > - `id` ：Categorize ID denoting which type the testing result belongs to;
-> - `error_type` ：The type of the error that the testing result belongs to (our implementation attribute the results to three error types)
+> - `error_type` ：The type of the error that the testing result belongs to (we currently consider hree error types)
 > - `engine` : The JS engine that triggers the potential bug;
 > - `error_info`：The (error) messages produced by the JS engine;
 > - `error_api`：API calls that trigger the `error_info`;
