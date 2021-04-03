@@ -172,10 +172,12 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 **Differential Testing Outcomes**
 
-The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in the ```classify``` database at the local MYSQL database. The check the results, using the following commands to login into the database:
+The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in the ```classify``` database at the local MYSQL database. The check the results, using the following bash command to login into the database:
 
 >```mysql -uroot -p123456 ```
->
+
+Then, check the data stored in the database:
+
 >```use classify;```
 >
 > ```select * from exist_errortype;```
