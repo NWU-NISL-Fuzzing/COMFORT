@@ -1,3 +1,8 @@
+#
+# This class infer the potential data type of a JS variable for test case mutaiton.
+#
+#
+
 class TypeInferer:
     def __init__(self):
         self.array_characters = [
