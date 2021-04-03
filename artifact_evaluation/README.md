@@ -170,27 +170,22 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
 
-**Introduction of the Testing Results**
+**Differential Testing Outcomes**
 
-All the suspecious differential testing results (e.g., the potential output the few JS engines yield) are stored in a MySql database. The name of the database is *classify*. You can use the following command to login the *classify* database:
+The deviated behaviours found during differential testing are stored in the ```classify``` database of the MYSQL database. The check the results, using the following commands to login into the database:
 
-``` mysql -uroot -p123456 ```
+>```mysql -uroot -p123456 ```
+>```use classify;```
+> ```select * from exist_errortype;```
+Schema of table *exists_errortype* are:
 
-There is one table named *exists_errortype* which has the below attributes:
-
-> - `id` ：Category ID, it marks which category the testing result belongs to;
-> - `error_type` ：The type of the error that the testing result belongs to, we manually defined three types according to the JS exception types;
+> - `id` ：Categorize ID denoting which type the testing result belongs to;
+> - `error_type` ：The type of the error that the testing result belongs to (our implementation attribute the results to three error types)
 > - `engine` : The JS engine that triggers the potential bug;
-> - `error_info`：The formatted error information thrown by the JS engine;
-> - `error_api`：API calls that triggers the `error_info`;
-> - `count` ：The number of tested results that belong to the `error_type`, which indicates how many same or similar testing results are tested or filetered out since testing.
+> - `error_info`：The formatted error information that is thrown by the JS engine;
+> - `error_api`：API calls that trigger the `error_info`;
+> - `count` ：The number of test results that belong to the `error_type`, which indicates how many same or similar testing results are tested or filtered out since testing.
 
-You can use the following commands to view the specific information of each item in the *exists_errortype* table:
-
-``` 
-use classify;
-select * from exist_errortype;
-```
 
 
 ## Remark
