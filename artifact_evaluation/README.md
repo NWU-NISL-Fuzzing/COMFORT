@@ -179,11 +179,11 @@ All the suspecious differential testing results (e.g., the potential output the 
 There is one table named *exists_errortype* which has the below attributes:
 
 > - `id` ：Category ID, it marks which category the testing result belongs to;
-> - `error_type` ：The type of the ；
-> - `engine` : The JS engine ；
-> - `error_info`：The formatted error information throwns by the JS engine；
-> - `error_api`：API calls that triggers the `error_info`；
-> - `count` ：The number of tested test cases that belong to this `error_type`
+> - `error_type` ：The type of the error that the testing result belongs to, we manually defined XX types;
+> - `engine` : The JS engine that triggers the potential bug;
+> - `error_info`：The formatted error information thrown by the JS engine;
+> - `error_api`：API calls that triggers the `error_info`;
+> - `count` ：The number of tested test cases that belong to the `error_type`, which indicates how many same or similar testing results are filtered out.
 
 You can use the following commands to view the specific information of each item in the *exists_errortype* table:
 
