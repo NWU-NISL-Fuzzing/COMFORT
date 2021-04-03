@@ -177,6 +177,8 @@ The deviated behaviours found during differential testing are stored in the ```c
 >```mysql -uroot -p123456 ```
 >```use classify;```
 > ```select * from exist_errortype;```
+
+
 Schema of table *exists_errortype* are:
 
 > - `id` ：Categorize ID denoting which type the testing result belongs to;
