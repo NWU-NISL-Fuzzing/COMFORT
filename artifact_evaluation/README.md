@@ -22,13 +22,6 @@ The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COM
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 Our docker image was tested on a host machine running Ubuntu 18.04. 
 
-After downloading the docker image, using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
-```
-unzip 53.zip
-cd 53
-docker load -i 53.tar
-docker tag 73a15dc0bf7b pldi2021:comfort
-```
 ## ★ Artifact Contents
 The Docker image contains the following scripts for evaluation. 
 
@@ -57,6 +50,15 @@ Please note that the above steps for configuring the GPU environment were only t
 ## Evaluation Steps
 
 Follow the instructions below to use our AE scripts.
+
+### ★ Loading Docker Image
+After downloading the docker image, using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
+```
+unzip 53.zip
+cd 53
+docker load -i 53.tar
+docker tag 73a15dc0bf7b pldi2021:comfort
+```
 
 ### ★ Importing the Docker Image
 
