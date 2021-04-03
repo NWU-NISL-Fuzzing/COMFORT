@@ -18,7 +18,7 @@ Note that we do not log IP addresses or other accessing information, but if you 
 
 The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
 
-## ★ Docker Image
+## ★ Docker Image <br id = "dockerimg">
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 Our docker image was tested on a host machine running Ubuntu 18.04. 
 
@@ -52,7 +52,7 @@ Please note that the above steps for configuring the GPU environment were only t
 Follow the instructions below to use our AE scripts.
 
 ### ★ Loading Docker Image
-After downloading the docker image, using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
+After downloading the [docker image](#dockerimg), using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
 ```
 unzip 53.zip
 cd 53
