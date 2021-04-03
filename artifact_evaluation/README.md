@@ -190,7 +190,7 @@ Schema of table *exists_errortype* is:
 > - `engine` : The JS engine that triggers the potential bug;
 > - `error_info`：The formatted error information that is thrown by the JS engine;
 > - `error_api`：API calls that trigger the `error_info`;
-> - `count` ：The number of test results that belong to the `error_type`, which indicates how many same or similar testing results are tested or filtered out since testing.
+> - `count` ：The number of test results that belong to the `error_type`, which accumulates the number of testing results that belong to the same error type seen to date.
 
 
 
