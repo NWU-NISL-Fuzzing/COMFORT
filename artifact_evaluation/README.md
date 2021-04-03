@@ -188,7 +188,7 @@ Schema of table *exists_errortype* is:
 > - `id` ：Categorize ID denoting which type the testing result belongs to;
 > - `error_type` ：The type of the error that the testing result belongs to (our implementation attribute the results to three error types)
 > - `engine` : The JS engine that triggers the potential bug;
-> - `error_info`：The formatted error information that is thrown by the JS engine;
+> - `error_info`：The (error) messages produced by the JS engine;
 > - `error_api`：API calls that trigger the `error_info`;
 > - `count` ：The number of test results that belong to the `error_type`, which accumulates the number of testing results that belong to the same error type seen to date.
 
