@@ -170,6 +170,28 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
 
+**Introduction of the Testing Results**
+
+All the suspecious differential testing results (e.g., the potential output the few JS engines yield) are stored in a MySql database. The name of the database is *classify*. You can use the following command to login the *classify* database:
+
+``` mysql -uroot -p123456 ```
+
+There is one table named *exists_errortype* which has the below attributes:
+
+> - `id` ：Category ID, it marks which category the testing result belongs to;
+> - `error_type` ：The type of the ；
+> - `engine` : The JS engine ；
+> - `error_info`：The formatted error information throwns by the JS engine；
+> - `error_api`：API calls that triggers the `error_info`；
+> - `count` ：The number of tested test cases that belong to this `error_type`
+
+You can use the following commands to view the specific information of each item in the *exists_errortype* table:
+
+``` 
+use classify;
+select * from exist_errortype;
+```
+
 
 ## Remark
 
