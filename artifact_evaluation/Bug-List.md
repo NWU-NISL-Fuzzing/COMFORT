@@ -232,7 +232,8 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 18 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
 
 
-## The bugs discovered by other fuzzers
+## Bugs exposed by other fuzzers
+JS engine bugs found by other fuzzers. This data corresponds to Figure 7 of the submitted paper. 
 
 ### CodeAlchemist-discovered Bugs
 
