@@ -1,6 +1,8 @@
+The following steps for running other fuzzers were tested on a host machine running Ubuntu 18.04. 
+
 ## Fuzzilli
 
-* Before running, you should setup the environment variable on the host machine using the following command:
+* Before running, you should setup the environment variable on *the host machine* using the following command:
 
 ```bash
     sudo sysctl -w 'kernel.core_pattern=|/bin/false'
