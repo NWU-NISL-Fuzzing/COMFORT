@@ -53,7 +53,7 @@ To check the schema and content of the database, using the following bash comman
 
 >```mysql -uroot -p123456 ```
 
-Then, check the data stored in the database:
+Then, run the following commands at the Mysql console: 
 
 >```use classify;```
 >
