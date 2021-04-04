@@ -112,6 +112,26 @@ We have reduced the size of the corpus so that it takes around 5 hours to train 
 
 Training the model can be interrupted after the first training iteration. Once trained, the model does not need to be re-trained. *Note that it takes around 20 minutes to load the dataset and the model using a laptop CPU*. 
 
+* **Preparing training samples:**  The samll training corpus are sotred in `/root/data/top10000.txt`. Of course, you can refine the GPT-2 model with your own dataset which needs to be organized into one of the following two formats:
+
+```txt
+//JavascriptTop2000Functions\n
+function1(...){
+ ...
+}
+//JavascriptTop2000Functions\n
+function2(...){
+ ...
+}
+```
+or 
+```txt
+JavascriptTop2000Functions\nfunction1(...){...}
+JavascriptTop2000Functions\nfunction2(...){...}
+```
+
+Where `//JavascriptTop2000Functions` is the delimiter that is used to split the training samples from the training corpus.
+
 
 ##### Step 2: Program generation
 (*approximate runtime: 20 minutes for using a  GPU, ~4 hours when using a CPU*)
