@@ -12,7 +12,7 @@ Here, we describe how to use other fuzzers to generate JS test cases for differe
 ```
 
 ### Generating test cases
-* Using the following command to generate test cases:
+* Using the following command running in our docker container to generate test cases:
 
 ```bash
     cd /root/software/fuzzers/fuzzilli
