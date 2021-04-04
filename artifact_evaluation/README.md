@@ -207,7 +207,7 @@ To add a new JS Engine (testbed) for differential testing, you can edit the conf
 
 >  "engines": [
 >  
->     "/root/.jsvu/engines/v8-0e44fef/x64/d8",
+>    "/root/.jsvu/engines/v8-0e44fef/x64/d8",
 >     
 >    "/root/.jsvu/engines/spiderMonkey-52.9.1pre1/bin/js",
 >    
