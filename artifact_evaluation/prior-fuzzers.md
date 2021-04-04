@@ -204,6 +204,7 @@ Then, go into bash of the docker container to configure the server and the clien
    export PATH=/usr/bin:$PATH
    ./fuzz/scripts/run.sh ./engines/chakracore-1.11.24/out/Debug/ch ./DIE-corpus ch
    ```
+ You can replace ```./engines/chakracore-1.11.24/out/Debug/ch``` with another JS engine. 
 
 #### Step 3 Monitor the running:
 
