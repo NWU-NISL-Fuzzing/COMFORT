@@ -78,7 +78,6 @@ docker tag 73a15dc0bf7b pldi2021:comfort
 >  
 >  This script will also start a MYSQL database deamon needed for program mutations and differentiated testing. 
 
-
  
 
 ### ★ Evaluation of Our JS Program Generator 
@@ -127,13 +126,13 @@ The  ```--nsamples``` parameter controls how many test programs to generate, **w
 *Note that it takes around 30 minutes to load the model using a laptop CPU*. 
 
 ### ★ Evaluation of test program coverage 
-(*approximate runtime: 20 minutes per fuzzer*)
+(*approximate runtime: 40 minutes per fuzzer*)
 
-* Using the following command to compute the coverage repored by [Istanbul](https://istanbul.js.org/) for Comfort. This script runs on 1,000 randomly chosen test programs from our full test dataset. 
+* Using the following command to compute the percentage of the generated test programs passed [JSHint](https://jshint.com/) (a static JS syntax checker), and the coverage repored by [Istanbul](https://istanbul.js.org/) for Comfort. This script runs on 1,000 randomly chosen test programs from our full test dataset. 
 
    ``` python /root/src/04_coverage_calculate.py --fuzzer=comfort --reporter_dir=/root/data/codeCoverage/coverageReporters ```
 
-Change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the code coverage of other fuzzers.
+Change the value of the parameter ```--fuzzer``` to be  `codealchemist, deepsmith, die, fuzzilli or montage`, to calculate the passing rate and code coverage of other fuzzers.
 
 This data corresponds to Figure 8 in our paper. *Note that since the test programs are randonmly chosen for sampling,  the numbers could be different from the ones reported in the paper for all fuzzers*. 
 
@@ -170,8 +169,8 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
 
-
-
+### Reproducing prior fuzzers
+To comparison, we use the program generators of prior fuzzers (e.g., CodeAlchemist, DeepSmith, Fuzzilli, Montage) to generate JS test cases, which are then used to test the JS engines used in our paper. In our Docker Image, we have configured the generators of prior fuzzers and use [the instructions](./prior-fuzzers.md) to generate the JS test cases.
 
 ## Remark
 
