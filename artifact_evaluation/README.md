@@ -178,7 +178,7 @@ To help developers in examining bug-exposing test cases, wedevelop a simple yet 
 ```python /root/src/05_testcase_reducing.py --file_dir=/root/data/interesting_testcases```
 
 ### Testing other fuzzers (optional)
-(*20+ hours*)
+(*~20+ hours*)
 
 Check [this document](./prior-fuzzers.md)  for how to use other fuzzers (CodeAlchemist, DeepSmith, Fuzzilli, Montage, Die) for test program generation and differential testing. 
 
