@@ -265,7 +265,7 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 9    | ChakraCore     | 5ed2985            | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6507) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
 | 10   | JavaScriptCore | dbae081            | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=216817) | [Yuan Wang](https://github.com/YuanWangC)  | Fixed            |                      |
 | 11   | Rhino          | 1.7.12             | [Rhino_report3](https://github.com/mozilla/rhino/issues/770) | [Yuan Wang](https://github.com/YuanWangC)  | Fixed            |                      |
-| 12   | QuickJS        | quickjs-2020-04-12 | [qjs_report1](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Fuzzilli/No.12.png) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
+| 12   | QuickJS        | quickjs-2020-04-12 | [qjs_report1](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Fuzzilli/No.12.png) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion | Previous version     |
 | 13   | Rhino          | 1.7.12             | [rhino_report4](https://github.com/mozilla/rhino/issues/768) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
 | 14   | ChakraCore     | 5ed2985            | [chakra_report4](https://github.com/microsoft/ChakraCore/issues/6502) | [Haobin Li](https://github.com/Haobin-Lee) | Under discussion |                      |
 | 15   | ChakraCore     | 5ed2985            | [chakra_report5](https://github.com/microsoft/ChakraCore/issues/6503) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
@@ -293,7 +293,7 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 15   | JerryScript    | 9ab4872              | [jerry_report3](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/DIE/jerryscript/No.15.png) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            | Previous version     |
 | 16   | Rhino          | 1.7.13               | [rhino_report6](https://github.com/mozilla/rhino/issues/782) | [Wen Yi](https://github.com/YiWen-y)       | Verified         |                      |
 | 17   | v8             | e39c701              | [v8_report1](https://bugs.chromium.org/p/chromium/issues/detail?id=1135406) | [Wen Yi](https://github.com/YiWen-y)       | Verified         |                      |
-| 18   | SpiderMonkey   | C69.0a1(debug)       | [spidermonker_report1](https://bugzilla.mozilla.org/show_bug.cgi?id=1670158) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            | Previous version     |
+| 18   | SpiderMonkey   | C69.0a1(debug)       | [spidermonkey_report1](https://bugzilla.mozilla.org/show_bug.cgi?id=1670158) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            | Previous version     |
 | 19   | Rhino          | 1.7.13               | [rhino_report7](https://github.com/mozilla/rhino/issues/777) | [Wen Yi](https://github.com/YiWen-y)       | Undetermined     |                      |
 | 20   | Rhino          | 1.7.13               | [rhino_report8](https://github.com/mozilla/rhino/issues/778) | [Wen Yi](https://github.com/YiWen-y)       | Undetermined     |                      |
 | 21   | ChakraCore     | v1.11.22             | [chakra_report4](https://github.com/microsoft/ChakraCore/issues/6516) | [Wen Yi](https://github.com/YiWen-y)       | Verified         |                      |
@@ -317,15 +317,15 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 4    | Rhino       | 1.7.12             | [rhino_report3](https://github.com/mozilla/rhino/issues/774) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
 | 5    | Rhino       | 1.7.13             | [rhino_report4](https://github.com/mozilla/rhino/issues/775) | [Xing Qu](https://github.com/QuXing9)      | Under discussion |                      |
 | 6    | Rhino       | 1.7.13             | [rhino_report5](https://github.com/mozilla/rhino/issues/776) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
-| 7    | Hermes      | 9caeabc            | [hermes_report2](https://github.com/facebook/hermes/issues/377) |                                            | Fixed            |                      |
+| 7    | Hermes      | 9caeabc            | [hermes_report2](https://github.com/facebook/hermes/issues/377) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
 | 8    | ChakraCore  | 63c5099            | [chakra_report1](https://github.com/microsoft/ChakraCore/issues/6515) | [Wen Yi](https://github.com/YiWen-y)       | Under discussion |                      |
 | 9    | Rhino       | 1.7.13             | [rhino_report6](https://github.com/mozilla/rhino/issues/782) | [Wen Yi](https://github.com/YiWen-y)       | Under discussion |                      |
-| 10   | Hermes      | 9caeabc            | [hermes_report3](https://github.com/facebook/hermes/issues/378) |                                            | Fixed            |                      |
+| 10   | Hermes      | 9caeabc            | [hermes_report3](https://github.com/facebook/hermes/issues/378) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
 | 11   | ChakraCore  | 63c5099            | [chakra_report2](https://github.com/microsoft/ChakraCore/issues/6514) | [Xing Qu](https://github.com/QuXing9)      | Under discussion |                      |
 | 12   | Hermes      | 9caeabc            | [hermes_report4](https://github.com/facebook/hermes/issues/389) | [Xing Qu](https://github.com/QuXing9)      | Verified         |                      |
-| 13   | JerryScript | 7df87b7            | [jerry_report1](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Montage/No.13.png) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            |                      |
-| 14   | QuickJS     | quickjs-2020-09-06 | [qjs_report1](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Montage/No.14.png) | [Xing Qu](https://github.com/QuXing9)      | Under discussion |                      |
-| 15   | Rhino       | 1.7.13             | [rhino_report7](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Montage/No.15.png) |                                            | Verified         |                      |
+| 13   | JerryScript | 7df87b7            | [jerry_report1](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Montage/No.13.png) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            | Previous version     |
+| 14   | QuickJS     | quickjs-2020-09-06 | [qjs_report1](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Montage/No.14.png) | [Xing Qu](https://github.com/QuXing9)      | Under discussion | Previous version     |
+| 15   | Rhino       | 1.7.13             | [rhino_report7](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/local-bugs%20-%20other_fuzzers/Montage/No.15.png) | [Haobin Li](https://github.com/Haobin-Lee) | Verified         | Previous version     |
 
 ### DeepSmith-discovered Bugs
 
