@@ -190,8 +190,9 @@ Then, go into bash of the docker container to configure the server and the clint
    ~~~
    tmux new-session -s ssh-tunneling
    ssh -L 9000:localhost:6379 serverName@serverIP
-   ctrl+b+d exit the session
    ~~~
+   
+ Press ``` ctrl+b+d``` to exit the session
 
 
 #### Step 2 Start the fuzzing process to mutate the seed programs
