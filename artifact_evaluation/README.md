@@ -1,8 +1,8 @@
 # Automated Conformance Testing for JavaScript Engines via Deep Compiler Fuzzing: Artifact
 
-This directory contains a pre-configured live server with a [Python Jupyter Notebook](#jupyter) and a [Docker Image](#docker) to support artifact for our paper (COMFORT) on PLDI 2021 paper on Javascript Conformance Testing. 
+We provide a pre-configured live server with a [Python Jupyter Notebook](#jupyter) and a [Docker Image](#docker) to support artifact for our paper (COMFORT) on PLDI 2021 paper on Javascript Conformance Testing. 
 
-It contains reduced-size data sets for evaluating our GPT-2 based test program generator, test case mutation and reduction, and differential tester. The full dataset is quite large (>100 GB uncompressed), and we are working on finding a method for sharing it with the community. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
+Our docker image contains reduced-size data sets for evaluating our GPT-2 based test program generator, test case mutation and reduction, and differential tester. The full dataset is quite large (>100 GB uncompressed), and we are working on finding a method for sharing it with the community. The idea is that this directory contains minimal working examples which can be evaluated in a reasonable amount of time. All of our code and data will be open-sourced upon publication and has been developed with extensibility as a primary goal.
 
 
 # Getting Start Guide <br id = "jupyter" >
