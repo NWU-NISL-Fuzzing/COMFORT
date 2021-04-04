@@ -136,8 +136,9 @@ The generated JS test cases are stored in `/root/software/fuzzers/montage/Montag
    screen -S motify
    bash /root/.bash_profile
    python /root/software/fuzzers/CodeAlchemist/motify.py /root/software/fuzzers/CodeAlchemist/data/generated_files/ 
-   Ctrl+A+D to exit
    ```
+   
+Press ```Ctrl+A+D``` to exit from the session. 
 
 The generated test cases are stored in `/root/software/fuzzers/CodeAlchemist/data/generated_files`
 
@@ -205,8 +206,8 @@ Then, go into bash of the docker container to configure the server and the clint
 
    ```
    tmux attach -t fuzzer
-   ctrl+b+d exit the session
    ```
+Press ```ctrl+b+d``` to exit from the session
 
 The generated test cases are stored in `/root/software/fuzzers/DIE/mutatedSeeds`.
 
