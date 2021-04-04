@@ -198,7 +198,7 @@ function2(...){
  ...
 }
 ```
-Here, we place `//JavascriptTop2000Functions` at the beginning of each function to split the training samples. An example of the training corpus can be found at ```/root/data/top10000.txt```. Once you have prepared the training corpus, stored it at ```/root/data/top10000.txt```, then follow the instructions [here](#generator) to train your own test program generator. 
+Here, we place `//JavascriptTop2000Functions` at the beginning of each function to split the training samples. An example of the training corpus can be found at ```/root/data/top10000.txt```. Once you have prepared the training corpus, stored it as ```/root/data/top10000.txt```, then follow the instructions [here](#generator) to train your own test program generator. 
 
 After training your own program synthesizer, you can then follow the AE instructions to launch differential tests. 
 
