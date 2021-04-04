@@ -81,9 +81,10 @@ The following steps are executed in bash of our docker container.
    python3 main.py --opt build_map --config /root/software/fuzzers/montage/Montage/config.json
    ```
 
-* Step 5, modifying the fuzz funtion of the `fuzz.py` in `/root/software/fuzzers/montage/Montage/src/fuzz/` as follows:
+* Step 5, modifying the fuzz funtion of the `fuzz.py` in `/root/software/fuzzers/montage/Montage/src/fuzz/` as follows to store the generated test programs:
 
   ```
+       #This tells where to save the mutated seed programs
        mutation_save_dir = "root/software/fuzzers/montage/Montage/mutationSeeds"
        if os.path.exists(mutation_save_dir):
          shutil.rmtree(mutation_save_dir)
