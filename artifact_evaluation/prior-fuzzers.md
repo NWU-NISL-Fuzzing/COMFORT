@@ -126,8 +126,8 @@ The generated JS test cases are stored in `/root/software/fuzzers/montage/Montag
    screen -S fuzz
    bash /root/.bash_profile
    dotnet /root/software/fuzzers/CodeAlchemist/bin/Main.dll fuzz /root/software/fuzzers/CodeAlchemist/conf/Chakra.conf
-   Ctrl+A+D to exit
    ```
+ Press ```Ctrl+A+D``` to exit from the session.
 
    
 * Running `modify.py` to convert the generated test cases: 
