@@ -153,7 +153,7 @@ The generated test cases are stored in `/root/software/fuzzers/CodeAlchemist/dat
 
    `sudo bash -c "echo core >/proc/sys/kernel/core_pattern"`
 
-Then, go into bash of the docker container to configure the server and the clint, by following the instructions given below: 
+Then, go into bash of the docker container to configure the server and the client, by following the instructions given below: 
 
 ### Configuring the server
 
