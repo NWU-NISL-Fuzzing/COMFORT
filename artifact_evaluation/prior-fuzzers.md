@@ -2,6 +2,11 @@ Here, we describe how to use other fuzzers to generate JS test cases for differe
 
 *Note that the following steps for running other fuzzers were only tested on a host machine running Ubuntu 18.04.*
 
+## Setup
+Please download and load the full docker image (80+GB) from [here ](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing).
+Following the instructions [here](./README.md#loaddi) to load the docker image. 
+
+
 ## Fuzzilli
 
 ### Setup
