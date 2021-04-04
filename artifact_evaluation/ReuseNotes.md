@@ -2,11 +2,6 @@
 
 ## Training the program generator on your own corpus
 
-You can train the GPT-2 model on your own training corpus. To do so, provide a txt file
-
-
-The samll training corpus are sotred in `/root/data/top10000.txt`. Of course, you can refine the GPT-2 model with your own dataset which needs to be organized into one of the following two formats:
-
 You can train the GPT-2 model on your own training corpus. To do so, providing a text file that contains a just of JS functions in the following format: 
 
 ```txt
