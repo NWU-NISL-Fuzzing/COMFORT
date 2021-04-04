@@ -96,10 +96,10 @@ This step takes around 4 hours to generate 512 test programs using a laptop CPU 
 
 All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
-#### ☆ Optional: Program generation using a locally trained model  <br id = "generation">
+### ☆ Optional: Program generation using a locally trained model  <br id = "generation">
 This option involves two steps: (1) first fine-tune a GPT-2 model locally and then (2) use the trained model for test program generation.
 
-##### Step 1: Train the JS Program Generator <br id="generator">
+#### Step 1: Train the JS Program Generator <br id="generator">
 (*approximate runtime: ~1 hour using a GPU， 5 hours using a CPU*)
 
 * Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=1``` for using a GPU for training):
@@ -113,7 +113,7 @@ We have reduced the size of the corpus so that it takes around 5 hours to train 
 Training the model can be interrupted after the first training iteration. Once trained, the model does not need to be re-trained. *Note that it takes around 20 minutes to load the dataset and the model using a laptop CPU*. 
 
 
-##### Step 2: Program generation
+#### Step 2: Program generation
 (*approximate runtime: 20 minutes for using a  GPU, ~4 hours when using a CPU*)
 
 **!Important:** To run this script, make sure you have trained a model using ```01_evaluate_generator.py``` dsescribed in the previous step.
