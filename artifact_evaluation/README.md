@@ -156,7 +156,7 @@ Replace the ```comfort_generate``` directory in option ```--coverage_files=/root
 **Note that our tool can only mutate test programs with a JS API. If the test program does not contain a JS API, it will yield an eror meassge `This test case fails to be mutated as it does not contain any API.`** When all test cases have processed, you can see the number of test cases that were mutated successfully. *Note that most of the GPT-2 generated test programs will not be mutated, but they were still used in our fuzzing test; hence, are not wasted*. 
 
 
-### ★ Demonstration of Differential Testing
+### ★ Demonstration of Differential Testing <br id="dftest">
 (*approximate runtime: 1 min per 120 test cases*)
 
 **[!Important]**: This step must run after the program mutation step described in the previous section. 
