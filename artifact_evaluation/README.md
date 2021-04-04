@@ -177,7 +177,7 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 The docker image provides a small-scale experiment to showcase the working mechanism of our work. Our main results (that run much longer – 200 hours per JS testbed on a larger test dataset) can be found at the [Bug List](./Bug-List.md) section. 
 
-# Notes For Reusing Our AE <br id="reuse>
+# Notes For Reusing Our AE <br id="reuse">
 
 ## Training the program generator on your own corpus
 
@@ -199,6 +199,8 @@ function2(...){
 }
 ```
 Here, we place `//JavascriptTop2000Functions` at the beginning of each function to split the training samples. An example of the training corpus can be found at ```/root/data/top10000.txt```. Once you have prepared the training corpus, stored it at ```/root/data/top10000.txt```, then follow the instructions [here](#generator) to train your own test program generator. 
+
+After training your own program synthesizer, you can then follow the AE instructions to launch differential tests. 
 
 ## Differential Testing Results Storage **
 
