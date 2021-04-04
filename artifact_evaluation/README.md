@@ -169,8 +169,8 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
 
-### Reproducing prior fuzzers
-To comparison, we use the program generators of prior fuzzers (e.g., CodeAlchemist, DeepSmith, Fuzzilli, Montage) to generate JS test cases, which are then used to test the JS engines used in our paper. In our Docker Image, we have configured the generators of prior fuzzers and use [the instructions](./prior-fuzzers.md) to generate the JS test cases.
+### Testing other prior fuzzers (optional)
+Check [this document] (./prior-fuzzers.md)  for how to use other fuzzers (CodeAlchemist, DeepSmith, Fuzzilli, Montage, Die) for test program generation and differential testing 
 
 ## Remark
 
