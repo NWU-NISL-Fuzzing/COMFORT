@@ -231,6 +231,9 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 17 |JavaScriptCore| d940b47 | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=220574) | [Wen Yi](https://github.com/YiWen-y) | Under discussion ||
 | 18 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
 
+
+## The bugs discovered by other fuzzers
+
 ### DIE-discovered Bugs
 
 | No.  | JS Engines     | Build Version        | Bug Report Link                                              | COMFORT Team Member (Contributor)          | State            | Remarks              |
