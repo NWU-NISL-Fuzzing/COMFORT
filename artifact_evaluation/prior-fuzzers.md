@@ -1,4 +1,4 @@
-Here, we describe how to use other fuzzers to generate JS test cases for differential testing. Once the test cases are genearted and saved to a directory, you can then use the differential testing intructions described [here](./README.md#dftest) to perform differential testing used the generated test case. 
+Here, we describe how to use other fuzzers to generate JS test cases for differential testing. Once the test cases are genearted and saved to a directory, you can then use the differential testing intructions described [here](./README.md#dftest) to perform differential testing using the generated test case. 
 
 *Note that the following steps for running other fuzzers were only tested on a host machine running Ubuntu 18.04.*
 
