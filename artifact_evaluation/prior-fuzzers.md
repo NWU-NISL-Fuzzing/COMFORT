@@ -19,7 +19,7 @@ Here, we describe how to use other fuzzers to generate JS test cases for differe
     swift run -c release -Xlinker='-lrt' FuzzilliCli --profile=jerryscript --storagePath=/root/software/fuzzers/fuzzilli/data /root/software/fuzzers/additional_engines/jerryscript/build/bin/jerry
 ```
 
-Remember to configure  `storagePath` before each running.
+Remember to pass in the  `storagePath` argument for each run.
 
 
 ## DeepSmith
