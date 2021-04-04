@@ -202,6 +202,10 @@ Here, we place `//JavascriptTop2000Functions` at the beginning of each function 
 
 After training your own program synthesizer, you can then follow the AE instructions to launch differential tests. 
 
+## Add a new JS testbed for differential testing
+To add a new JS Engine (testbed) for differential testing, following the steps described below:
+
+
 ## Database for Differential Testing Results 
 
 The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in the ```classify``` database at the local MYSQL database. To check the results, using the following bash command to login into the database:
