@@ -235,4 +235,4 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 
 
 ## Bugs exposed by other fuzzers <br id="otherfuzzer">
-JS engine bugs found by other fuzzers. If you want to know more detailed data, please click [here](). 
+JS engine bugs found by other fuzzers. If you want to know more detailed data, please click [here](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/Bug-List%20-%20other_fuzzers.md). 
