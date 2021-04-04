@@ -54,6 +54,8 @@ The generated JS program are saved to `/root/software/fuzzers/DeepSmithNISL/work
 
 ## Montage
 
+The following steps are executed in bash of our docker container. 
+
 ### Setup and model training
 * Step 1, go to the root directory of Montage. In our docker container, this would be: 
 
