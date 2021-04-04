@@ -205,6 +205,20 @@ After training your own program synthesizer, you can then follow the AE instruct
 ## Add a new JS testbed for differential testing
 To add a new JS Engine (testbed) for differential testing, following the steps described below:
 
+Edit configuration file at ```/root/data/config.json```, and putting the command for launching the JS engine into the ``engines`` list. For example, the following configuration defined 10 JS engines used in our AE demo. 
+
+> ``` "engines": [
+>     "/root/.jsvu/engines/v8-0e44fef/x64/d8",
+>    "/root/.jsvu/engines/spiderMonkey-52.9.1pre1/bin/js",
+>    "/root/.jsvu/chakra-1.11.8",
+>    "/root/.jsvu/engines/WebKit-b3fa4c5/WebKit/WebKitBuild/Debug/bin/jsc",
+>    "/root/.jsvu/hermes-0.1.0 -w",
+>    "/root/.jsvu/quickjs-2019-09-01",
+>    "/root/.jsvu/graaljs-20.1.0",
+>    "/root/.jsvu/jerryscript-7df87b7",
+>    "java -jar  /root/.jsvu/rhino-1.7.11.jar -debug -version 200",
+>    "/root/.jsvu/engines/jdk-12.0.1/bin/jjs --no-syntax-extensions=true --no-deprecation-warning=true"
+>  ],```
 
 ## Database
 
