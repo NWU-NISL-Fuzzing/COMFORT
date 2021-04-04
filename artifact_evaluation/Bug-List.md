@@ -62,7 +62,7 @@ These newly exposed bugs are listed at [here](#newly-discovered). We also list t
 | 42   | Rhino          | 1.7.12                  | [rhino_report32](https://github.com/mozilla/rhino/issues/726) | [Wen Yi](https://github.com/YiWen-y)                         | Fixed                  |                                                              |
 | 43   | Rhino          | 1.7.12                  | [rhino_report33](https://github.com/mozilla/rhino/issues/725) | [Wen Yi](https://github.com/YiWen-y)                         | Fixed                  |                                                              |
 | 44   | Rhino          | 1.7.12                  | [rhino_report34](https://github.com/mozilla/rhino/issues/746) | [Wen Yi](https://github.com/YiWen-y)                         | Fixed                  |    Fix [String.prototype.includes](https://github.com/mozilla/rhino/pull/747) at the same time                                                          |
-| 45   | Rhino          | 1.7.12                  | [rhino_report35](https://github.com/mozilla/rhino/issues/750) | [Haobin Li](1355878370@qq.com)                               | Fixed                  |                                                              |
+| 45   | Rhino          | 1.7.12                  | [rhino_report35](https://github.com/mozilla/rhino/issues/750) | [Haobin Li](https://github.com/Haobin-Lee)                               | Fixed                  |                                                              |
 | 46   | Rhino          | 1.7.11                  | [rhino_report36](https://github.com/mozilla/rhino/issues/582) | [Houyou Yao](https://github.com/YaoHouyou)                   | Fixed                  | [Not first discovered](https://github.com/mozilla/rhino/issues/415) |
 | 47   | Rhino          | 1.7.11                  | [rhino_report37](https://github.com/mozilla/rhino/issues/581) | [Implementist](https://github.com/Implementist)              | Fixed                  |                                                              |
 | 48   | Rhino          | 1.7.10                  | [rhino_report38](https://github.com/mozilla/rhino/issues/563) | [yeguixin](https://github.com/yeguixin)                      | Fixed                  |                                                              |
@@ -157,7 +157,7 @@ These newly exposed bugs are listed at [here](#newly-discovered). We also list t
 | 137  | Rhino          | 1.7.12                  | [rhino_report25](https://github.com/mozilla/rhino/issues/691) | [Wen Yi](https://github.com/YiWen-y)                         | Under discussion       |                                                              |
 | 138  | Rhino          | 1.7.12                  | [rhino_report27](https://github.com/mozilla/rhino/issues/697) | [Xing Qu](https://github.com/QuXing9) & [Houyou Yao](https://github.com/YaoHouyou) | Under discussion       |                                                              |
 | 139  | Rhino          | 1.7.12                  | [rhino_report28](https://github.com/mozilla/rhino/issues/699) | [Yuan Wang](https://github.com/YuanWangC)                    | Under discussion       |                                                              |
-| 140  | Rhino          | 1.7.12                  | [rhino_report31](https://github.com/mozilla/rhino/issues/719) | [Haobin Li](1355878370@qq.com)                               | Under discussion       |                                                              |
+| 140  | Rhino          | 1.7.12                  | [rhino_report31](https://github.com/mozilla/rhino/issues/719) | [Haobin Li](https://github.com/Haobin-Lee)                               | Under discussion       |                                                              |
 | 141  | Rhino          | 1.7.11                  | [rhino_report40](https://github.com/mozilla/rhino/issues/569) | [yeguixin](https://github.com/yeguixin)                      | Under discussion       |                                                              |
 | 142  | Rhino          | 1.7.11                  | [rhino_report44](https://github.com/mozilla/rhino/issues/568) | [yeguixin](https://github.com/yeguixin)                      | Under discussion       |                                                              |
 | 143  | Nashorn        | 12.0.1                  | [nashorn_report10](local-bugs/nashorn/No.143.png)            | [Houyou Yao](https://github.com/YaoHouyou)                   | Under discussion       | Not first discovered                                         |
@@ -234,6 +234,44 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 
 ## The bugs discovered by other fuzzers
 
+### CodeAlchemist-discovered Bugs
+
+| No.  | JS Engines  | Build Version | Bug Report Link                                              | Contributor                                | State            | Remarks              |
+| ---- | ----------- | ------------- | ------------------------------------------------------------ | ------------------------------------------ | ---------------- | -------------------- |
+| 1    | Rhino       | 1.7.12        | [rhino_report1](https://github.com/mozilla/rhino/issues/725) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            | Duplicated test case |
+| 2    | Rhino       | 1.7.12        | [rhino_report2](https://github.com/mozilla/rhino/issues/665) | [Yang Tian](https://github.com/ty5491003)  | Fixed            | Duplicated test case |
+| 3    | Rhino       | 1.7.12        | [rhino_report3](https://github.com/mozilla/rhino/issues/639) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            | Duplicated test case |
+| 4    | ChakraCore  | eaaf7ac       | [chakra_report1](https://github.com/microsoft/ChakraCore/issues/6342) | [Yuan Wang](https://github.com/YuanWangC)  | Verified         | Duplicated test case |
+| 5    | Rhino       | 1.7.12        | [rhino_report4](https://github.com/mozilla/rhino/issues/765) | [Yuan Wang](https://github.com/YuanWangC)  | Verified         |                      |
+| 6    | Rhino       | 1.7.12        | [rhino_report5](https://github.com/mozilla/rhino/issues/766) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
+| 7    | Rhino       | 1.7.12        | [rhino_report6](https://github.com/mozilla/rhino/issues/764) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
+| 8    | V8          | d891c59       | [v8_report1](https://bugs.chromium.org/p/v8/issues/detail?id=10908) | [Yuan Wang](https://github.com/YuanWangC)  | Fixed            |                      |
+| 9    | jerryscript | bd1c4df       | [jerry_report1](https://github.com/jerryscript-project/jerryscript/issues/4192) | [Yuan Wang](https://github.com/YuanWangC)  | Fixed            |                      |
+| 10   | Rhino       | 1.7.12        | [rhino_report7](https://github.com/mozilla/rhino/issues/762) | [Haobin Li](https://github.com/Haobin-Lee) | Under discussion |                      |
+| 11   | Hermes      | b6530ae       | [hermes_report1](https://github.com/facebook/hermes/issues/349) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
+
+### Fuzzilli-discovered Bugs
+
+| No.  | JS Engines     | Build Version      | Bug Report Link                                              | Contributor                                | State            | Remarks              |
+| ---- | -------------- | ------------------ | ------------------------------------------------------------ | ------------------------------------------ | ---------------- | -------------------- |
+| 1    | Rhino          | 1.7.12             | [rhino_report1](https://github.com/mozilla/rhino/issues/719) | [Haobin Li](https://github.com/Haobin-Lee) | Under discussion | Duplicated test case |
+| 2    | JavaScriptCore | dbae081            | [JSC_report1](https://bugs.webkit.org/show_bug.cgi?id=212730) | [Xing Qu](https://github.com/QuXing9)      | Fixed            | Duplicated test case |
+| 3    | Rhino          | 1.7.12             | [rhino_report2](https://github.com/mozilla/rhino/issues/688) | [Houyou Yao](https://github.com/YaoHouyou) | Fixed            | Duplicated test case |
+| 4    | JerryScript    | 7df87b7            | [jerry_report1](local-bugs/jerryscript/No.86.png)            | [Houyou Yao](https://github.com/YaoHouyou) | Fixed            | Duplicated test case |
+| 5    | ChakraCore     | eaaf7ac            | [chakra_report1](https://github.com/microsoft/ChakraCore/issues/6342) | [Yuan Wang](https://github.com/YuanWangC)  | Verified         | Duplicated test case |
+| 6    | ChakraCore     | 5ed2985            | [chakra_report2](https://github.com/microsoft/ChakraCore/issues/6505) | [Yuan Wang](https://github.com/YuanWangC)  | Verified         |                      |
+| 7    | JavaScriptCore | dbae081            | [JSC_report2](https://bugs.webkit.org/show_bug.cgi?id=217051) | [Yuan Wang](https://github.com/YuanWangC)  | Fixed            |                      |
+| 8    | JavaScriptCore | dbae081            | [JSC_report3](https://bugs.webkit.org/show_bug.cgi?id=216816) | [Yuan Wang](https://github.com/YuanWangC)  | Verified         |                      |
+| 9    | ChakraCore     | 5ed2985            | [chakra_report3](https://github.com/microsoft/ChakraCore/issues/6507) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
+| 10   | JavaScriptCore | dbae081            | [JSC_report4](https://bugs.webkit.org/show_bug.cgi?id=216817) | [Yuan Wang](https://github.com/YuanWangC)  | Fixed            |                      |
+| 11   | Rhino          | 1.7.12             | [Rhino_report3](https://github.com/mozilla/rhino/issues/770) | [Yuan Wang](https://github.com/YuanWangC)  | Fixed            |                      |
+| 12   | QuickJS        | quickjs-2020-04-12 | [qjs_report1](local-bugs-other_fuzzers/Fuzzilli/No.12.png)   | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
+| 13   | Rhino          | 1.7.12             | [rhino_report4](https://github.com/mozilla/rhino/issues/768) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
+| 14   | ChakraCore     | 5ed2985            | [chakra_report4](https://github.com/microsoft/ChakraCore/issues/6502) | [Haobin Li](https://github.com/Haobin-Lee) | Under discussion |                      |
+| 15   | ChakraCore     | 5ed2985            | [chakra_report5](https://github.com/microsoft/ChakraCore/issues/6503) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
+| 16   | SpiderMonkey   | firefox-C69.0a1    | [spiderMonkey_report1](https://bugzilla.mozilla.org/show_bug.cgi?id=1666986) | [Haobin Li](https://github.com/Haobin-Lee) | Fixed            |                      |
+
+
 ### DIE-discovered Bugs
 
 | No.  | JS Engines     | Build Version        | Bug Report Link                                              | COMFORT Team Member (Contributor)          | State            | Remarks              |
@@ -268,6 +306,26 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 28   | Rhino          | 1.7.13               | [rhino_report10](https://github.com/mozilla/rhino/issues/781) | [Haobin Li](https://github.com/Haobin-Lee) | Undetermined     |                      |
 | 29   | ChakraCore     | v1.11.22             | [chakra_report8](https://github.com/microsoft/ChakraCore/issues/6520) | [Haobin Li](https://github.com/Haobin-Lee) | Undetermined     |                      |
 | 30   | ChakraCore     | v1.11.19             | [chakra_report9](https://github.com/microsoft/ChakraCore/issues/6502) | [Haobin Li](https://github.com/Haobin-Lee) | Undetermined     |                      |
+
+### Montage-discovered Bugs
+
+| No.  | JS Engines  | Build Version      | Bug Report Link                                              | Contributor                                | State            | Remarks              |
+| ---- | ----------- | ------------------ | ------------------------------------------------------------ | ------------------------------------------ | ---------------- | -------------------- |
+| 1    | Rhino       | 1.7.12             | [rhino_report1](https://github.com/mozilla/rhino/issues/665) | [Yang Tian](https://github.com/ty5491003)  | Fixed            | Duplicated test case |
+| 2    | Rhino       | 1.7.12             | [rhino_report2](https://github.com/mozilla/rhino/issues/719) | [Haobin Li](https://github.com/Haobin-Lee) | Under discussion | Duplicated test case |
+| 3    | Hermes      | b6530ae            | [hermes_report1](https://github.com/facebook/hermes/issues/277) | [Wen Yi](https://github.com/YiWen-y)       | Fixed            | Duplicated test case |
+| 4    | Rhino       | 1.7.12             | [rhino_report3](https://github.com/mozilla/rhino/issues/774) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
+| 5    | Rhino       | 1.7.13             | [rhino_report4](https://github.com/mozilla/rhino/issues/775) | [Xing Qu](https://github.com/QuXing9)      | Under discussion |                      |
+| 6    | Rhino       | 1.7.13             | [rhino_report5](https://github.com/mozilla/rhino/issues/776) | [Yuan Wang](https://github.com/YuanWangC)  | Under discussion |                      |
+| 7    | Hermes      | 9caeabc            | [hermes_report2](https://github.com/facebook/hermes/issues/377) |                                            | Fixed            |                      |
+| 8    | ChakraCore  | 63c5099            | [chakra_report1](https://github.com/microsoft/ChakraCore/issues/6515) | [Wen Yi](https://github.com/YiWen-y)       | Under discussion |                      |
+| 9    | Rhino       | 1.7.13             | [rhino_report6](https://github.com/mozilla/rhino/issues/782) | [Wen Yi](https://github.com/YiWen-y)       | Under discussion |                      |
+| 10   | Hermes      | 9caeabc            | [hermes_report3](https://github.com/facebook/hermes/issues/378) |                                            | Fixed            |                      |
+| 11   | ChakraCore  | 63c5099            | [chakra_report2](https://github.com/microsoft/ChakraCore/issues/6514) | [Xing Qu](https://github.com/QuXing9)      | Under discussion |                      |
+| 12   | Hermes      | 9caeabc            | [hermes_report4](https://github.com/facebook/hermes/issues/389) | [Xing Qu](https://github.com/QuXing9)      | Verified         |                      |
+| 13   | JerryScript | 7df87b7            | [jerry_report1](local-bugs-other_fuzzers/Montage/No.13.png)  | [Wen Yi](https://github.com/YiWen-y)       | Fixed            |                      |
+| 14   | QuickJS     | quickjs-2020-09-06 | [qjs_report1](local-bugs-other_fuzzers/Montage/No.14.png)    | [Xing Qu](https://github.com/QuXing9)      | Under discussion |                      |
+| 15   | Rhino       | 1.7.13             | [rhino_report7](local-bugs-other_fuzzers/Montage/No.15.png)  |                                            | Verified         |                      |
 
 ### DeepSmith-discovered Bugs
 
