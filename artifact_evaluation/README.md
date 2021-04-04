@@ -200,7 +200,7 @@ function2(...){
 ```
 Here, we place `//JavascriptTop2000Functions` at the beginning of each function to split the training samples. An example of the training corpus can be found at ```/root/data/top10000.txt```. Once you have prepared the training corpus, stored it at ```/root/data/top10000.txt```, then follow the instructions [here](#generator) to train your own test program generator. 
 
-## Differential Testing Results Storage (Optional)**
+## Differential Testing Results Storage **
 
 The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in the ```classify``` database at the local MYSQL database. To check the results, using the following bash command to login into the database:
 
