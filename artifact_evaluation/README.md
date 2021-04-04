@@ -16,7 +16,7 @@ Note that we do not log IP addresses or other accessing information, but if you 
 
 ## ★ Main Results <span id = "bug-list">
 
-The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases. 
+The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases and other competing methods. 
 
 ## ★ Docker Image <br id = "dockerimg">
 We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
@@ -112,26 +112,6 @@ We have reduced the size of the corpus so that it takes around 5 hours to train 
 
 Training the model can be interrupted after the first training iteration. Once trained, the model does not need to be re-trained. *Note that it takes around 20 minutes to load the dataset and the model using a laptop CPU*. 
 
-* **Preparing training samples:**  The samll training corpus are sotred in `/root/data/top10000.txt`. Of course, you can refine the GPT-2 model with your own dataset which needs to be organized into one of the following two formats:
-
-```txt
-//JavascriptTop2000Functions\n
-function1(...){
- ...
-}
-//JavascriptTop2000Functions\n
-function2(...){
- ...
-}
-```
-or 
-```txt
-JavascriptTop2000Functions\nfunction1(...){...}
-JavascriptTop2000Functions\nfunction2(...){...}
-```
-
-Where `//JavascriptTop2000Functions` is the delimiter that is used to split the training samples from the training corpus.
-
 
 ##### Step 2: Program generation
 (*approximate runtime: 20 minutes for using a  GPU, ~4 hours when using a CPU*)
@@ -190,7 +170,37 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
 
-**Differential Testing Results Storage (Optional)**
+
+
+
+## Remark
+
+The docker image provides a small-scale experiment to showcase the working mechanism of our work. Our main results (that run much longer – 200 hours per JS testbed on a larger test dataset) can be found at the [Bug List](./Bug-List.md) section. 
+
+# Notes For Reusing Our AE <br id="reuse>
+
+## Training the program generator on your own corpus
+
+You can train the GPT-2 model on your own training corpus. To do so, provide a txt file
+
+
+The samll training corpus are sotred in `/root/data/top10000.txt`. Of course, you can refine the GPT-2 model with your own dataset which needs to be organized into one of the following two formats:
+
+You can train the GPT-2 model on your own training corpus. To do so, providing a text file that contains a just of JS functions in the following format: 
+
+```txt
+//JavascriptTop2000Functions\n
+function1(...){
+ ...
+}
+//JavascriptTop2000Functions\n
+function2(...){
+ ...
+}
+```
+Here, we place `//JavascriptTop2000Functions` at the beginning of each function to split the training samples. An example of the training corpus can be found at ```/root/data/top10000.txt```. Once you have prepared the training corpus, stored it at ```/root/data/top10000.txt```, then follow the instructions [here](#generator) to train your own test program generator. 
+
+## Differential Testing Results Storage (Optional)**
 
 The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in the ```classify``` database at the local MYSQL database. To check the results, using the following bash command to login into the database:
 
@@ -212,8 +222,3 @@ Schema of table *exists_errortype* is:
 > - `error_api`：API calls that trigger the `error_info`;
 > - `count` ：The number of test results that belong to the `error_type`, which accumulates the number of testing results that belong to the same error type seen to date.
 
-
-
-## Remark
-
-The docker image provides a small-scale experiment to showcase the working mechanism of our work. Our main results (that run much longer – 200 hours per JS testbed on a larger test dataset) can be found at the [Bug List](./Bug-List.md) section. 
