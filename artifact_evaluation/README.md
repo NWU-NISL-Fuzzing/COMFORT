@@ -19,7 +19,7 @@ Note that we do not log IP addresses or other accessing information, but if you 
 The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases and other competing methods. 
 
 ## ★ Docker Image <br id = "dockerimg">
-We prepare our artifact within a Docker image to run "out of the box". The Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
+We prepare our artifact within a Docker image to run "out of the box". A reduced-sized Docker image can be downloaded from [here](https://drive.google.com/drive/folders/1JkS2S4GOCPdicQsbDeqlkzXO4tZ-2Iyg?usp=sharing). 
 Our docker image was tested on a host machine running Ubuntu 18.04. 
 
 ## ★ Artifact Contents
