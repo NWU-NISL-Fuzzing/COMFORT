@@ -1,14 +1,18 @@
-The following steps for running other fuzzers were tested on a host machine running Ubuntu 18.04. 
+Here, we describe how to use other fuzzers to generate JS test cases for differential testing. Once the test cases are genearted and saved to a directory, you can then use the differential testing intructions described [here](./README.md#dftest) to perform differential testing used the generated test case. 
+
+*Note that the following steps for running other fuzzers were only tested on a host machine running Ubuntu 18.04.*
 
 ## Fuzzilli
 
+### Setup
 * Before running, you should setup the environment variable on *the host machine* using the following command:
 
 ```bash
     sudo sysctl -w 'kernel.core_pattern=|/bin/false'
 ```
 
-* Using the following command to execution:
+### Generating test cases
+* Using the following command to generate test cases:
 
 ```bash
     cd /root/software/fuzzers/fuzzilli
@@ -19,14 +23,13 @@ Remember to configure  `storagePath` before each running.
 
 
 ## DeepSmith
-
-* First, it should switch another conda environment using the below commands:
+### Training DeepSmith for JS Test Program Generation
+* Switch to another conda environment by running the below commands in bash of our docker container. 
 
 ```bash
 conda deactivate
 conda activate pytorch
 ```
-
 
 * Next, training the model using the following commands:
 
@@ -35,17 +38,18 @@ cd /root/software/fuzzers/DeepSmithNISL
 python train.py --workspace=default --data_path=/root/data/top10000.txt --epoch=10  --save_every_epoch=10
 ```
 
-The default save path of the trained model is stored to `/root/software/fuzzers/DeepSmithNISL/workspace/default`
+The trained model is saved to `/root/software/fuzzers/DeepSmithNISL/workspace/default`
 
+### Generating Test Cases
 
-* Finally, using the following commands to generate the JS test cases:
+* Using the following commands to use the trained model to generate the JS test cases 
 
 ```python
 cd /root/software/fuzzers/DeepSmithNISL
 python gen.py --gen_model=workspace/default/model_10.ckpt --gen_file=gen_test.txt --gen_number=32 --gen_batch_size=32 
 ```
 
-The generated JS program will be stored to `/root/software/fuzzers/DeepSmithNISL/workspace/default/gen_test.txt`.
+The generated JS program are saved to `/root/software/fuzzers/DeepSmithNISL/workspace/default/gen_test.txt`.
 
 
 ## Montage
