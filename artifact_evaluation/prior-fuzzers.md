@@ -194,7 +194,7 @@ Then, go into bash of the docker container to configure the server and the clint
    ~~~
 
 
-#### Step 2 Start the fuzzing to mutate the seed programs
+#### Step 2 Start the fuzzing process to mutate the seed programs
 
    ```
    cd /root/software/fuzzers/DIE
