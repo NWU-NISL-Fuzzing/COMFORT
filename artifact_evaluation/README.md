@@ -188,5 +188,5 @@ Check [this document](./prior-fuzzers.md)  for how to use other fuzzers (CodeAlc
 
 The docker image provides a small-scale experiment to showcase the working mechanism of our work. Our main results (that run much longer – 200 hours per JS testbed on a larger test dataset) can be found at the [Bug List](./Bug-List.md) section. 
 
-# ★ Reusing Our AE <br id="reuse">
-Notes for reusing our AE can be found at [this document](./ReuseNotes.md).
+# Reusing Our AE <br id="reuse">
+Notes for how to resue our AE can be found at [this document](./ReuseNotes.md).
