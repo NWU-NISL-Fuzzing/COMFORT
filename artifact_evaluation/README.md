@@ -177,6 +177,5 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 The docker image provides a small-scale experiment to showcase the working mechanism of our work. Our main results (that run much longer – 200 hours per JS testbed on a larger test dataset) can be found at the [Bug List](./Bug-List.md) section. 
 
-# Notes For Reusing Our AE <br id="reuse">
-
-
+# Reusing Our AE <br id="reuse">
+Notes for reusing our AE can be found at [this document](./ReuseNotes.md).
