@@ -46,8 +46,10 @@ The trained model is saved to `/root/software/fuzzers/DeepSmithNISL/workspace/de
 
 ```python
 cd /root/software/fuzzers/DeepSmithNISL
-python gen.py --gen_model=workspace/default/model_10.ckpt --gen_file=gen_test.txt --gen_number=32 --gen_batch_size=32 
+python gen.py --gen_model=workspace/default/model_10.ckpt --gen_file=gen_test.txt --gen_number=1024 --gen_batch_size```=32 
 ```
+
+The ```--gen_number``` defines how many test programs to generate, which must be a multiply of the batch_size defined by ```--gen_batch_size```
 
 The generated JS program are saved to `/root/software/fuzzers/DeepSmithNISL/workspace/default/gen_test.txt`.
 
