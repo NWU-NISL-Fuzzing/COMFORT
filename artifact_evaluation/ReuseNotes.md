@@ -19,7 +19,7 @@ Here, we place `//JavascriptTop2000Functions` at the beginning of each function 
 After training your own program synthesizer, you can then follow the AE instructions to launch differential tests. 
 
 ## Add a new JS testbed for differential testing
-To add a new JS Engine (testbed) for differential testing, you can edit the configuration file at ```/root/data/config.json```, and put the command for launching the JS engine in the ``engines`` list. For example, the following configuration defined 10 JS engines used in our AE demo. 
+To add a new JS Engine (testbed) for differential testing, you can edit the configuration file at ```/root/data/config.json```, and put the command for launching the JS engine in the ``engines`` list. For example, the following configuration defines 10 JS testbeds used in our AE demo. 
 
 >  "engines": [
 >  
