@@ -206,9 +206,11 @@ After training your own program synthesizer, you can then follow the AE instruct
 To add a new JS Engine (testbed) for differential testing, following the steps described below:
 
 
-## Database for Differential Testing Results 
+## Database
 
-The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in the ```classify``` database at the local MYSQL database. To check the results, using the following bash command to login into the database:
+The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in a MYSQL database. The database is used to filter out idential bug behavior seen in previous runs. 
+
+To check the schema and content of the database, using the following bash command to login into the database:
 
 >```mysql -uroot -p123456 ```
 
@@ -218,7 +220,6 @@ Then, check the data stored in the database:
 >
 > ```select * from exist_errortype;```
 
-
 Schema of table *exists_errortype* is:
 
 > - `id` ：Categorize ID denoting which type the testing result belongs to;
@@ -227,5 +228,3 @@ Schema of table *exists_errortype* is:
 > - `error_info`：The (error) messages produced by the JS engine;
 > - `error_api`：API calls that trigger the `error_info`;
 > - `count` ：The number of test results that belong to the `error_type`, which accumulates the number of testing results that belong to the same error type seen to date.
-
-This table is also used to filter out idential bug behavior seen in previous runs. 
