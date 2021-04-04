@@ -18,7 +18,6 @@ Please note that you should set the new `storagePath` for each running to avoid 
 
 ## DeepSmith
 
-**首先需要切换到另一个conda环境：**
 * First, it should switch another conda environment using the below commands:
 
 ```bash
