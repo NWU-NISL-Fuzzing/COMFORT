@@ -170,7 +170,7 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
 
 ### Testing other fuzzers (optional)
-Check [this document](./prior-fuzzers.md)  for how to use other fuzzers (CodeAlchemist, DeepSmith, Fuzzilli, Montage, Die) for test program generation and differential testing 
+Check [this document](./prior-fuzzers.md)  for how to use other fuzzers (CodeAlchemist, DeepSmith, Fuzzilli, Montage, Die) for test program generation and differential testing. 
 
 ## Remark
 
