@@ -54,13 +54,14 @@ The generated JS program are saved to `/root/software/fuzzers/DeepSmithNISL/work
 
 ## Montage
 
-* Step 1, go to the root directory of Montage, e.g.,：
+### Setup and model training
+* Step 1, go to the root directory of Montage. In our docker container, this would be: 
 
    ```
    cd /root/software/fuzzers/montage/Montage/src/
    ```
 
-* Step 2, preprocessing and configuration using the following command:
+* Step 2, preprocessing and configuring Montage using the following command:
 
    ```
    python3 main.py --opt preprocess --config /root/software/fuzzers/montage/Montage/config.json
@@ -102,7 +103,9 @@ The generated JS program are saved to `/root/software/fuzzers/DeepSmithNISL/work
          self.exec_eng(js_path)
    ```
 
-Step 6, execution:
+## Test case generation
+
+   After configuring the fuzzer, using the following command running in our container to generate test cases. 
 
    ```
    python3 main.py --opt fuzz --config /root/software/fuzzers/montage/Montage/config.json
@@ -113,7 +116,8 @@ The generated JS test cases are stored in `/root/software/fuzzers/montage/Montag
 
 ## CodeAlchemist
 
-* Using the following to execute the generator:
+### Test case generation
+* Using the following to execute the generator in our docker container:
 
    ```
    screen -S fuzz
@@ -123,7 +127,7 @@ The generated JS test cases are stored in `/root/software/fuzzers/montage/Montag
    ```
 
    
-* Running `modify.py` to transfer the generated test cases: 
+* Running `modify.py` to convert the generated test cases: 
 
    ```
    screen -S motify
@@ -136,15 +140,18 @@ The generated test cases are stored in `/root/software/fuzzers/CodeAlchemist/dat
 
    
 
-## DIE (Unfinshed)
+## DIE
 
-* First, it should run the following command on the host machine: 
+### Setup 
+* Run the following command to setup the host machine (tested on Ubuntu 18.04)
 
    `sudo bash -c "echo core >/proc/sys/kernel/core_pattern"`
 
-**Configuring the server side**
+Then, go into bash of the docker container to configure the server and the clint, by following the instructions given below: 
 
-Step 1 Connect the redis server:
+### Configuring the server
+
+#### Step 1 Connect to the redis server:
 
    ```
    /etc/init.d/ssh start
@@ -153,7 +160,7 @@ Step 1 Connect the redis server:
    ctrl+b+d to exit the session
    ```
 
-Step 2 Preprocessing the corpus:
+#### Step 2 Preprocessing the corpus:
 
    ```
    cd /root/software/fuzzers/DIE
@@ -162,19 +169,19 @@ Step 2 Preprocessing the corpus:
    ./fuzz/scripts/populate.sh ./engines/chakracore-1.11.24/out/Debug/bin/ch/ch ./DIE-corpus/ ch
    ```
 
-3. 查看执行情况
-Step 3 Monitor the running: 
+### Step 3 Monitor the server status:
 
    ```
    tmux attach -t corpus
-   ctrl+b+d 退出会话
    ```
+   
+ Note that press ```ctrl+b+d``` to exit from the session. 
 
    
 
-**Configuring the client side：**
+### Configure the DIE client
 
-Step 1 Connect the server
+#### Step 1 Connect the server
 
    ~~~
    tmux new-session -s ssh-tunneling
@@ -183,7 +190,7 @@ Step 1 Connect the server
    ~~~
 
 
-Step 2 Fuzzing:
+#### Step 2 Start the fuzzing to mutate the seed programs
 
    ```
    cd /root/software/fuzzers/DIE
@@ -191,12 +198,12 @@ Step 2 Fuzzing:
    ./fuzz/scripts/run.sh ./engines/chakracore-1.11.24/out/Debug/ch ./DIE-corpus ch
    ```
 
-Step 3 Monitor the running:
+#### Step 3 Monitor the running:
 
    ```
    tmux attach -t fuzzer
    ctrl+b+d exit the session
    ```
 
-Finally, the generated test cases are stored in `/root/software/fuzzers/DIE/mutatedSeeds`.
+The generated test cases are stored in `/root/software/fuzzers/DIE/mutatedSeeds`.
 
