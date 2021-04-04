@@ -15,7 +15,7 @@ The following steps for running other fuzzers were tested on a host machine runn
     swift run -c release -Xlinker='-lrt' FuzzilliCli --profile=jerryscript --storagePath=/root/software/fuzzers/fuzzilli/data /root/software/fuzzers/additional_engines/jerryscript/build/bin/jerry
 ```
 
-Please note that you should set the new `storagePath` for each running to avoid throwing exception.
+Remember to configure  `storagePath` before each running.
 
 
 ## DeepSmith
