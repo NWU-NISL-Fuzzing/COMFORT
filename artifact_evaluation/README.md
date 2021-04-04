@@ -224,3 +224,4 @@ Schema of table *exists_errortype* is:
 > - `error_api`：API calls that trigger the `error_info`;
 > - `count` ：The number of test results that belong to the `error_type`, which accumulates the number of testing results that belong to the same error type seen to date.
 
+This table is also used to filter out idential bug behavior seen in previous runs. 
