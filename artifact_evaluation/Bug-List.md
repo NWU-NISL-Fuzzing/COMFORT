@@ -10,9 +10,11 @@ in ECMA-262 or not supported by the testing compiler. There are also bug reports
 Futhermore, some COMPORT-generated test cases have exposed addtional bugs after our PLDI submission during our continous testing process. 
 These newly exposed bugs are listed at [here](#newly-discovered). We also list the COMFORT-generated test cases that were accepted by the [Test-262 test suite](https://github.com/tc39/test262) in the [Test-262 accepted test case section](#test-262). 
 
+We also list the bugs found by other JS fuzzers (Figure 7) at [here](#otherfuzzer)
+
 ## Main Results 
 
-*This section corresponds to Tables 2 and Figure 7 of the submitted paper*
+*This section corresponds to Tables 2 and Figure 8 of the submitted paper*. 
 
 ### COMFORT-discovered Bugs
 
@@ -232,7 +234,7 @@ were made by the relevant JS vendor after we reported a COMFORT-found bug.
 | 18 |ChakraCore| V1.11.24 | [chakra_report8](https://github.com/chakra-core/ChakraCore/issues/6589) | [Wen Yi](https://github.com/YiWen-y) | Rejected by developers ||
 
 
-## Bugs exposed by other fuzzers
+## Bugs exposed by other fuzzers <br id="otherfuzzer">
 JS engine bugs found by other fuzzers. This data corresponds to Figure 7 of the submitted paper. 
 
 ### CodeAlchemist-discovered Bugs
