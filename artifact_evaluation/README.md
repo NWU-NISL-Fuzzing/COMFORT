@@ -231,7 +231,7 @@ To add a new JS Engine (testbed) for differential testing, you can edit the conf
 
 ## Database
 
-The deviated behaviours found during differential testing (after applying our filtering scheme) are stored in a MYSQL database. The database is used to filter out idential bug behavior seen in previous runs. 
+The deviated behaviours found during differential testing are stored in a MYSQL database. The database is used to filter out idential bug behavior seen in previous runs. 
 
 To check the schema and content of the database, using the following bash command to login into the database:
 
