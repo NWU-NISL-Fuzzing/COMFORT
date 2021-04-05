@@ -59,7 +59,6 @@ After downloading the [docker image](#dockerimg), using the following commands t
 unzip 53.zip
 cd 53
 docker load -i 53.tar
-docker tag 73a15dc0bf7b pldi2021:comfort
 ```
 
 ### ★ Importing the Docker Image
