@@ -33,7 +33,7 @@ The Docker image contains the following scripts for evaluation.
  * [05_testcase_reducing.py](https://github.com/NWU-NISL-Fuzzing/COMFORT/blob/main/artifact_evaluation/src/05_testcase_reducing.py): A demonstraction of test case reduction.
 
 
-### Preliminary: Configure the GPU Running Environment (optional) <br id = "gpusetup">
+### Preliminary: Configure the GPU Running Environment on the Host Machine (optional) <br id = "gpusetup">
 If you wish to use an NVIDIA GPU on the host machine (running Ubuntu 18.04) to execute the AE, please follow the instructions below to setup the GPU execution environment:
 
 > - Copy [this bash script](../data/nvidia-container-runtime-script.sh) and run the following command in **the host environment** with sudo permission:
@@ -55,7 +55,7 @@ Please note that the above steps for configuring the GPU environment were only t
 Follow the instructions below to use our AE scripts.
 
 ### ★ Setup
-#### Setup 1 Loading Docker Image <br id="loaddi">
+#### Step 1 Loading Docker Image <br id="loaddi">
 After downloading the [docker image](#dockerimg), using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
 ```
 unzip 53.zip
