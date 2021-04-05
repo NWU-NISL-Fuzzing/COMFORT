@@ -14,6 +14,7 @@ Note that we do not log IP addresses or other accessing information, but if you 
 
 # Step-by-Step Instructions <br id = "docker">
 
+
 ## ★ Main Results <span id = "bug-list">
 
 The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COMFORT-generated test cases and other competing methods. 
@@ -53,7 +54,8 @@ Please note that the above steps for configuring the GPU environment were only t
 
 Follow the instructions below to use our AE scripts.
 
-### ★ Loading Docker Image <br id="loaddi">
+### ★ Setup
+#### Setup 1 Loading Docker Image <br id="loaddi">
 After downloading the [docker image](#dockerimg), using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
 ```
 unzip 53.zip
@@ -61,7 +63,8 @@ cd 53
 docker load -i 53.tar
 ```
 
-### ★ Importing the Docker Image
+#### Step 2 Importing the Docker Image
+Choose one of the following options depending if you have setup the NVIDIA GPU execution environment. 
 
 > - **Using CPU:** Using the following command to import the docker container and use the CPU for testing:
 >     
@@ -73,11 +76,12 @@ docker load -i 53.tar
 >     
 
 **[!IMPORTANT]**
-> - **Setup environmental parameters:** After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
+**Setup environmental parameters:** After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 >
 >     ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile``` 
 >  
->  This script will also start a MYSQL database deamon needed for program mutations and differentiated testing. 
+
+This script will also start a MYSQL database deamon needed for program mutations and differentiated testing. 
 
  
 
