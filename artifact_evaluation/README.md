@@ -167,7 +167,9 @@ Replace the ```comfort_generate``` directory in option ```--coverage_files=/root
 * Evaluate our differential fuzzer on *ten* JS test beds by running the following command (In our paper, we tested 102 testbeds on a much larger dataset for 200 hours):
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
-   
+  
+During the differential testing, inconsistent testing outcomes will be printed out on the screen. Since we generate multiple test cases from the same test program through mutation, we are likely to get many identical inconsistent results. We apply our filtering script to filter these identical testing outcomes. 
+
 Once executed and if buggy behaviour is detected, you will see an output similar to the one given below. 
 
 >.......
