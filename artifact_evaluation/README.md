@@ -204,6 +204,8 @@ Use the following command running in our docker container to evaluate our test c
 
 ```python /root/src/05_testcase_reducing.py --file_dir=/root/data/interesting_testcases```
 
+**Known issue** To demonstrate the test case reduction, we always include a randomly selected test case (in addtion to the bug-exposing one, if any) in the ```interesting_testcases``` folder. If this randmoly selected test case is the only test case to be reduced, the test case reducer will return empty result as the randomly chosen test case does not trigger unusal behavior. This is a work-around technique used for AE only. 
+
 
 ### ★ Testing other fuzzers (optional)
 (*~20+ hours*)
