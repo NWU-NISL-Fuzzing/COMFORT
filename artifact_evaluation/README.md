@@ -204,7 +204,7 @@ Use the following command running in our docker container to evaluate our test c
 
 ```python /root/src/05_testcase_reducing.py --file_dir=/root/data/interesting_testcases```
 
-**Known issue** To demonstrate the test case reduction, we always include a test case - 5.js (in addition to the bug-exposing one, if any) in the ```interesting_testcases``` folder. This is to prevent the issue of not able to run the test case reducer if no test case triggered buggy behaviour during differential testing. If 5.js is the only test case to be reduced and it does not trigger buggy behaviour, the test case reducer will return an empty result. This is a work-around technique used for AE only.
+**Known issue** To demonstrate the test case reduction, we always include a test case - 5.js (in addition to the bug-exposing ones, if any) in the ```interesting_testcases``` folder. This is to prevent the issue of not able to run the test case reducer if no test case triggered buggy behaviour during differential testing. If 5.js is the only test case to be reduced and it does not trigger buggy behaviour, the test case reducer will return an empty result. This is a work-around technique used for AE only.
 
 ### ★ Testing other fuzzers (optional)
 (*~20+ hours*)
