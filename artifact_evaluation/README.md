@@ -62,9 +62,7 @@ unzip 53.zip
 cd 53
 docker load -i 53.tar
 ```
-
-#### Step 2 Importing the Docker Image
-Choose one of the following options depending if you have setup the NVIDIA GPU execution environment. 
+Then, choose one of the following options depending if you have setup the NVIDIA GPU execution environment. 
 
 > - **Using CPU:** Using the following command to import the docker container and use the CPU for testing:
 >     
@@ -75,8 +73,10 @@ Choose one of the following options depending if you have setup the NVIDIA GPU e
 >     ```docker run -it --name comfort --gpus all pldi2021:comfort /bin/bash  ```
 >     
 
-**[!IMPORTANT]**
-**Setup environmental parameters:** After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
+
+### Step 2: setup environmental parameters:
+
+After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 >
 >     ```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile``` 
 >  
