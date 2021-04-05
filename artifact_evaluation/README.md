@@ -204,17 +204,19 @@ Use the following command running in our docker container to evaluate our test c
 
 ```python /root/src/05_testcase_reducing.py --file_dir=/root/data/interesting_testcases```
 
-**Known issue** To demonstrate the test case reduction, we always include a randomly selected test case (in addtion to the bug-exposing one, if any) in the ```interesting_testcases``` folder. If this randmoly selected test case is the only test case to be reduced, the test case reducer will return empty result as the randomly chosen test case does not trigger unusal behavior. This is a work-around technique used for AE only. 
-
+**Known issue** To demonstrate the test case reduction, we always include a test case - 5.js (in addition to the bug-exposing one, if any) in the ```interesting_testcases``` folder. This is to prevent the issue of not able to run the test case reducer if no test case triggered buggy behaviour during differential testing. If 5.js is the only test case to be reduced and it does not trigger buggy behaviour, the test case reducer will return an empty result. This is a work-around technique used for AE only.
 
 ### ★ Testing other fuzzers (optional)
 (*~20+ hours*)
 
 Check [this document](./prior-fuzzers.md)  for how to use other fuzzers (CodeAlchemist, DeepSmith, Fuzzilli, Montage, Die) for test program generation and differential testing. 
 
-## ★ Remark
+## ★ Remarks
 
 The docker image provides a small-scale experiment to showcase the working mechanism of our work. Our main results (that run much longer – 200 hours per JS testbed on a larger test dataset) can be found at the [Bug List](./Bug-List.md) section. 
+
+In Figure 6 of the submitted manuscript, we attribute the discovered bugs to the general components of JS engines. This grouping is subjective as JS engine implementations do not follow the same structure, and we refer the reviewers to the live server to check the results.
+
 
 # Reusing Our AE <br id="reuse">
 Notes for how to resue our AE can be found at [this document](./ReuseNotes.md).
