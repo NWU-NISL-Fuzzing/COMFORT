@@ -164,6 +164,30 @@ Replace the ```comfort_generate``` directory in option ```--coverage_files=/root
 * Evaluate our differential fuzzer on *ten* JS test beds by running the following command (In our paper, we tested 102 testbeds on a much larger dataset for 200 hours):
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
+   
+Once executed, you will see the output similar to the below example in the console:
+
+>.......
+>
+> The number of deviated test cases that were filtered out by our filtring scheme is: 4
+> 
+> The number of test cases required manual analysis is: 1
+> 
+> Summary of test case required manual inspect:
+> 
+> =================================================
+> 
+> Test Cases  &emsp; &emsp;   JS Testbed
+> 
+> 1.js      &emsp;&emsp;     Jerryscript-7df87b7
+> 
+> =================================================
+> 
+> --------------------------------------------------------------------
+> 
+> All differential testing results are saved to /root/data/mutation_result/log/*.log. Check the log file for deviated execution outputs 
+> 
+> ---------------------------------------------------------------------
 
 Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 512), it is likely that none of the test cases triggers a potential bug.
 
