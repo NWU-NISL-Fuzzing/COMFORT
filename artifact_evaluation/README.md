@@ -200,7 +200,7 @@ Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 51
 
 **[!important]** This step must run after differential testing. 
 
-Use the following command running in our docker container to evaluate our test case reducer 
+Use the following command running in our docker container to evaluate our test case reducer:
 
 ```python /root/src/05_testcase_reducing.py --file_dir=/root/data/interesting_testcases```
 
