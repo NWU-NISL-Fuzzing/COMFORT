@@ -192,7 +192,7 @@ Once executed and if buggy behaviour is detected, you will see an output similar
 > 
 > ---------------------------------------------------------------------
 
-Since we only test on <= 512 generated programs ([nsamples](#pregenerator) <= 512), it is likely that none of the test cases triggers a potential bug.
+Since we only test on a relatively smaller number of test cases ([nsamples](#pregenerator) <= 512), it is likely that none of the test cases triggers a potential bug.
 
 **Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error, make sure you have run the setup script as:
 
