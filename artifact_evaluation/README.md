@@ -168,7 +168,7 @@ Replace the ```comfort_generate``` directory in option ```--coverage_files=/root
 
    ```python /root/src/03_evaluate_harness.py --testsuite=/root/data/mutation_result/ --clear_classifier=False```
    
-Once executed, you will see the output similar to the below example in the console:
+Once executed and if buggy behaviour is detected, you will see an output similar to the one given below. 
 
 >.......
 >
