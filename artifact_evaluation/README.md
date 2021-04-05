@@ -176,7 +176,7 @@ Once executed and if buggy behaviour is detected, you will see an output similar
 > 
 > The number of test cases required manual analysis is: 1
 > 
-> Summary of test case required manual inspect:
+> Summary of test cases required manual inspect:
 > 
 > =================================================
 > 
