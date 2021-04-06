@@ -203,7 +203,7 @@ Since we only test on a relatively smaller number of test cases ([nsamples](#pre
 
 ### ★ Demonstration of Test Case Reduction (Optional)
 
-**[!important]* This step must run after the differential testing stage. 
+**[!important]** This step must run after the differential testing stage. 
 
 Use the following command running in our docker container to evaluate our test case reducer:
 
