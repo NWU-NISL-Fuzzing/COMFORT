@@ -114,8 +114,7 @@ The program uses a small JS corpus of 10,000 JS programs randomly selected from 
 
 We have reduced the size of the corpus so that it takes around 5 hours to train on a multi-core CPU (~1 hour on a GPU). For our paper, we trained our model on more data (140,000 JS programs rather than 2,000) for longer (~150,000 iterations rather than 1,000). *As such, the quality of output of this model is lower, which is likely to produce shorter and fewer syntactically correct programs*. 
 
-Training the model can be interrupted after the first training iteration. Once trained, the model does not need to be re-trained. *Note that it takes around 20 minutes to load the dataset and the model using a laptop CPU*. 
-
+*Training the model can be interrupted after the first training iteration (by pressing Ctrl + C)*. Once trained, the model does not need to be re-trained. 
 
 #### Step 2: Program generation
 (*approximate runtime: 20 minutes for using a  GPU, ~4 hours when using a CPU*)
