@@ -70,7 +70,7 @@ The following steps are executed in bash of our docker container.
    cd /root/software/fuzzers/montage/Montage/src/
    ```
 
-Step 2, use the following command running in our container to generate test cases. 
+* Step 2, use the following command running in our container to generate test cases. 
 
    ```
    python3 main.py --opt fuzz --config /root/software/fuzzers/montage/Montage/config.json
