@@ -33,7 +33,7 @@ The Docker image contains the following scripts for evaluation.
  * [05_testcase_reducing.py](./src/05_testcase_reducing.py): A demonstration of test case reduction.
 
 
-### Preliminary: Configure the GPU Running Environment on the Host Machine (optional) <br id = "gpusetup">
+### Preliminary: Configure the GPU Running Environment on the Host Machine (Optional) <br id = "gpusetup">
 If you wish to use an NVIDIA GPU on the host machine (running Ubuntu 18.04) to execute the AE, please follow the instructions below to setup the GPU execution environment:
 
 > - Copy [this bash script](../data/nvidia-container-runtime-script.sh) and run the following command in **the host environment** with sudo permission:
@@ -50,9 +50,9 @@ If you wish to use an NVIDIA GPU on the host machine (running Ubuntu 18.04) to e
 
 Please note that the above steps for configuring the GPU environment were only tested on **a host machine running Ubuntu 18.04**. It may throw exceptions or errors when configuring in other Linux distributions. If you have difficulties in setting up the GPU, you can opt to use the CPU for AE testing or use the pre-configured, live server given in the getting start guide to go through the setps. 
 
-## Evaluation Steps
+## AE Evaluation Steps
 
-Follow the instructions below to use our AE scripts.
+Follow the instructions below to use our AE evaluation scripts.
 
 ### ★ Setup
 #### Step 1 load the Docker Image <br id="loaddi">
