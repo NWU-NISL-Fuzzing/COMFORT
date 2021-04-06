@@ -56,7 +56,7 @@ Follow the instructions below to use our AE scripts.
 
 ### ★ Setup
 #### Step 1 load the Docker Image <br id="loaddi">
-After downloading the [docker image](#dockerimg), using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
+After downloading the [docker image](#dockerimg), using the following commands to load the docker image (~30 minutes on a laptop for the reduced sized image) on the host machine:
 ```
 unzip 53.zip
 cd 53
