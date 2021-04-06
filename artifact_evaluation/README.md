@@ -156,7 +156,7 @@ Replace the ```comfort_generate``` directory in option ```--coverage_files=/root
 
 ```python /root/src/02_evaluate_mutator.py --input_path=/root/data/generated_data/complete_testcases --save_path=/root/data/mutation_result```
 
-**Note that our tool can only mutate test programs with a JS API. If the test program does not contain a JS API, it will yield an eror meassge `This test case fails to be mutated as it does not contain any API.`** When all test cases have processed, you can see the number of test cases that were mutated successfully. *Note that most of the GPT-2 generated test programs will not be mutated, but they were still used in our fuzzing test; hence, are not wasted*. 
+**Note that our tool can only mutate test programs with a JS API. If the test program does not contain a JS API, it will yield a warning `This test case fails to be mutated as it does not contain any API.`** When all test cases have processed, you can see the number of test cases that were mutated successfully. *Note that most of the GPT-2 generated test programs will not be mutated, but they were still used in our fuzzing test; hence, are not wasted*. 
 
 
 ### ★ Demonstration of Differential Testing <br id="dftest">
