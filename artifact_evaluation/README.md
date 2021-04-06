@@ -216,7 +216,7 @@ Use the following command running in our docker container to evaluate our test c
 ### ★ Testing other fuzzers (optional)
 (*~20+ hours*)
 
-Check [this document](./prior-fuzzers.md)  for how to use other fuzzers (CodeAlchemist, DeepSmith, Fuzzilli, Montage, Die) for test program generation and differential testing (using our scripts). 
+Check [this document](./prior-fuzzers.md)  for how to use other fuzzers (CodeAlchemist, DeepSmith, Fuzzilli, Montage, Die) for test program generation and differential testing. 
 This test requires using a larger docker image (80+GB uncompressed) that can be downloaded from [here](https://drive.google.com/file/d/1WMd4GMin5rOke40CaFwylm34ddmBpFGY/view?usp=sharing)
 
 ## ★ Remarks
