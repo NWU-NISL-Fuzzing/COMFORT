@@ -24,7 +24,7 @@ Following the instructions [here](./README.md#loaddi) to load the docker image.
     swift run -c release -Xlinker='-lrt' FuzzilliCli --profile=jerryscript --storagePath=/root/software/fuzzers/fuzzilli/data /root/software/fuzzers/additional_engines/jerryscript/build/bin/jerry
 ```
 
-Remember to pass in the  `storagePath` argument for each run.
+Test cases are save into the path given by the `storagePath` (`/root/software/fuzzers/fuzzilli/data` in this example). 
 
 
 ## DeepSmith
