@@ -64,14 +64,14 @@ docker load -i 53.tar
 ```
 Then, choose one of the following options depending if you have setup the NVIDIA GPU execution environment. 
 
-> - **Using CPU:** Using the following command to import the docker container and use the CPU for testing:
->     
->     ```docker run -it --name comfort pldi2021:comfort /bin/bash  ```
->     
-> - **Using GPU:** Run the following command to import the docker container with GPU support (Make sure you have setup the GPU environment - see [here](#gpusetup)):
-> 
->     ```docker run -it --name comfort --gpus all pldi2021:comfort /bin/bash  ```
->     
+- **Using CPU:** Using the following command to import the docker container and use the CPU for testing:
+     
+     ```docker run -it --name comfort pldi2021:comfort /bin/bash  ```
+     
+- **Using GPU:** Run the following command to import the docker container with GPU support (Make sure you have setup the GPU environment - see [here](#gpusetup)):
+ 
+     ```docker run -it --name comfort --gpus all pldi2021:comfort /bin/bash  ```
+     
 
 
 ### Step 2: setup environmental parameters:
