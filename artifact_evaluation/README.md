@@ -74,7 +74,7 @@ Then, choose one of the following options depending if you have setup the NVIDIA
      
 
 
-### Step 2: setup environmental parameters:
+#### Step 2: setup environmental parameters:
 
 After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 
