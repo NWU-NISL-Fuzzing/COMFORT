@@ -55,7 +55,7 @@ Please note that the above steps for configuring the GPU environment were only t
 Follow the instructions below to use our AE scripts.
 
 ### ★ Setup
-#### Step 1 Loading Docker Image <br id="loaddi">
+#### Step 1 load the Docker Image <br id="loaddi">
 After downloading the [docker image](#dockerimg), using the following commands to load the docker image (approximate 45 minutes on a laptop) on the host machine:
 ```
 unzip 53.zip
