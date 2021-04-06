@@ -63,59 +63,14 @@ The generated JS program are saved to `/root/software/fuzzers/DeepSmithNISL/work
 
 The following steps are executed in bash of our docker container. 
 
-### Setup and model training
+
 * Step 1, go to the root directory of Montage. In our docker container, this would be: 
 
    ```
    cd /root/software/fuzzers/montage/Montage/src/
    ```
 
-* Step 2, preprocessing and configuring Montage using the following command:
-
-   ```
-   python3 main.py --opt preprocess --config /root/software/fuzzers/montage/Montage/config.json
-   ```
-
-* Step 3, training the model using the following commnd:
-
-   ```
-   python3 main.py --opt train  --config /root/software/fuzzers/montage/Montage/config.json
-   ```
-
-* Step 4, building the mapping table using the following commnd:
-
-   ```
-   python3 main.py --opt build_map --config /root/software/fuzzers/montage/Montage/config.json
-   ```
-
-* Step 5, modifying the fuzz funtion of the `fuzz.py` in `/root/software/fuzzers/montage/Montage/src/fuzz/` as follows to store the generated test programs:
-
-  ```
-       #This tells where to save the mutated seed programs
-       mutation_save_dir = "root/software/fuzzers/montage/Montage/mutationSeeds"
-       if os.path.exists(mutation_save_dir):
-         shutil.rmtree(mutation_save_dir)
-         os.mkdir(mutation_save_dir)
-       file_name = "samples_" + ''.join(random.sample(string.ascii_letters + string.digits, 16)) + ".js"
-       file_path = os.path.join(mutation_save_dir, file_name)
-       model = load_model(self._model_path)
-   
-       printer = CodePrinter(self._bug_dir)
-   
-       while True:
-         js_path = self.gen_code(printer, model)
-         if js_path == None: continue
-         js_path = os.path.abspath(js_path)
-         with open(js_path, "r", encoding="utf-8") as f:
-           content = f.read()
-         with open(file_path, "w", encoding="utf-8") as w:
-           w.write(content)
-         self.exec_eng(js_path)
-   ```
-
-## Test case generation
-
-   After configuring the fuzzer, using the following command running in our container to generate test cases. 
+Step 2, use the following command running in our container to generate test cases. 
 
    ```
    python3 main.py --opt fuzz --config /root/software/fuzzers/montage/Montage/config.json
