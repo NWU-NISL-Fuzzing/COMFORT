@@ -202,9 +202,6 @@ Since we only test on a relatively smaller number of test cases ([nsamples](#pre
 
 
 ### ★ Demonstration of Test Case Reduction (Optional)
-
-**[!important]** This step must run after differential testing. 
-
 Use the following command running in our docker container to evaluate our test case reducer:
 
 ```python /root/src/05_testcase_reducing.py --file_dir=/root/data/interesting_testcases```
