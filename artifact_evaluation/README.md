@@ -78,7 +78,7 @@ Then, choose one of the following options depending if you have setup the NVIDIA
 
 After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 
-```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile``` 
+```source /root/.bash_profile``` 
   
 
 This script will also start a MYSQL database deamon needed for program mutations and differentiated testing. 
@@ -198,7 +198,7 @@ Since we only test on a relatively smaller number of test cases ([nsamples](#pre
 
 **Known Issue:** If you get a  *mysql connection exception* (e.g., pymysql.err.OperationError) error, make sure you have run the setup script as:
 
-```echo -e '[mysqld]\nskip-grant-tables' >> /etc/mysql/my.cnf && pip install sqlalchemy PyExecJS && source /root/.bash_profile```
+```source /root/.bash_profile```
 
 
 ### ★ Demonstration of Test Case Reduction (Optional)
