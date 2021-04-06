@@ -123,8 +123,9 @@ Then, go into bash of the docker container to configure the server and the clien
    /etc/init.d/ssh start
    tmux new-session -s ssh-tunneling
    ssh -L 9000:localhost:6379 serverName@serverIP
-   ctrl+b+d to exit the session
    ```
+   
+Press ```ctrl+b+d``` to exit the session
 
 #### Step 2 Preprocessing the corpus:
 
