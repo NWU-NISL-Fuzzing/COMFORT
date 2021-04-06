@@ -202,9 +202,14 @@ Since we only test on a relatively smaller number of test cases ([nsamples](#pre
 
 
 ### ★ Demonstration of Test Case Reduction (Optional)
+
+**[!important]* This step must run after the differential testing stage. 
+
 Use the following command running in our docker container to evaluate our test case reducer:
 
 ```python /root/src/05_testcase_reducing.py --file_dir=/root/data/interesting_testcases```
+
+*Note that the test cases stored in the ```interesting_testcases``` are renamed starting from index 1.*
 
 **Known issue** To demonstrate the test case reduction, we always include a randomly chosen test case (in addition to the bug-exposing ones, if any) in the ```interesting_testcases``` folder. This is to prevent the issue of not able to run the test case reducer if no test case triggered buggy behaviour during differential testing. If the randomly chosen test case is the only test case to be reduced and it does not trigger buggy behaviour, the test case reducer will return an empty result. This is a work-around technique used for AE only.
 
