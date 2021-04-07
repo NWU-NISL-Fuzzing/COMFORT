@@ -67,6 +67,7 @@ The following steps are executed in bash of our docker container.
 * Step 1, go to the root directory of Montage. In our docker container, this would be: 
 
    ```
+   source /root/.bash_profile
    cd /root/software/fuzzers/montage/Montage/src/
    ```
 
