@@ -13,6 +13,8 @@ Note that we do not log IP addresses or other accessing information, but if you 
 **While it is possible to create your own copy of our Jupyter Notebook usng [the code](./Jupyter) provided, we recommend to use the configured server as it is non-trivial to configure the Notebook locally within a docker container**. 
 
 # Step-by-Step Instructions <br id = "docker">
+*Disclaim*:
+*Although we have worked hard to ensure our AE scripts are robust, our tool remains a *research prototype*. It can still have glitches when using in complex, real-life settings. If you discover any bugs, please raise an issue, describing how you ran the program and what problem you encountered. We will get back to you ASAP. Thank you. *
 
 
 ## ★ Main Results <span id = "bug-list">
