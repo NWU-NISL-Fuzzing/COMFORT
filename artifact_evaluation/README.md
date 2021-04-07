@@ -21,7 +21,7 @@ The main results of the paper are a [list of bugs](./Bug-List.md) exposed by COM
 
 ## ★ Docker Image <br id = "dockerimg">
 We prepare our artifact within a Docker image to run "out of the box". A reduced-sized Docker image can be downloaded from [here](https://drive.google.com/file/d/1gv-APYDCvhBGJj3T15uahfqzRaWTcecj/view?usp=sharing). 
-Our docker image was tested on a host machine running Ubuntu 18.04. 
+Our docker image was tested on a host machine running Ubuntu 18.04 and Windows 10.  
 
 ## ★ Artifact Contents
 The Docker image contains the following scripts for evaluation. 
