@@ -55,7 +55,7 @@ Please note that the above steps for configuring the GPU environment were only t
 Follow the instructions below to use our AE evaluation scripts.
 
 ### 1. Setup
-#### 1.1  load the Docker Image <br id="loaddi">
+#### 1.1  Load the Docker Image <br id="loaddi">
 After downloading the [docker image](#dockerimg), using the following commands to load the docker image (~30 minutes on a laptop for the reduced sized image) on the host machine:
 ```
 unzip 53.zip
@@ -74,7 +74,7 @@ Then, choose one of the following options depending if you have setup the NVIDIA
      
 
 
-#### 1.2 setup environmental parameters:
+#### 1.2 Setup environmental parameters:
 
 After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 
@@ -100,7 +100,7 @@ This step takes around 4 hours to generate 512 test programs using a laptop CPU 
 
 All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
 
-### 2.2 Optional: Program generation using a locally trained model  <br id = "generation">
+### 2.2 (Optional) Program generation using a locally trained model  <br id = "generation">
 This option involves two steps: (1) first fine-tune a GPT-2 model locally and then (2) use the trained model for test program generation.
 
 #### 2.2.1 Train the JS Program Generator <br id="generator">
