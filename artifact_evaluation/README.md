@@ -74,7 +74,7 @@ Then, choose one of the following options depending if you have setup the NVIDIA
      
 
 
-#### 1.2: setup environmental parameters:
+#### 1.2 setup environmental parameters:
 
 After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
 
@@ -103,7 +103,7 @@ All generated test cases are written to directory ```/root/data/generated_data/c
 ### 2.2 Optional: Program generation using a locally trained model  <br id = "generation">
 This option involves two steps: (1) first fine-tune a GPT-2 model locally and then (2) use the trained model for test program generation.
 
-#### 2.2.1: Train the JS Program Generator <br id="generator">
+#### 2.2.1 Train the JS Program Generator <br id="generator">
 (*approximate runtime: ~1 hour using a GPU， 5 hours using a CPU*)
 
 * Evaluate GPT-2 program synthesizer by running the following command (set ```--multi_gpu=1``` for using a GPU for training):
@@ -116,7 +116,7 @@ We have reduced the size of the corpus so that it takes around 5 hours to train 
 
 *Training the model can be interrupted after the first training iteration (by pressing Ctrl + C)*. Once trained, the model does not need to be re-trained. 
 
-#### 2.2.2: Program generation
+#### 2.2.2 Program generation
 (*approximate runtime: 20 minutes for using a  GPU, ~4 hours when using a CPU*)
 
 **!Important:** To run this script, make sure you have trained a model using ```01_evaluate_generator.py``` dsescribed in the previous step.
