@@ -72,8 +72,6 @@ Then, choose one of the following options depending if you have setup the NVIDIA
  
      ```docker run -it --name comfort --gpus all pldi2021:comfort /bin/bash  ```
      
-
-
 #### 1.2 Setup environmental parameters:
 
 After importing the docker container **and getting into bash** in the container, make sure you run the below command to setup the environmental variables, before using any of the AE scripts:
@@ -98,7 +96,7 @@ Using the following command to generate about 512 (defined by ```nsamples```) te
 
 This step takes around 4 hours to generate 512 test programs using a laptop CPU and the model loading stage may take around 30 minutes. The  ```--nsamples``` parameter controls how many test programs to generate, **which must be a multiply of the default bach size of 16 (e.g., 16, 32, 64, 128, 512, etc.)**. We suggest setting nsamples to be at least >= 64 for effective differntial testing. 
 
-All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. 
+All generated test cases are written to directory ```/root/data/generated_data/complete_testcases/```. Note that the number of test cases generated can vary depending on the number of syntatically valid test programs generated and if they contain a JS API. 
 
 ### 2.2 (Optional) Program generation using a locally trained model  <br id = "generation">
 This option involves two steps: (1) first fine-tune a GPT-2 model locally and then (2) use the trained model for test program generation.
