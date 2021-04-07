@@ -21,7 +21,7 @@ Following the instructions [here](./README.md#loaddi) to load the docker image.
 
 ```bash
     cd /root/software/fuzzers/fuzzilli
-    swift run -c release -Xlinker='-lrt' FuzzilliCli --profile=jerryscript --storagePath=/root/software/fuzzers/fuzzilli/data /root/software/fuzzers/additional_engines/jerryscript/build/bin/jerry
+    swift run -c release -Xlinker='-lrt' FuzzilliCli --profile=jerryscript --storagePath=/root/software/fuzzers/fuzzilli/data /root/software/fuzzers/additional_engines/jerryscript/build/bin/jerry --resume
 ```
 
 Test cases are save into the path given by the `storagePath` (`/root/software/fuzzers/fuzzilli/data` in this example). 
@@ -51,7 +51,7 @@ The trained model is saved to `/root/software/fuzzers/DeepSmithNISL/workspace/de
 
 ```python
 cd /root/software/fuzzers/DeepSmithNISL
-python gen.py --gen_model=workspace/default/model_10.ckpt --gen_file=gen_test.txt --gen_number=1024 --gen_batch_size```=32 
+python gen.py --gen_model=workspace/default/model_10.ckpt --gen_file=gen_test.txt --gen_number=1024 --gen_batch_size=32 
 ```
 
 The ```--gen_number``` defines how many test programs to generate, which must be a multiply of the batch_size defined by ```--gen_batch_size```
