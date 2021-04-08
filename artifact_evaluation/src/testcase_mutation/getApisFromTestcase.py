@@ -1,7 +1,3 @@
-#
-# This utility provides APIs to collect JS APIs from a JS test program
-#
-
 import execjs
 import tempfile
 import pathlib
@@ -29,8 +25,8 @@ def get_function_nodes_from_testcase(testcase):
         except Exception:
             pass
     getFunctionNodes = execjs.compile("""
-        let estraverse = require('/root/software/node_modules/estraverse');
-        let esprima = require('/root/software/node_modules/esprima');
+        let estraverse = require('estraverse');
+        let esprima = require('esprima');
         let fs = require("fs");
 
         function analyzeCode(filename) {  

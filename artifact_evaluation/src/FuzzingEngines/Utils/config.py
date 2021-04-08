@@ -45,3 +45,5 @@ class Hparams_Reduce:
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--file_path', type=str, default=r"/root/data/testcases/testcase.js", help='path to the reduce file')
+   
+    parser.add_argument('--file_dir', type=str, default=r"/root/data/interesting_testcases", help='directory to the reduce file')

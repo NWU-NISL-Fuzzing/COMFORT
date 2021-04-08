@@ -11,6 +11,7 @@ import logging
 import os
 import sys
 from uuid import uuid4
+import pathlib
 
 from FuzzingEngines.Utils.config import Hparams_Evaluate
 from FuzzingEngines.step3_executeTestcase import harness, Result
@@ -21,7 +22,7 @@ from FuzzingEngines.Utils.logger import logger_config
 def evaluate_testcase(testcase_list, log_path, clear_classifier):
     logger_config(prefix='step3_evaluate_harness', log_file=log_path)
 
-    logging.info(f"Performing differential testing (approx 2 minutes)...\n")
+    logging.info(f"Performing differential testing (approximate: 1 minute/120 test cases)...\n")
 
     Harness = harness.Harness()
 
@@ -32,14 +33,15 @@ def evaluate_testcase(testcase_list, log_path, clear_classifier):
     count = 1
     total = len(testcase_list)
 
+    caseAndengine = []
     # Test case filter
     classify = Classifier()
     # Empting all the test cases
     if clear_classifier:
         classify.clear_recorders()
-
+    pathlib.Path(f"/root/data/interesting_testcases").mkdir(parents=True, exist_ok=True)
     for test_case in testcase_list:
-        progress = "\rEvaluate Testcases Processing: {current}/{total} ".format(current=count, total=total)
+        progress = "\r[Differential Testing Progress] : {current}/{total} ".format(current=count, total=total)
         sys.stdout.write(progress)
         count += 1
         # The differential testing outputs
@@ -70,10 +72,12 @@ def evaluate_testcase(testcase_list, log_path, clear_classifier):
         if len(suspicious_result) != len(test_result_list):
             logging.info(f"Filtering successfully...\n")
         else:
+            pathlib.Path(f"/root/data/interesting_testcases/{count - 1}.js").write_text(test_case)
             logging.info(f"Add to classify database\n")
         logging.info(f"------------------------------------------------------\n")
         for result in suspicious_result:
             suspicious_result_list.append(result)
+            caseAndengine.append([f"{count - 1}.js", result.testbed])
 
     for interesting_test_result in suspicious_result_list:
         logging.info(interesting_test_result)
@@ -82,10 +86,17 @@ def evaluate_testcase(testcase_list, log_path, clear_classifier):
        logging.info("\n\033[1;31;48mTips: No Potential Non-Conformance Behaviors Detected, Please change test suite\033[0m")
 
     logging.info(f"\n------------------------------------------------------")
-    logging.info(f"#Suspicious results before filtering is: {test_result_num}:\n")
-    logging.info(f"#Suspicious results that need to be manually inspected after filtering is: {len(suspicious_result_list)}")
+    logging.info(f"The number of deviated test cases that were filtered out by our filtering scheme is : {test_result_num}\n")
+    logging.info(f"The number of test cases required manual analysis is:: {len(suspicious_result_list)}")
+    logging.info(f"Summary of test case required manual inspect:")
+    logging.info(f"=======================================")
+    logging.info(f"Test cases \t JS Testbed")
+    for result in caseAndengine:
+        logging.info(result[0] + "\t" + result[1])
+    logging.info(f"=======================================")
     logging.info(f"------------------------------------------------------")
-    logging.info(f"#All evaluated result has been save to " + log_path)
+    logging.info(f"All differential testing results are saved to " + log_path)
+    logging.info(f"Check the log file for deviated execution outputs.")
     logging.info(f"------------------------------------------------------\n")
 
 

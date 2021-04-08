@@ -84,7 +84,7 @@ def simple_by_block(result: Result.HarnessResult, with_output_info=False):
         ast = buildAST(simplified_testcase)
     except Exception as r:
         # When the test case cannot extract the abstract syntax tree, it is streamlined in a line-of-code manner.
-        print("Failed to extract AST. ", r)
+        # print("Failed to extract AST. ", r)
         simplified_testcase = reduce_by_line.simple_by_statement(result, with_output_info=with_output_info)
         return simplified_testcase
     else:

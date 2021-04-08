@@ -1,6 +1,6 @@
-let mutation = require('/root/software/node_modules/estraverse');
-let esprima = require('/root/software/node_modules/esprima');
-let escodegen = require('/root/software/node_modules/escodegen');
+let mutation = require('estraverse');
+let esprima = require('esprima');
+let escodegen = require('escodegen');
 let fs = require("fs");
 
 let {getValues} = require("../StandardParser/src/main/main");

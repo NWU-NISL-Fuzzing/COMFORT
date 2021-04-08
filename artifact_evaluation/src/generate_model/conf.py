@@ -1,5 +1,3 @@
-# This utility file parses the argument passed to the test program generation model. 
-
 import argparse
 
 

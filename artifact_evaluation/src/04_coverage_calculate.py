@@ -4,7 +4,7 @@
 """
 @author: xing
 @contact: 1059252359@qq.com
-@file: 05_coverage_calculate.py
+@file: 04_coverage_calculate.py
 @date: 2021/3/2 10:19
 @desc: Use NYC to calculate code coverage
 """
@@ -28,6 +28,23 @@ def coverage(report_dir, temp_dir, file_path):
            "--clean=false", "node", file_path]
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     p.communicate()
+
+
+def jshint_checking(file_path):
+    # 进行uglifyjs过滤
+    cmd = ['timeout', '60s', 'node', '--max_old_space_size=4096', '/root/data/codeCoverage/node_modules/jshint/bin/jshint',
+           file_path]
+    if sys.platform.startswith('win'):  # 假如是windows
+        p1 = subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
+    else:  # 假如是linux
+        p1 = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    stdout = p1.communicate()[0]
+    if stdout.__len__() > 0:
+        jshint_flag = 0
+    else:  # 通过了检查，此时 test_file_name中就是美化后的代码
+        jshint_flag = 1
+
+    return jshint_flag
 
 
 def extractCoverage(coverage_file):
@@ -90,6 +107,7 @@ if __name__ == '__main__':
                 total += 1
 
     i = 0
+    jshint_pass = 0
     for root, dirs, files in os.walk(corpus_dir):
         for file in files:
             file_path = os.path.join(root, file)
@@ -97,6 +115,8 @@ if __name__ == '__main__':
                 process = "\rprocessing: {current}/{total}".format(current=str(i+1), total=total)
                 sys.stdout.write(process)
                 coverage(report_dir, temp_dir, file_path)
+                if jshint_checking(file_path):
+                    jshint_pass += 1
                 i += 1
 
     coverage_file = os.path.join(report_dir, "coverage-summary.json")
@@ -109,7 +129,8 @@ if __name__ == '__main__':
         f.write(open(coverage_file, "r").read())
 
     coverages = extractCoverage(coverage_file)
-    print("\ncoverage results:")
+    print("\n\njshint passing rate: %s" % str(round(jshint_pass/total, 4) * 100))
+    print("\ncoverage rate results:")
     print("statement coverages: %s" % coverages[0])
     print("function coverages: %s" % coverages[1])
     print("branch coverages: %s" % coverages[2])

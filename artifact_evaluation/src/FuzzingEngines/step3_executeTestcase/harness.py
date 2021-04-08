@@ -36,6 +36,7 @@ class Harness:
     def __init__(self, mode: int = 2, processes: int = -1):
         """
         initialize harness
+        :param engines: engines to be test
         :param mode: Mode to execute the testcase: single thread(1), mutithreading(2), mutiprocess(3). multithreading here is the fastest
         :param processes: Number of CPU cores turned on
         """
