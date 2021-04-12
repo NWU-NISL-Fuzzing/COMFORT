@@ -92,7 +92,6 @@ The generated JS test cases are stored in `/root/software/fuzzers/montage/Montag
    ```
  Press ```Ctrl+A+D``` to exit from the session.
 
-   
 * Running `modify.py` to convert the generated test cases: 
 
    ```
@@ -101,6 +100,7 @@ The generated JS test cases are stored in `/root/software/fuzzers/montage/Montag
    python /root/software/fuzzers/CodeAlchemist/motify.py /root/software/fuzzers/CodeAlchemist/data/generated_files/ 
    ```
    
+
 Press ```Ctrl+A+D``` to exit from the session. 
 
 The generated test cases are stored in `/root/software/fuzzers/CodeAlchemist/data/generated_files`
@@ -116,62 +116,32 @@ The generated test cases are stored in `/root/software/fuzzers/CodeAlchemist/dat
 
 Then, go into bash of the docker container to configure the server and the client, by following the instructions given below: 
 
-### Configuring the server
-
-#### Step 1 Connect to the redis server:
-
-   ```
-   /etc/init.d/ssh start
-   tmux new-session -s ssh-tunneling
-   ssh -L 9000:localhost:6379 serverName@serverIP
-   ```
-   
-Press ```ctrl+b+d``` to exit the session
-
-#### Step 2 Preprocessing the corpus:
-
-   ```
-   cd /root/software/fuzzers/DIE
-   rm -rf ./output-*
-   export PATH=/usr/bin:$PATH
-   ./fuzz/scripts/populate.sh ./engines/chakracore-1.11.24/out/Debug/bin/ch/ch ./DIE-corpus/ ch
-   ```
-
-### Step 3 Monitor the server status:
-
-   ```
-   tmux attach -t corpus
-   ```
-   
- Note that press ```ctrl+b+d``` to exit from the session. 
-
-   
-
 ### Configure the DIE client
 
 #### Step 1 Connect the server
 
    ~~~
-   tmux new-session -s ssh-tunneling
-   ssh -L 9000:localhost:6379 serverName@serverIP
+    /etc/init.d/ssh start
+    tmux new-session -s ssh-tunneling
+    ssh -L 9000:localhost:6379 serverName@serverIP	
    ~~~
-   
+
  Press ``` ctrl+b+d``` to exit the session
 
 
 #### Step 2 Start the fuzzing process to mutate the seed programs
 
    ```
-   cd /root/software/fuzzers/DIE
-   export PATH=/usr/bin:$PATH
-   ./fuzz/scripts/run.sh ./engines/chakracore-1.11.24/out/Debug/ch ./DIE-corpus ch
+    cd /root/software/fuzzers/DIE
+    rm -rf mutatedSeeds/*
+    ./fuzz/scripts/run.sh ./engines/chakracore-1.11.24/out/Debug/ch ./DIE-corpus/ ch
    ```
  You can replace ```./engines/chakracore-1.11.24/out/Debug/ch``` with another JS engine. 
 
 #### Step 3 Monitor the running:
 
    ```
-   tmux attach -t fuzzer
+    tmux attach -t fuzzer
    ```
 Press ```ctrl+b+d``` to exit from the session
 
