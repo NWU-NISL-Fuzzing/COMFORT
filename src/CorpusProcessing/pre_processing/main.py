@@ -9,8 +9,8 @@ from lib.db_operation import DBOperation
 from pre_processing.function_extraction import functionExtraction
 from pre_processing.blacklist_filter import removeDross
 from pre_processing.syntax_filtration import SyntaxFiltration
-from utils.config import Hparams_preprocessing
-from utils.logger import logger_config
+from lib.config import Hparams_preprocessing
+from lib.logger import logger_config
 
 
 class PreProcessor:
