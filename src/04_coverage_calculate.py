@@ -77,7 +77,7 @@ if __name__ == '__main__':
     hparams = Hparams_Coverage().parser.parse_args()
 
     parent_dir = os.path.abspath("../../../../GithubProjects/COMFORT/src/codeCoverage")
-    reporter_path = os.path.join(parent_dir, "coverageReporters")
+    reporter_dir = os.path.join(parent_dir, "coverageReporters")
     fuzzer = hparams.fuzzer
     coverage_files = hparams.coverage_files
 
@@ -122,7 +122,9 @@ if __name__ == '__main__':
     # get the current time
     now = time.localtime()
     nowt = time.strftime("%Y-%m-%d-%H_%M_%S", now)
-    reporter_path = os.path.join(reporter_path, nowt + "_" + fuzzer + ".json")
+    if not os.path.exists(reporter_dir):
+        os.mkdir(reporter_dir)
+    reporter_path = os.path.join(reporter_dir, nowt + "_" + fuzzer + ".json")
     with open(reporter_path, "w", encoding="utf-8") as f:
         f.write(open(coverage_file, "r").read())
 
