@@ -17,7 +17,7 @@ let {oneToOneApiList} = require('../../resources/oneToOneApiList');
 let {oneToManyApiObject} = require('../../resources/oneToManyApiObject');
 let {stringExists} = require('./utils');
 // 指定结果
-var resultPath = '../../resources/result.json'
+var resultPath = '../../resources/result_test.json'
 
 function getValues(inputObject) {
     // 3-27修正：传递过来的参数变更为对象形式，注意这里都先转成字符串了

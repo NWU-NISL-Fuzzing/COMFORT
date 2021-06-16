@@ -18,7 +18,7 @@ let {ApiTransformError} = require('./error');
 let {textToCode} = require('./textToCode');
 
 // 声明结果文件的路径
-var targetPath = '../../resources/result.json'
+var targetPath = '../../resources/result_test.json'
 
 // 加载 document
 logger.info('正在加载document，请稍等...');

@@ -167,10 +167,10 @@ class FilterThread(threading.Thread):
 
         # 执行uglifyjs检查，通过则flag=1，未通过则flag=0
         if sys.platform.startswith('win'):    # 假如是windows
-            cmd1 = ['timeout', '120s', 'node', '--max_old_space_size=4096', '../node_modules/uglify-js/bin/uglifyjs', test_file_name, '-b', '-o', test_file_name]
+            cmd1 = ['timeout', '120s', 'uglifyjs', test_file_name, '-b', '-o', test_file_name]
             p1 = subprocess.Popen(cmd1, stderr=subprocess.PIPE, shell=True)
         else:    # 假如是linux
-            cmd1 = ['timeout', '120s', 'node', '--max_old_space_size=4096', '../node_modules/uglify-js/bin/uglifyjs', test_file_name, '-b', '-o', test_file_name]
+            cmd1 = ['timeout', '120s', 'uglifyjs', test_file_name, '-b', '-o', test_file_name]
             p1 = subprocess.Popen(cmd1, stderr=subprocess.PIPE)
 
         if ((p1.poll() is None) and p1.stderr.readline().__len__() > 0 and os.path.exists(

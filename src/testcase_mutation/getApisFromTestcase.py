@@ -25,8 +25,8 @@ def get_function_nodes_from_testcase(testcase):
         except Exception:
             pass
     getFunctionNodes = execjs.compile("""
-        let estraverse = require('/usr/local/lib/node_modules/estraverse');
-        let esprima = require('/usr/local/lib/node_modules/esprima');
+        let estraverse = require('estraverse');
+        let esprima = require('esprima');
         let fs = require("fs");
 
         function analyzeCode(filename) {  

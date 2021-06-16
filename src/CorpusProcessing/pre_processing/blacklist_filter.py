@@ -57,6 +57,6 @@ def removeDross(dir_path, source_db_path, before_uglifyjs_db_path, after_uglifyj
     list2db(after_uglifyjs_data, os.path.join(dir_path, after_uglifyjs_db_path))
     logging.info(f'·After deannotating, beautifying, and deduplicating, remaining: {len(after_uglifyjs_data)}')
 
-    # 执行完成后邮件告知
-    EmailSender = email_sender('1059252359@qq.com')
-    EmailSender.send_main()
+    # # 执行完成后邮件告知
+    # EmailSender = email_sender('1059252359@qq.com')
+    # EmailSender.send_main()

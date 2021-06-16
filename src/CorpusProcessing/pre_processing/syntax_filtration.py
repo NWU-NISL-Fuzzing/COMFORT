@@ -75,7 +75,7 @@ class FiltrateThread(threading.Thread):  # 继承父类threading.Thread
 
     @staticmethod
     def contains_syntax_error(test_file_name):
-        cmd = ['timeout', '120s', 'node', '--max_old_space_size=4096', '../node_modules/jshint/bin/jshint', test_file_name]
+        cmd = ['timeout', '120s', 'jshint', test_file_name]
         # cmd = ['node', '--max_old_space_size=4096', '../node_modules/jshint/bin/jshint', test_file_name]
         process = subprocess.Popen(cmd, stdout=subprocess.PIPE)
         # process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE)

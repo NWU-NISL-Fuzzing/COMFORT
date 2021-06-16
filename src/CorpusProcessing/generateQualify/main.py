@@ -1,13 +1,13 @@
 import os
 from uuid import uuid4
 
-from utils.logger import *
+from lib.logger import *
 from generateQualify.step1_syntaxcheck import syntaxCheck
 from generateQualify.step2_lengthandcallable import lengthAndCallable
 from generateQualify.step3_getAPIS import *
 from lib.db_operation import DBOperation
 from utils.config import Hparams_generateQualify
-from utils.logger import logger_config
+from lib.logger import logger_config
 '''
         此模块的主要目的是用于评测模型生成代码的质量，评测标准从三方面进行：
             1. 去重，通过美化和语法检查的数量

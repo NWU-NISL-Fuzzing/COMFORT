@@ -1,5 +1,5 @@
 # Download the github repository and rename it
-cat top2000Repos.txt | while read line; 
+cat top2000Repos.txt | while read line;
 do
     str="$line"
 
