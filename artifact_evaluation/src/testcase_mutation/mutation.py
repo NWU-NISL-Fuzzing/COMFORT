@@ -30,4 +30,4 @@ class Mutator:
 
 
 def get_config():
-    return config.LoadConfig.init_config()["ESApis"]
+    return config.init_config()["ESApis"]
